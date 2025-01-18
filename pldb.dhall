@@ -779,6 +779,21 @@ in  [ { name = "ALGOL 58"
         , { title = "Perl Documentation", url = "https://perldoc.perl.org/" }
         ]
       }
+    , { name = "Pony"
+      , originalAuthors = [ "Sebastian Blessing", "Sylvan Clebsch" ]
+      , paradigms = [ paradigms.objectOriented, paradigms.functional ]
+      , examples = [] : List Text
+      , description =
+          "An object-oriented programming language designed for writing safe, high-performance actor-based programs. Pony emphasizes capabilities-secure type system and data-race freedom through its reference capabilities system."
+      , yearFirstPublished = 2015
+      , compilationTargets = [ compilationTarget.machineCode ]
+      , typing = [ typingSystem.static, typingSystem.strong, typingSystem.nominal ]
+      , resources =
+        [ { title = "Pony Homepage", url = "https://www.ponylang.io/" }
+        , { title = "Pony Tutorial", url = "https://tutorial.ponylang.io/" }
+        , { title = "Pony Documentation", url = "https://www.ponylang.io/learn/" }
+        ]
+      }
     , { name = "Prolog"
       , originalAuthors = [ "Alain Colmerauer", "Philippe Roussel" ]
       , paradigms = [ paradigms.logic, paradigms.declarative ]
