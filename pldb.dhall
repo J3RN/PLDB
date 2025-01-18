@@ -831,6 +831,21 @@ in  [ { name = "ALGOL 58"
           }
         ]
       }
+    , { name = "PureScript"
+      , originalAuthors = [ "Phil Freeman" ]
+      , paradigms = [ paradigms.functional ]
+      , examples = [] : List Text
+      , description =
+          "A strongly-typed functional programming language that compiles to JavaScript. PureScript is similar to Haskell but designed specifically for the web platform, featuring row polymorphism, type classes, and strict evaluation."
+      , yearFirstPublished = 2013
+      , compilationTargets = [ compilationTarget.javascript ]
+      , typing = [ typingSystem.static, typingSystem.strong, typingSystem.inferred ]
+      , resources =
+        [ { title = "PureScript Homepage", url = "https://www.purescript.org/" }
+        , { title = "PureScript Documentation", url = "https://github.com/purescript/documentation" }
+        , { title = "Try PureScript", url = "https://try.purescript.org/" }
+        ]
+      }
     , { name = "Pyret"
       , originalAuthors =
         [ "Joe Gibbs Politz"
