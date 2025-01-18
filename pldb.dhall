@@ -6,6 +6,7 @@ let paradigms =
       | array
       | objectOriented
       | logic
+      | stack
       >
 
 let compilationTarget =
@@ -418,9 +419,24 @@ in  [ { name = "ALGOL 58"
           }
         ]
       }
+    , { name = "Factor"
+      , originalAuthors = [ "Slava Pestov" ]
+      , paradigms = [ paradigms.functional, paradigms.declarative, paradigms.stack ]
+      , examples = [] : List Text
+      , description =
+          "A stack-oriented programming language with high-level features like dynamic typing, extensible syntax, macros, and garbage collection. Factor emphasizes interactive development and concatenative programming."
+      , yearFirstPublished = 2003
+      , compilationTargets = [ compilationTarget.machineCode ]
+      , typing = [ typingSystem.dynamic, typingSystem.strong ]
+      , resources =
+        [ { title = "Factor Homepage", url = "https://factorcode.org/" }
+        , { title = "Factor Documentation", url = "https://docs.factorcode.org/" }
+        , { title = "Factor GitHub Repository", url = "https://github.com/factor/factor" }
+        ]
+      }
     , { name = "Forth"
       , originalAuthors = [ "Charles H. Moore" ]
-      , paradigms = [ paradigms.imperative ]
+      , paradigms = [ paradigms.imperative, paradigms.stack ]
       , examples = [] : List Text
       , description =
           "A stack-based programming language emphasizing simplicity and extensibility."
