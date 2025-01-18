@@ -670,6 +670,20 @@ in  [ { name = "ALGOL 58"
           }
         ]
       }
+    , { name = "Magik"
+      , originalAuthors = [ "Arthur Chance" ]
+      , paradigms = [ paradigms.objectOriented ]
+      , examples = [] : List Text
+      , description =
+          "A dynamic object-oriented programming language originally developed by Smallworld for developing geographical information systems (GIS). Features multiple inheritance, dynamic typing, and garbage collection."
+      , yearFirstPublished = 1990
+      , compilationTargets = [ compilationTarget.interpreted ]
+      , typing = [ typingSystem.dynamic ]
+      , resources =
+        [ { title = "Magik Development Tools (MDT)", url = "https://mdt.net" }
+        , {title = "Visual Studio Code Extension", url = "https://marketplace.visualstudio.com/items?itemName=siamz.smallworld-magik"}
+        ]
+      }
     , { name = "Modula"
       , originalAuthors = [ "Niklaus Wirth" ]
       , paradigms = [ paradigms.imperative, paradigms.procedural ]
