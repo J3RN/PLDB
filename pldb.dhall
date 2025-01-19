@@ -151,6 +151,17 @@ in  [ { name = "ALGOL 58"
       , typing = [ typingSystem.weak ]
       , resources = [] : List { title : Text, url : Text }
       }
+    , { name = "BASIC"
+      , originalAuthors = [ "John G. Kemeny", "Thomas E. Kurtz" ]
+      , paradigms = [ paradigms.imperative, paradigms.procedural ]
+      , examples = [] : List Text
+      , description =
+          "Beginner's All-purpose Symbolic Instruction Code (BASIC) was designed to be easy to learn and use. It became widely popular in the home computer era of the 1980s."
+      , yearFirstPublished = 1964
+      , compilationTargets = [ compilationTarget.interpreted ]
+      , typing = [ typingSystem.dynamic ]
+      , resources = [] : List { title : Text, url : Text }
+      }
     , { name = "BCPL"
       , originalAuthors = [ "Martin Richards" ]
       , description =
@@ -972,6 +983,21 @@ in  [ { name = "ALGOL 58"
         , { title = "Python Documentation", url = "https://docs.python.org/" }
         ]
       }
+    , { name = "QBasic"
+      , originalAuthors = [ "Microsoft" ]
+      , paradigms = [ paradigms.imperative, paradigms.procedural ]
+      , examples = [] : List Text
+      , description =
+          "An IDE and interpreter for a version of BASIC developed by Microsoft. It was included with MS-DOS and was many programmers' first introduction to programming."
+      , yearFirstPublished = 1991
+      , compilationTargets = [ compilationTarget.interpreted ]
+      , typing = [ typingSystem.dynamic ]
+      , resources =
+        [ { title = "QB64 (a modern implementation of QBASIC)"
+          , url = "https://qb64.com/"
+          }
+        ]
+      }
     , { name = "R"
       , originalAuthors = [ "Ross Ihaka", "Robert Gentleman" ]
       , paradigms = [ paradigms.functional, paradigms.procedural ]
@@ -1291,6 +1317,21 @@ in  [ { name = "ALGOL 58"
         , { title = "V GitHub Repository", url = "https://github.com/vlang/v" }
         , { title = "V Playground (online editor)"
           , url = "https://play.vlang.io/"
+          }
+        ]
+      }
+    , { name = "Visual Basic"
+      , originalAuthors = [ "Microsoft" ]
+      , paradigms = [ paradigms.imperative, paradigms.objectOriented ]
+      , examples = [] : List Text
+      , description =
+          "A version of BASIC developed by Microsoft for its COM programming model and Windows GUI development. Later evolved into Visual Basic .NET."
+      , yearFirstPublished = 1991
+      , compilationTargets = [ compilationTarget.machineCode ]
+      , typing = [ typingSystem.static ]
+      , resources =
+        [ { title = "Visual Basic Documentation"
+          , url = "https://learn.microsoft.com/en-us/dotnet/visual-basic/"
           }
         ]
       }
