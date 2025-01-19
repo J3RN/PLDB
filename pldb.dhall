@@ -729,6 +729,21 @@ in  [ { name = "ALGOL 58"
       , typing = [ typingSystem.static, typingSystem.strong ]
       , resources = [] : List { title : Text, url : Text }
       }
+    , { name = "Modula-2"
+      , originalAuthors = [ "Niklaus Wirth" ]
+      , paradigms = [ paradigms.imperative, paradigms.procedural ]
+      , examples = [] : List Text
+      , description =
+          "A successor to Modula with improved type safety and module system. Modula-2 added support for separate compilation, co-routines for concurrent programming, and a more sophisticated module system. It influenced later languages like Ada and Oberon."
+      , yearFirstPublished = 1978
+      , compilationTargets = [ compilationTarget.machineCode ]
+      , typing = [ typingSystem.static, typingSystem.strong ]
+      , resources =
+        [ { title = "ADW Modula-2 Homepage"
+          , url = "http://www.modula2.org/"
+          }
+        ]
+      }
     , { name = "OCaml"
       , originalAuthors =
         [ "Xavier Leroy"
