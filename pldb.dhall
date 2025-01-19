@@ -45,7 +45,10 @@ in  [ { name = "ALGOL 58"
         ]
       , paradigms = [ paradigms.imperative, paradigms.procedural ]
       , examples = [] : List Text
-      , description = "Originally termed International Algebraic Language (IAL), ALGOL 58 was an attempt to create a universal programming language.  The Communications of the ACM (CACM) used ALGOL notation to publish algorithms.  ALGOL 58 was rapidly succeeded by ALOGOL 60."
+      , description =
+          ''
+          Originally termed International Algebraic Language (IAL), ALGOL 58 was an attempt to create a universal programming language.  The Communications of the ACM (CACM) used ALGOL notation to publish algorithms.  ALGOL 58 was rapidly succeeded by ALOGOL 60.
+          ''
       , yearFirstPublished = 1958
       , compilationTargets = [ compilationTarget.machineCode ]
       , typing = [ typingSystem.static, typingSystem.strong ]
@@ -70,7 +73,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.imperative ]
       , examples = [] : List Text
       , description =
-          "The ALGOrithmic Language 1960, a further development upon ALGOL 1958."
+          ''
+          The ALGOrithmic Language 1960, a further development upon ALGOL 1958.
+          ''
       , yearFirstPublished = 1960
       , compilationTargets = [ compilationTarget.machineCode ]
       , typing = [ typingSystem.static, typingSystem.strong ]
@@ -90,7 +95,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.imperative ]
       , examples = [] : List Text
       , description =
-          "The ALGOrithmic Language 1968, a further development upon ALGOL 1960."
+          ''
+          The ALGOrithmic Language 1968, a further development upon ALGOL 1960.
+          ''
       , yearFirstPublished = 1968
       , compilationTargets = [ compilationTarget.machineCode ]
       , typing = [ typingSystem.static, typingSystem.strong ]
@@ -105,7 +112,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.declarative, paradigms.array ]
       , examples = [] : List Text
       , description =
-          "A Programming Language, originally a math notation, is an language specialized for manipulating multidimensional arrays."
+          ''
+          A Programming Language, originally a math notation, is an language specialized for manipulating multidimensional arrays.
+          ''
       , yearFirstPublished = 1966
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.dynamic ]
@@ -119,7 +128,9 @@ in  [ { name = "ALGOL 58"
       , originalAuthors = [ "Jean Ichbiah et al" ]
       , examples = [] : List Text
       , description =
-          "A programming language commission by the United States Department of Defense (DoD) to supercede the variety of languages in use at the time.  Originally designed for embedded systems, Ada emphasizes safety and security through strong typing, explicit concurrency, and protected objects.  Ada is named for Ada Lovelace."
+          ''
+          A programming language commission by the United States Department of Defense (DoD) to supercede the variety of languages in use at the time.  Originally designed for embedded systems, Ada emphasizes safety and security through strong typing, explicit concurrency, and protected objects.  Ada is named for Ada Lovelace.
+          ''
       , yearFirstPublished = 1980
       , compilationTargets = [ compilationTarget.machineCode ]
       , typing = [ typingSystem.static, typingSystem.strong ]
@@ -135,7 +146,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.imperative ]
       , examples = [] : List Text
       , description =
-          "Generally a notation for machine language, assigning readable names (e.g. \"mov\") to machine instructors.  Modern assembly languages often feature programmer conveniences such as labels and macros."
+          ''
+          Generally a notation for machine language, assigning readable names (e.g. \"mov\") to machine instructors.  Modern assembly languages often feature programmer conveniences such as labels and macros.
+          ''
       , yearFirstPublished = 1947
       , compilationTargets = [ compilationTarget.machineCode ]
       , typing = [ typingSystem.weak ]
@@ -145,7 +158,10 @@ in  [ { name = "ALGOL 58"
       , originalAuthors = [ "Ken Thompson", "Dennis Ritchie" ]
       , paradigms = [ paradigms.imperative ]
       , examples = [] : List Text
-      , description = "A simplification of BCPL; predecessor to C."
+      , description =
+          ''
+          A simplification of BCPL; predecessor to C.
+          ''
       , yearFirstPublished = 1969
       , compilationTargets = [ compilationTarget.machineCode ]
       , typing = [ typingSystem.weak ]
@@ -156,7 +172,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.imperative, paradigms.procedural ]
       , examples = [] : List Text
       , description =
-          "Beginner's All-purpose Symbolic Instruction Code (BASIC) was designed to be easy to learn and use. It became widely popular in the home computer era of the 1980s."
+          ''
+          Beginner's All-purpose Symbolic Instruction Code (BASIC) was designed to be easy to learn and use. It became widely popular in the home computer era of the 1980s.
+          ''
       , yearFirstPublished = 1964
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.dynamic ]
@@ -165,7 +183,9 @@ in  [ { name = "ALGOL 58"
     , { name = "BCPL"
       , originalAuthors = [ "Martin Richards" ]
       , description =
-          "Basic Combined Programming Language; a language originally designed to implement compilers in.  BCPL was later simplified into B, which was then developed into the still-widely-used C programming language."
+          ''
+          Basic Combined Programming Language; a language originally designed to implement compilers in.  BCPL was later simplified into B, which was then developed into the still-widely-used C programming language.
+          ''
       , paradigms = [ paradigms.imperative, paradigms.procedural ]
       , yearFirstPublished = 1967
       , examples = [] : List Text
@@ -182,7 +202,9 @@ in  [ { name = "ALGOL 58"
       , originalAuthors = [ "Dennis Ritchie" ]
       , yearFirstPublished = 1972
       , description =
-          "Originally developed in service of developing the UNIX operating system, C is one of the most influential and widely-used programming languages today.\nC was originally standardized by the ANSI in 1989 (C89), but that standard was later superceded by the ISO in 1990 and since."
+          ''
+          Originally developed in service of developing the UNIX operating system, C is one of the most influential and widely-used programming languages today.
+          C was originally standardized by the ANSI in 1989 (C89), but that standard was later superceded by the ISO in 1990 and since.''
       , examples =
             [ ''
               #include <stdio.h>
@@ -213,7 +235,9 @@ in  [ { name = "ALGOL 58"
         ]
       , examples = [] : List Text
       , description =
-          "A modern, object-oriented language developed by Microsoft as part of the .NET platform. While initially similar to Java, C# has evolved to incorporate many functional programming features."
+          ''
+          A modern, object-oriented language developed by Microsoft as part of the .NET platform. While initially similar to Java, C# has evolved to incorporate many functional programming features.
+          ''
       , yearFirstPublished = 2000
       , compilationTargets = [ compilationTarget.cli ]
       , typing = [ typingSystem.static, typingSystem.strong ]
@@ -232,7 +256,9 @@ in  [ { name = "ALGOL 58"
       , originalAuthors = [ "Bjarne Stroustroup" ]
       , yearFirstPublished = 1985
       , description =
-          "An extension of C.  Originally the extension was first-class object orientation (the code `c++` in C means \"add one to c\"), C++ now offers a large number and variety of extensions, including closures, templates, and exceptions."
+          ''
+          An extension of C.  Originally the extension was first-class object orientation (the code `c++` in C means \"add one to c\"), C++ now offers a large number and variety of extensions, including closures, templates, and exceptions.
+          ''
       , examples = [] : List Text
       , compilationTargets = [ compilationTarget.machineCode ]
       , typing = [ typingSystem.static, typingSystem.strong ]
@@ -254,7 +280,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.imperative, paradigms.procedural ]
       , examples = [] : List Text
       , description =
-          "COmmon Business-Oriented Language, designed for business use."
+          ''
+          COmmon Business-Oriented Language, designed for business use.
+          ''
       , yearFirstPublished = 1959
       , compilationTargets = [ compilationTarget.machineCode ]
       , typing = [ typingSystem.static, typingSystem.strong ]
@@ -269,7 +297,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.functional ]
       , examples = [] : List Text
       , description =
-          "A modern dialect of Lisp that runs on the Java Virtual Machine, emphasizing functional programming and immutability."
+          ''
+          A modern dialect of Lisp that runs on the Java Virtual Machine, emphasizing functional programming and immutability.
+          ''
       , yearFirstPublished = 2007
       , compilationTargets =
         [ compilationTarget.jvmBytecode, compilationTarget.javascript ]
@@ -294,7 +324,9 @@ in  [ { name = "ALGOL 58"
         [ paradigms.functional, paradigms.imperative, paradigms.objectOriented ]
       , examples = [] : List Text
       , description =
-          "A standardized dialect of Lisp that unified several existing Lisp implementations.  It is a multi-paradigm language featuring a macro system, dynamic typing, and support for multiple programming paradigms."
+          ''
+          A standardized dialect of Lisp that unified several existing Lisp implementations.  It is a multi-paradigm language featuring a macro system, dynamic typing, and support for multiple programming paradigms.
+          ''
       , yearFirstPublished = 1984
       , compilationTargets =
         [ compilationTarget.machineCode, compilationTarget.interpreted ]
@@ -317,7 +349,9 @@ in  [ { name = "ALGOL 58"
             ]
           : List Text
       , description =
-          "A programming language with Ruby-like syntax that compiles to native code. It aims to provide the productivity of Ruby with the performance and type safety of a compiled language."
+          ''
+          A programming language with Ruby-like syntax that compiles to native code. It aims to provide the productivity of Ruby with the performance and type safety of a compiled language.
+          ''
       , yearFirstPublished = 2014
       , compilationTargets = [ compilationTarget.machineCode ]
       , typing = [ typingSystem.static, typingSystem.strong ]
@@ -333,7 +367,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.functional, paradigms.logic ]
       , examples = [] : List Text
       , description =
-          "A declarative programming language that combines functional programming with logic programming features. Named after Haskell B. Curry, it integrates the most important features of functional languages like Haskell and logic languages like Prolog."
+          ''
+          A declarative programming language that combines functional programming with logic programming features. Named after Haskell B. Curry, it integrates the most important features of functional languages like Haskell and logic languages like Prolog.
+          ''
       , yearFirstPublished = 1999
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.static, typingSystem.strong ]
@@ -351,7 +387,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.imperative, paradigms.objectOriented ]
       , examples = [] : List Text
       , description =
-          "A systems programming language intended as an improvement over C++."
+          ''
+          A systems programming language intended as an improvement over C++.
+          ''
       , yearFirstPublished = 2001
       , compilationTargets = [ compilationTarget.machineCode ]
       , typing = [ typingSystem.static, typingSystem.strong ]
@@ -367,7 +405,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.objectOriented, paradigms.functional ]
       , examples = [] : List Text
       , description =
-          "A client-optimized programming language developed by Google for building web, mobile, and desktop applications. Originally designed as a replacement for JavaScript, it now focuses on being a general-purpose language with strong tooling support."
+          ''
+          A client-optimized programming language developed by Google for building web, mobile, and desktop applications. Originally designed as a replacement for JavaScript, it now focuses on being a general-purpose language with strong tooling support.
+          ''
       , yearFirstPublished = 2011
       , compilationTargets = [ compilationTarget.javascript ]
       , typing = [ typingSystem.static, typingSystem.strong ]
@@ -381,7 +421,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.logic, paradigms.declarative ]
       , examples = [] : List Text
       , description =
-          "A declarative logic programming language that is a subset of Prolog, but typically uses a bottom-up rather than top-down evaluation style.  It is often used as a query language for deductive databases such as Datomic."
+          ''
+          A declarative logic programming language that is a subset of Prolog, but typically uses a bottom-up rather than top-down evaluation style.  It is often used as a query language for deductive databases such as Datomic.
+          ''
       , yearFirstPublished = 1977
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.static ]
@@ -396,7 +438,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.functional, paradigms.declarative ]
       , examples = [] : List Text
       , description =
-          "A programmable configuration language that is not Turing complete. Dhall aims to be a standardized configuration language that is guaranteed to terminate and is more expressive than JSON or YAML."
+          ''
+          A programmable configuration language that is not Turing complete. Dhall aims to be a standardized configuration language that is guaranteed to terminate and is more expressive than JSON or YAML.
+          ''
       , yearFirstPublished = 2017
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.static, typingSystem.strong ]
@@ -411,7 +455,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.functional, paradigms.declarative ]
       , examples = [] : List Text
       , description =
-          "A functional programming language with Ruby-like syntax that runs on the BEAM (the Erlang virtual machine)."
+          ''
+          A functional programming language with Ruby-like syntax that runs on the BEAM (the Erlang virtual machine).
+          ''
       , yearFirstPublished = 2011
       , compilationTargets = [ compilationTarget.beamBytecode ]
       , typing = [ typingSystem.dynamic, typingSystem.strong ]
@@ -425,7 +471,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.functional ]
       , examples = [] : List Text
       , description =
-          "A functional programming language that compiles to JavaScript, specifically designed for building web browser-based user interfaces. Elm emphasizes simplicity, ease of use, and no runtime exceptions."
+          ''
+          A functional programming language that compiles to JavaScript, specifically designed for building web browser-based user interfaces. Elm emphasizes simplicity, ease of use, and no runtime exceptions.
+          ''
       , yearFirstPublished = 2012
       , compilationTargets = [ compilationTarget.javascript ]
       , typing = [ typingSystem.static, typingSystem.strong ]
@@ -442,7 +490,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.functional, paradigms.declarative ]
       , examples = [] : List Text
       , description =
-          "A functional programming language developed at Ericsson, designed for building scalable distributed systems."
+          ''
+          A functional programming language developed at Ericsson, designed for building scalable distributed systems.
+          ''
       , yearFirstPublished = 1986
       , compilationTargets = [ compilationTarget.beamBytecode ]
       , typing = [ typingSystem.dynamic, typingSystem.strong ]
@@ -458,7 +508,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.functional, paradigms.objectOriented ]
       , examples = [] : List Text
       , description =
-          "A functional-first programming language for the .NET ecosystem."
+          ''
+          A functional-first programming language for the .NET ecosystem.
+          ''
       , yearFirstPublished = 2005
       , compilationTargets = [ compilationTarget.cli ]
       , typing =
@@ -475,7 +527,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.functional, paradigms.declarative, paradigms.stack ]
       , examples = [] : List Text
       , description =
-          "A stack-oriented programming language with high-level features like dynamic typing, extensible syntax, macros, and garbage collection. Factor emphasizes interactive development and concatenative programming."
+          ''
+          A stack-oriented programming language with high-level features like dynamic typing, extensible syntax, macros, and garbage collection. Factor emphasizes interactive development and concatenative programming.
+          ''
       , yearFirstPublished = 2003
       , compilationTargets = [ compilationTarget.machineCode ]
       , typing = [ typingSystem.dynamic, typingSystem.strong ]
@@ -490,7 +544,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.imperative, paradigms.stack ]
       , examples = [] : List Text
       , description =
-          "A stack-based programming language emphasizing simplicity and extensibility."
+          ''
+          A stack-based programming language emphasizing simplicity and extensibility.
+          ''
       , yearFirstPublished = 1970
       , compilationTargets =
         [ compilationTarget.interpreted, compilationTarget.machineCode ]
@@ -503,7 +559,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.imperative, paradigms.procedural ]
       , examples = [] : List Text
       , description =
-          "The first high-level programming language, designed for scientific computing."
+          ''
+          The first high-level programming language, designed for scientific computing.
+          ''
       , yearFirstPublished = 1957
       , compilationTargets = [ compilationTarget.machineCode ]
       , typing = [ typingSystem.static, typingSystem.strong ]
@@ -519,7 +577,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.functional ]
       , examples = [] : List Text
       , description =
-          "A statically typed functional programming language for building scalable concurrent systems that runs on the BEAM."
+          ''
+          A statically typed functional programming language for building scalable concurrent systems that runs on the BEAM.
+          ''
       , yearFirstPublished = 2016
       , compilationTargets = [ compilationTarget.beamBytecode ]
       , typing =
@@ -536,7 +596,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.imperative, paradigms.procedural ]
       , examples = [] : List Text
       , description =
-          "A statically typed, compiled language designed at Google and strongly influenced by C.  However, Go's design more strongly emphasizes simplicity and safety (e.g. Go features garbage collection instead of manual memory management)."
+          ''
+          A statically typed, compiled language designed at Google and strongly influenced by C.  However, Go's design more strongly emphasizes simplicity and safety (e.g. Go features garbage collection instead of manual memory management).
+          ''
       , yearFirstPublished = 2009
       , compilationTargets = [ compilationTarget.machineCode ]
       , typing = [ typingSystem.static, typingSystem.strong ]
@@ -575,7 +637,9 @@ in  [ { name = "ALGOL 58"
             ]
           : List Text
       , description =
-          "A purely functional programming language with strong static typing and lazy evaluation."
+          ''
+          A purely functional programming language with strong static typing and lazy evaluation.
+          ''
       , yearFirstPublished = 1990
       , compilationTargets =
         [ compilationTarget.machineCode
@@ -596,13 +660,17 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.objectOriented ]
       , examples = [] : List Text
       , description =
-          "A pure object-oriented programming language inspired by Smalltalk, Self, and Lisp. Everything in Io is a message that is passed to objects. It features a small core with highly dynamic and reflective capabilities."
+          ''
+          A pure object-oriented programming language inspired by Smalltalk, Self, and Lisp. Everything in Io is a message that is passed to objects. It features a small core with highly dynamic and reflective capabilities.
+          ''
       , yearFirstPublished = 2002
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.dynamic, typingSystem.strong ]
       , resources =
         [ { title = "Io Language", url = "https://iolanguage.org/" }
-        , { title = "Io Guide", url = "https://iolanguage.org/guide/guide.html" }
+        , { title = "Io Guide"
+          , url = "https://iolanguage.org/guide/guide.html"
+          }
         ]
       }
     , { name = "Ioke"
@@ -610,13 +678,17 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.objectOriented ]
       , examples = [] : List Text
       , description =
-          "A prototype-based, dynamic programming language inspired by Io, Smalltalk, Ruby, and Lisp. It runs on the Java Virtual Machine and emphasizes expressiveness and experimentation."
+          ''
+          A prototype-based, dynamic programming language inspired by Io, Smalltalk, Ruby, and Lisp. It runs on the Java Virtual Machine and emphasizes expressiveness and experimentation.
+          ''
       , yearFirstPublished = 2008
       , compilationTargets = [ compilationTarget.jvmBytecode ]
       , typing = [ typingSystem.dynamic, typingSystem.strong ]
       , resources =
         [ { title = "Ioke Language", url = "https://ioke.org/" }
-        , { title = "Ioke Documentation", url = "https://ioke.org/documentation.html" }
+        , { title = "Ioke Documentation"
+          , url = "https://ioke.org/documentation.html"
+          }
         ]
       }
     , { name = "J"
@@ -624,7 +696,10 @@ in  [ { name = "ALGOL 58"
       , paradigms =
         [ paradigms.array, paradigms.declarative, paradigms.functional ]
       , examples = [] : List Text
-      , description = "A successor to APL focusing on array programming."
+      , description =
+          ''
+          A successor to APL focusing on array programming.
+          ''
       , yearFirstPublished = 1990
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.dynamic ]
@@ -640,7 +715,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.objectOriented, paradigms.imperative ]
       , examples = [] : List Text
       , description =
-          "A class-based, object-oriented programming language designed to be 'write once, run anywhere' via the Java Virtual Machine."
+          ''
+          A class-based, object-oriented programming language designed to be 'write once, run anywhere' via the Java Virtual Machine.
+          ''
       , yearFirstPublished = 1995
       , compilationTargets = [ compilationTarget.jvmBytecode ]
       , typing =
@@ -663,7 +740,9 @@ in  [ { name = "ALGOL 58"
             ]
           : List Text
       , description =
-          "A high-level, multi-paradigm programming language that powers most interactive websites. Originally created for Netscape Navigator, it has since become the de facto language of the web."
+          ''
+          A high-level, multi-paradigm programming language that powers most interactive websites. Originally created for Netscape Navigator, it has since become the de facto language of the web.
+          ''
       , yearFirstPublished = 1995
       , compilationTargets = [ compilationTarget.javascript ]
       , typing = [ typingSystem.dynamic, typingSystem.weak ]
@@ -683,7 +762,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.array, paradigms.declarative ]
       , examples = [] : List Text
       , description =
-          "An array programming language used primarily in financial applications."
+          ''
+          An array programming language used primarily in financial applications.
+          ''
       , yearFirstPublished = 1993
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.dynamic ]
@@ -700,7 +781,9 @@ in  [ { name = "ALGOL 58"
         ]
       , examples = [] : List Text
       , description =
-          "A modern programming language targeting the JVM, Android, and web browsers (via compilation to JavaScript)."
+          ''
+          A modern programming language targeting the JVM, Android, and web browsers (via compilation to JavaScript).
+          ''
       , yearFirstPublished = 2011
       , compilationTargets =
         [ compilationTarget.jvmBytecode, compilationTarget.javascript ]
@@ -722,7 +805,9 @@ in  [ { name = "ALGOL 58"
         [ paradigms.imperative, paradigms.functional, paradigms.procedural ]
       , examples = [] : List Text
       , description =
-          "A lightweight, high-level scripting language designed primarily for embedded use in applications. Known for its efficiency, portability, and ease of integration."
+          ''
+          A lightweight, high-level scripting language designed primarily for embedded use in applications. Known for its efficiency, portability, and ease of integration.
+          ''
       , yearFirstPublished = 1993
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.dynamic, typingSystem.strong ]
@@ -736,7 +821,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.array, paradigms.imperative ]
       , examples = [] : List Text
       , description =
-          "Originally \"MATrix LABoratory\", MATLAB is a closed-source numerical computing environment and programming language."
+          ''
+          Originally \"MATrix LABoratory\", MATLAB is a closed-source numerical computing environment and programming language.
+          ''
       , yearFirstPublished = 1984
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.dynamic ]
@@ -754,7 +841,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.objectOriented ]
       , examples = [] : List Text
       , description =
-          "A dynamic object-oriented programming language originally developed by Smallworld for developing geographical information systems (GIS). Features multiple inheritance, dynamic typing, and garbage collection."
+          ''
+          A dynamic object-oriented programming language originally developed by Smallworld for developing geographical information systems (GIS). Features multiple inheritance, dynamic typing, and garbage collection.
+          ''
       , yearFirstPublished = 1990
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.dynamic ]
@@ -768,7 +857,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.functional, paradigms.logic ]
       , examples = [] : List Text
       , description =
-          "A pure logic programming language that combines the clarity and expressiveness of declarative programming with advanced static analysis and error detection features. Mercury improves upon Prolog with a strong type system, mode system, and determinism analysis."
+          ''
+          A pure logic programming language that combines the clarity and expressiveness of declarative programming with advanced static analysis and error detection features. Mercury improves upon Prolog with a strong type system, mode system, and determinism analysis.
+          ''
       , yearFirstPublished = 1995
       , compilationTargets = [ compilationTarget.machineCode ]
       , typing = [ typingSystem.static, typingSystem.strong ]
@@ -784,7 +875,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.imperative, paradigms.procedural ]
       , examples = [] : List Text
       , description =
-          "A successor to Pascal emphasizing modularity, wherein groups of related declarations are grouped into modules."
+          ''
+          A successor to Pascal emphasizing modularity, wherein groups of related declarations are grouped into modules.
+          ''
       , yearFirstPublished = 1975
       , compilationTargets = [ compilationTarget.machineCode ]
       , typing = [ typingSystem.static, typingSystem.strong ]
@@ -795,7 +888,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.imperative, paradigms.procedural ]
       , examples = [] : List Text
       , description =
-          "A successor to Modula with improved type safety and module system. Modula-2 added support for separate compilation, co-routines for concurrent programming, and a more sophisticated module system. It influenced later languages like Ada and Oberon."
+          ''
+          A successor to Modula with improved type safety and module system. Modula-2 added support for separate compilation, co-routines for concurrent programming, and a more sophisticated module system. It influenced later languages like Ada and Oberon.
+          ''
       , yearFirstPublished = 1978
       , compilationTargets = [ compilationTarget.machineCode ]
       , typing = [ typingSystem.static, typingSystem.strong ]
@@ -817,7 +912,9 @@ in  [ { name = "ALGOL 58"
         [ paradigms.functional, paradigms.imperative, paradigms.objectOriented ]
       , examples = [] : List Text
       , description =
-          "Formerly Objective Caml, OCaml is a general-purpose programming language that supports functional, imperative, and object-oriented programming styles. OCaml emphasizes type safety and expressiveness while maintaining high performance through native code compilation."
+          ''
+          Formerly Objective Caml, OCaml is a general-purpose programming language that supports functional, imperative, and object-oriented programming styles. OCaml emphasizes type safety and expressiveness while maintaining high performance through native code compilation.
+          ''
       , yearFirstPublished = 1996
       , compilationTargets = [ compilationTarget.machineCode ]
       , typing = [ typingSystem.static, typingSystem.strong ]
@@ -835,7 +932,9 @@ in  [ { name = "ALGOL 58"
         [ paradigms.imperative, paradigms.procedural, paradigms.objectOriented ]
       , examples = [] : List Text
       , description =
-          "A successor to Modula-2 that introduced object-oriented features while maintaining simplicity and efficiency. It was designed alongside the Oberon operating system."
+          ''
+          A successor to Modula-2 that introduced object-oriented features while maintaining simplicity and efficiency. It was designed alongside the Oberon operating system.
+          ''
       , yearFirstPublished = 1987
       , compilationTargets = [ compilationTarget.machineCode ]
       , typing = [ typingSystem.static, typingSystem.strong ]
@@ -850,7 +949,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.imperative, paradigms.procedural ]
       , examples = [] : List Text
       , description =
-          "A high-level language, primarily used for numerical computations.  Octave is a free and open-source alternative to MATLAB."
+          ''
+          A high-level language, primarily used for numerical computations.  Octave is a free and open-source alternative to MATLAB.
+          ''
       , yearFirstPublished = 1992
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.dynamic ]
@@ -867,7 +968,9 @@ in  [ { name = "ALGOL 58"
         [ paradigms.imperative, paradigms.procedural, paradigms.objectOriented ]
       , examples = [] : List Text
       , description =
-          "A server-side scripting language originally designed for web development. PHP originally stood for \"Personal Home Page\" but was later renamed to \"PHP: Hypertext Preprocessor\"."
+          ''
+          A server-side scripting language originally designed for web development. PHP originally stood for \"Personal Home Page\" but was later renamed to \"PHP: Hypertext Preprocessor\".
+          ''
       , yearFirstPublished = 1995
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.dynamic, typingSystem.weak ]
@@ -881,7 +984,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.imperative, paradigms.procedural ]
       , examples = [] : List Text
       , description =
-          "Programming Language One, designed by IBM and its user group, SHARE, to succeed FORTRAN and COBOL."
+          ''
+          Programming Language One, designed by IBM and its user group, SHARE, to succeed FORTRAN and COBOL.
+          ''
       , yearFirstPublished = 1964
       , compilationTargets = [ compilationTarget.machineCode ]
       , typing = [ typingSystem.static ]
@@ -892,7 +997,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.imperative, paradigms.procedural ]
       , examples = [] : List Text
       , description =
-          "A language designed to encourage good programming practices.  Wirth's efforts were originally part of the effort to design the next version of ALGOL (the ALGOL X effort), but Wirth's proposals were not accepted, so he created Pascal instead.  Pascal was very popular in the 1970s and 1980s, but has since been largely supplanted by C and C++."
+          ''
+          A language designed to encourage good programming practices.  Wirth's efforts were originally part of the effort to design the next version of ALGOL (the ALGOL X effort), but Wirth's proposals were not accepted, so he created Pascal instead.  Pascal was very popular in the 1970s and 1980s, but has since been largely supplanted by C and C++.
+          ''
       , yearFirstPublished = 1970
       , compilationTargets = [ compilationTarget.machineCode ]
       , typing = [ typingSystem.static, typingSystem.strong ]
@@ -910,7 +1017,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.imperative, paradigms.procedural ]
       , examples = [] : List Text
       , description =
-          "A general-purpose language originally designed for text processing.  Perl is known for its flexibility and its ability to easily create domain-specific languages."
+          ''
+          A general-purpose language originally designed for text processing.  Perl is known for its flexibility and its ability to easily create domain-specific languages.
+          ''
       , yearFirstPublished = 1987
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.dynamic ]
@@ -924,10 +1033,13 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.objectOriented, paradigms.functional ]
       , examples = [] : List Text
       , description =
-          "An object-oriented programming language designed for writing safe, high-performance actor-based programs. Pony emphasizes capabilities-secure type system and data-race freedom through its reference capabilities system."
+          ''
+          An object-oriented programming language designed for writing safe, high-performance actor-based programs. Pony emphasizes capabilities-secure type system and data-race freedom through its reference capabilities system.
+          ''
       , yearFirstPublished = 2015
       , compilationTargets = [ compilationTarget.machineCode ]
-      , typing = [ typingSystem.static, typingSystem.strong, typingSystem.nominal ]
+      , typing =
+        [ typingSystem.static, typingSystem.strong, typingSystem.nominal ]
       , resources =
         [ { title = "Pony Homepage", url = "https://www.ponylang.io/" }
         , { title = "Pony Tutorial", url = "https://tutorial.ponylang.io/" }
@@ -939,7 +1051,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.logic, paradigms.declarative ]
       , examples = [] : List Text
       , description =
-          "A logic programming language based on first-order predicate calculus. Programs consist of facts and rules, and computation proceeds by making logical queries against this knowledge base."
+          ''
+          A logic programming language based on first-order predicate calculus. Programs consist of facts and rules, and computation proceeds by making logical queries against this knowledge base.
+          ''
       , yearFirstPublished = 1972
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.dynamic, typingSystem.strong ]
@@ -960,7 +1074,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.functional ]
       , examples = [] : List Text
       , description =
-          "A strongly-typed functional programming language that compiles to JavaScript. PureScript is similar to Haskell but designed specifically for the web platform, featuring row polymorphism, type classes, and strict evaluation."
+          ''
+          A strongly-typed functional programming language that compiles to JavaScript. PureScript is similar to Haskell but designed specifically for the web platform, featuring row polymorphism, type classes, and strict evaluation.
+          ''
       , yearFirstPublished = 2013
       , compilationTargets = [ compilationTarget.javascript ]
       , typing = [ typingSystem.static, typingSystem.strong, typingSystem.inferred ]
@@ -980,7 +1096,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.functional ]
       , examples = [] : List Text
       , description =
-          "A programming language designed for teaching computer science, featuring built-in testing, tables, and image manipulation. Pyret emphasizes clear error messages and integrates features from both functional and object-oriented programming."
+          ''
+          A programming language designed for teaching computer science, featuring built-in testing, tables, and image manipulation. Pyret emphasizes clear error messages and integrates features from both functional and object-oriented programming.
+          ''
       , yearFirstPublished = 2012
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.dynamic, typingSystem.strong ]
@@ -996,7 +1114,9 @@ in  [ { name = "ALGOL 58"
         [ paradigms.imperative, paradigms.objectOriented, paradigms.functional ]
       , examples = [ "print(\"Hello, World!\")" ]
       , description =
-          "A high-level, general-purpose programming language emphasizing code readability with its notable use of significant whitespace. Python supports multiple programming paradigms and features a comprehensive (frequently referred to as \"batteries-included\") standard library."
+          ''
+          A high-level, general-purpose programming language emphasizing code readability with its notable use of significant whitespace. Python supports multiple programming paradigms and features a comprehensive (frequently referred to as \"batteries-included\") standard library.
+          ''
       , yearFirstPublished = 1991
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.dynamic, typingSystem.strong ]
@@ -1010,7 +1130,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.imperative, paradigms.procedural ]
       , examples = [] : List Text
       , description =
-          "An IDE and interpreter for a version of BASIC developed by Microsoft. It was included with MS-DOS and was many programmers' first introduction to programming."
+          ''
+          An IDE and interpreter for a version of BASIC developed by Microsoft. It was included with MS-DOS and was many programmers' first introduction to programming.
+          ''
       , yearFirstPublished = 1991
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.dynamic ]
@@ -1025,7 +1147,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.functional, paradigms.procedural ]
       , examples = [] : List Text
       , description =
-          "A language for statistical computing and data visualization."
+          ''
+          A language for statistical computing and data visualization.
+          ''
       , yearFirstPublished = 1993
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.dynamic ]
@@ -1045,7 +1169,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.functional, paradigms.objectOriented ]
       , examples = [] : List Text
       , description =
-          "A general-purpose, multi-paradigm programming language in the Lisp/Scheme family. Racket is designed to be a platform for programming language design, implementation, and learning."
+          ''
+          A general-purpose, multi-paradigm programming language in the Lisp/Scheme family. Racket is designed to be a platform for programming language design, implementation, and learning.
+          ''
       , yearFirstPublished = 1995
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.dynamic, typingSystem.strong ]
@@ -1061,7 +1187,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.objectOriented, paradigms.functional ]
       , examples = [] : List Text
       , description =
-          "A multi-paradigm language formerly known as Perl 6, designed to be more consistent and modern than Perl 5."
+          ''
+          A multi-paradigm language formerly known as Perl 6, designed to be more consistent and modern than Perl 5.
+          ''
       , yearFirstPublished = 2015
       , compilationTargets = [ compilationTarget.machineCode ]
       , typing =
@@ -1076,7 +1204,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.functional, paradigms.imperative ]
       , examples = [] : List Text
       , description =
-          "A lightweight messaging language designed for distributed computing and network communications, with a focus on human-readable syntax.  Sassenrath claims its greatest strength is its ability to easily create domain-specific languages."
+          ''
+          A lightweight messaging language designed for distributed computing and network communications, with a focus on human-readable syntax.  Sassenrath claims its greatest strength is its ability to easily create domain-specific languages.
+          ''
       , yearFirstPublished = 1997
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.dynamic, typingSystem.strong ]
@@ -1092,7 +1222,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.functional, paradigms.imperative ]
       , examples = [] : List Text
       , description =
-          "A next-generation programming language strongly inspired by Rebol but with a focus on cross-compilation, concurrency and high performance."
+          ''
+          A next-generation programming language strongly inspired by Rebol but with a focus on cross-compilation, concurrency and high performance.
+          ''
       , yearFirstPublished = 2011
       , compilationTargets = [ compilationTarget.machineCode ]
       , typing = [ typingSystem.dynamic, typingSystem.strong ]
@@ -1107,7 +1239,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.imperative, paradigms.objectOriented ]
       , examples = [ "puts \"Hello World!\"" ]
       , description =
-          "A dynamic, object-oriented language emphasizing simplicity and productivity."
+          ''
+          A dynamic, object-oriented language emphasizing simplicity and productivity.
+          ''
       , yearFirstPublished = 1995
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.dynamic, typingSystem.strong ]
@@ -1126,7 +1260,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.imperative, paradigms.functional ]
       , examples = [] : List Text
       , description =
-          "A systems programming language focused on safety, concurrency, and performance, originally developed at Mozilla.  Rust is notable for its compile-time memory safety guarantees through a unique ownership system."
+          ''
+          A systems programming language focused on safety, concurrency, and performance, originally developed at Mozilla.  Rust is notable for its compile-time memory safety guarantees through a unique ownership system.
+          ''
       , yearFirstPublished = 2012
       , compilationTargets =
         [ compilationTarget.machineCode, compilationTarget.webassembly ]
@@ -1144,7 +1280,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.imperative ]
       , examples = [] : List Text
       , description =
-          "StriNg Oriented symBOlic Language, designed for text processing.  SNOBOL had support for \"patterns\", which were more powerful than regular expressions.  SNOBOL was used for text processing in the 1960s and 1970s, but was largely supplanted by Perl and AWK."
+          ''
+          StriNg Oriented symBOlic Language, designed for text processing.  SNOBOL had support for \"patterns\", which were more powerful than regular expressions.  SNOBOL was used for text processing in the 1960s and 1970s, but was largely supplanted by Perl and AWK.
+          ''
       , yearFirstPublished = 1962
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.dynamic ]
@@ -1159,7 +1297,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.declarative ]
       , examples = [] : List Text
       , description =
-          "Structured Query Language, a domain-specific language designed for managing and querying relational databases. It has become the standard language for relational database management systems, used in PostgreSQL, MySQL, Oracle, and other database systems."
+          ''
+          Structured Query Language, a domain-specific language designed for managing and querying relational databases. It has become the standard language for relational database management systems, used in PostgreSQL, MySQL, Oracle, and other database systems.
+          ''
       , yearFirstPublished = 1974
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.static, typingSystem.strong ]
@@ -1174,7 +1314,9 @@ in  [ { name = "ALGOL 58"
       , originalAuthors = [ "Martin Odersky" ]
       , examples = [] : List Text
       , description =
-          "A language combining object-oriented and functional programming running on the JVM."
+          ''
+          A language combining object-oriented and functional programming running on the JVM.
+          ''
       , yearFirstPublished = 2004
       , compilationTargets =
         [ compilationTarget.jvmBytecode, compilationTarget.javascript ]
@@ -1191,7 +1333,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.functional ]
       , examples = [] : List Text
       , description =
-          "A dialect of Lisp emphasizing simplicity and minimalism, widely used in computer science education and research."
+          ''
+          A dialect of Lisp emphasizing simplicity and minimalism, widely used in computer science education and research.
+          ''
       , yearFirstPublished = 1975
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.dynamic, typingSystem.strong ]
@@ -1206,7 +1350,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.objectOriented ]
       , examples = [] : List Text
       , description =
-          "A prototype-based object-oriented programming language that pioneered many concepts used in modern languages like JavaScript."
+          ''
+          A prototype-based object-oriented programming language that pioneered many concepts used in modern languages like JavaScript.
+          ''
       , yearFirstPublished = 1987
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.dynamic, typingSystem.strong ]
@@ -1228,7 +1374,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.objectOriented ]
       , examples = [] : List Text
       , description =
-          "One of the first pure object-oriented programming languages."
+          ''
+          One of the first pure object-oriented programming languages.
+          ''
       , yearFirstPublished = 1972
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.dynamic, typingSystem.strong ]
@@ -1245,7 +1393,10 @@ in  [ { name = "ALGOL 58"
       , originalAuthors = [ "Ole-Johan Dahl", "Kristen Nygaard" ]
       , paradigms = [ paradigms.objectOriented, paradigms.procedural ]
       , examples = [] : List Text
-      , description = "The first object-oriented programming language."
+      , description =
+          ''
+          The first object-oriented programming language.
+          ''
       , yearFirstPublished = 1965
       , compilationTargets = [ compilationTarget.machineCode ]
       , typing = [ typingSystem.static, typingSystem.strong ]
@@ -1260,7 +1411,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.imperative, paradigms.functional ]
       , examples = [] : List Text
       , description =
-          "An attempt to \"standardize\" ML implementations, Standard ML (SML) is a general-purpose functional programming language that features static typing, type inference, pattern matching, and a sophisticated module system. SML influenced many modern functional languages including OCaml, F#, and Scala."
+          ''
+          An attempt to \"standardize\" ML implementations, Standard ML (SML) is a general-purpose functional programming language that features static typing, type inference, pattern matching, and a sophisticated module system. SML influenced many modern functional languages including OCaml, F#, and Scala.
+          ''
       , yearFirstPublished = 1983
       , compilationTargets = [ compilationTarget.machineCode ]
       , typing = [ typingSystem.static, typingSystem.strong ]
@@ -1285,7 +1438,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.objectOriented, paradigms.functional ]
       , examples = [] : List Text
       , description =
-          "A modern programming language developed by Apple as a replacement for Objective-C.  Swift is primarily used to create apps for iOS, macOS, and other Apple operating systems."
+          ''
+          A modern programming language developed by Apple as a replacement for Objective-C.  Swift is primarily used to create apps for iOS, macOS, and other Apple operating systems.
+          ''
       , yearFirstPublished = 2014
       , compilationTargets = [ compilationTarget.machineCode ]
       , typing = [ typingSystem.static, typingSystem.strong ]
@@ -1307,7 +1462,9 @@ in  [ { name = "ALGOL 58"
         [ paradigms.objectOriented, paradigms.functional, paradigms.imperative ]
       , examples = [] : List Text
       , description =
-          "A strict syntactical superset of JavaScript that adds optional static typing. Developed by Microsoft to enable JavaScript development at scale."
+          ''
+          A strict syntactical superset of JavaScript that adds optional static typing. Developed by Microsoft to enable JavaScript development at scale.
+          ''
       , yearFirstPublished = 2012
       , compilationTargets = [ compilationTarget.javascript ]
       , typing =
@@ -1329,7 +1486,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.imperative, paradigms.procedural ]
       , examples = [] : List Text
       , description =
-          "A systems programming language, very similar to Go.  V emphasizes safety, performance, and simplicity with fast compilation, memory safety without garbage collection, and C-style syntax."
+          ''
+          A systems programming language, very similar to Go.  V emphasizes safety, performance, and simplicity with fast compilation, memory safety without garbage collection, and C-style syntax.
+          ''
       , yearFirstPublished = 2019
       , compilationTargets = [ compilationTarget.machineCode ]
       , typing = [ typingSystem.static, typingSystem.strong ]
@@ -1347,7 +1506,9 @@ in  [ { name = "ALGOL 58"
       , paradigms = [ paradigms.imperative, paradigms.objectOriented ]
       , examples = [] : List Text
       , description =
-          "A version of BASIC developed by Microsoft for its COM programming model and Windows GUI development. Later evolved into Visual Basic .NET."
+          ''
+          A version of BASIC developed by Microsoft for its COM programming model and Windows GUI development. Later evolved into Visual Basic .NET.
+          ''
       , yearFirstPublished = 1991
       , compilationTargets = [ compilationTarget.machineCode ]
       , typing = [ typingSystem.static ]
