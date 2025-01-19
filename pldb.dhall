@@ -558,6 +558,34 @@ in  [ { name = "ALGOL 58"
           }
         ]
       }
+    , { name = "Io"
+      , originalAuthors = [ "Steve Dekorte" ]
+      , paradigms = [ paradigms.objectOriented ]
+      , examples = [] : List Text
+      , description =
+          "A pure object-oriented programming language inspired by Smalltalk, Self, and Lisp. Everything in Io is a message that is passed to objects. It features a small core with highly dynamic and reflective capabilities."
+      , yearFirstPublished = 2002
+      , compilationTargets = [ compilationTarget.interpreted ]
+      , typing = [ typingSystem.dynamic, typingSystem.strong ]
+      , resources =
+        [ { title = "Io Language", url = "https://iolanguage.org/" }
+        , { title = "Io Guide", url = "https://iolanguage.org/guide/guide.html" }
+        ]
+      }
+    , { name = "Ioke"
+      , originalAuthors = [ "Ola Bini" ]
+      , paradigms = [ paradigms.objectOriented ]
+      , examples = [] : List Text
+      , description =
+          "A prototype-based, dynamic programming language inspired by Io, Smalltalk, Ruby, and Lisp. It runs on the Java Virtual Machine and emphasizes expressiveness and experimentation."
+      , yearFirstPublished = 2008
+      , compilationTargets = [ compilationTarget.jvmBytecode ]
+      , typing = [ typingSystem.dynamic, typingSystem.strong ]
+      , resources =
+        [ { title = "Ioke Language", url = "https://ioke.org/" }
+        , { title = "Ioke Documentation", url = "https://ioke.org/documentation.html" }
+        ]
+      }
     , { name = "J"
       , originalAuthors = [ "Kenneth E. Iverson", "Roger Hui" ]
       , paradigms =
