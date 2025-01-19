@@ -702,6 +702,22 @@ in  [ { name = "ALGOL 58"
         , {title = "Visual Studio Code Extension", url = "https://marketplace.visualstudio.com/items?itemName=siamz.smallworld-magik"}
         ]
       }
+    , { name = "Mercury"
+      , originalAuthors = [ "Zoltan Somogyi", "Ralph Becket", "Peter Ross" ]
+      , paradigms = [ paradigms.functional, paradigms.logic ]
+      , examples = [] : List Text
+      , description =
+          "A pure logic programming language that combines the clarity and expressiveness of declarative programming with advanced static analysis and error detection features. Mercury improves upon Prolog with a strong type system, mode system, and determinism analysis."
+      , yearFirstPublished = 1995
+      , compilationTargets = [ compilationTarget.machineCode ]
+      , typing = [ typingSystem.static, typingSystem.strong ]
+      , resources =
+        [ { title = "Mercury Homepage", url = "https://mercurylang.org/" }
+        , { title = "Mercury Documentation"
+          , url = "https://mercurylang.org/documentation/documentation.html"
+          }
+        ]
+      }
     , { name = "Modula"
       , originalAuthors = [ "Niklaus Wirth" ]
       , paradigms = [ paradigms.imperative, paradigms.procedural ]
