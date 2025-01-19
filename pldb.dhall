@@ -1530,4 +1530,24 @@ in  [ { name = "ALGOL 58"
           }
         ]
       }
+    , { name = "Zig"
+      , originalAuthors = [ "Andrew Kelley" ]
+      , paradigms =
+        [ paradigms.imperative, paradigms.procedural, paradigms.functional ]
+      , examples = [] : List Text
+      , description =
+          ''
+          A general-purpose programming language with an emphasis on being explicit. To this end, Zig makes features that are usually implicit, such as memory allocations, explicit. Zig supports incremental adoption into C/C++ codebases.
+          ''
+      , yearFirstPublished = 2016
+      , compilationTargets = [ compilationTarget.machineCode ]
+      , typing =
+        [ typingSystem.static, typingSystem.strong, typingSystem.inferred ]
+      , resources =
+        [ { title = "Zig Homepage", url = "https://ziglang.org" }
+        , { title = "Compiler repository"
+          , url = "https://github.com/ziglang/zig"
+          }
+        ]
+      }
     ]
