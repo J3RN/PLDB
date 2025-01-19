@@ -374,9 +374,7 @@ in  [ { name = "ALGOL 58"
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.static, typingSystem.strong ]
       , resources =
-        [ { title = "Curry Homepage"
-          , url = "http://www.curry-lang.org/"
-          }
+        [ { title = "Curry Homepage", url = "http://www.curry-lang.org/" }
         , { title = "Curry Documentation"
           , url = "http://www.curry-lang.org/documentation/"
           }
@@ -446,8 +444,12 @@ in  [ { name = "ALGOL 58"
       , typing = [ typingSystem.static, typingSystem.strong ]
       , resources =
         [ { title = "Dhall Homepage", url = "https://dhall-lang.org/" }
-        , { title = "Dhall Documentation", url = "https://docs.dhall-lang.org/" }
-        , { title = "Dhall GitHub", url = "https://github.com/dhall-lang/dhall-lang" }
+        , { title = "Dhall Documentation"
+          , url = "https://docs.dhall-lang.org/"
+          }
+        , { title = "Dhall GitHub"
+          , url = "https://github.com/dhall-lang/dhall-lang"
+          }
         ]
       }
     , { name = "Elixir"
@@ -524,7 +526,8 @@ in  [ { name = "ALGOL 58"
       }
     , { name = "Factor"
       , originalAuthors = [ "Slava Pestov" ]
-      , paradigms = [ paradigms.functional, paradigms.declarative, paradigms.stack ]
+      , paradigms =
+        [ paradigms.functional, paradigms.declarative, paradigms.stack ]
       , examples = [] : List Text
       , description =
           ''
@@ -535,8 +538,12 @@ in  [ { name = "ALGOL 58"
       , typing = [ typingSystem.dynamic, typingSystem.strong ]
       , resources =
         [ { title = "Factor Homepage", url = "https://factorcode.org/" }
-        , { title = "Factor Documentation", url = "https://docs.factorcode.org/" }
-        , { title = "Factor GitHub Repository", url = "https://github.com/factor/factor" }
+        , { title = "Factor Documentation"
+          , url = "https://docs.factorcode.org/"
+          }
+        , { title = "Factor GitHub Repository"
+          , url = "https://github.com/factor/factor"
+          }
         ]
       }
     , { name = "Forth"
@@ -849,7 +856,10 @@ in  [ { name = "ALGOL 58"
       , typing = [ typingSystem.dynamic ]
       , resources =
         [ { title = "Magik Development Tools (MDT)", url = "https://mdt.net" }
-        , {title = "Visual Studio Code Extension", url = "https://marketplace.visualstudio.com/items?itemName=siamz.smallworld-magik"}
+        , { title = "Visual Studio Code Extension"
+          , url =
+              "https://marketplace.visualstudio.com/items?itemName=siamz.smallworld-magik"
+          }
         ]
       }
     , { name = "Mercury"
@@ -895,10 +905,7 @@ in  [ { name = "ALGOL 58"
       , compilationTargets = [ compilationTarget.machineCode ]
       , typing = [ typingSystem.static, typingSystem.strong ]
       , resources =
-        [ { title = "ADW Modula-2 Homepage"
-          , url = "http://www.modula2.org/"
-          }
-        ]
+        [ { title = "ADW Modula-2 Homepage", url = "http://www.modula2.org/" } ]
       }
     , { name = "OCaml"
       , originalAuthors =
@@ -1043,7 +1050,9 @@ in  [ { name = "ALGOL 58"
       , resources =
         [ { title = "Pony Homepage", url = "https://www.ponylang.io/" }
         , { title = "Pony Tutorial", url = "https://tutorial.ponylang.io/" }
-        , { title = "Pony Documentation", url = "https://www.ponylang.io/learn/" }
+        , { title = "Pony Documentation"
+          , url = "https://www.ponylang.io/learn/"
+          }
         ]
       }
     , { name = "Prolog"
@@ -1079,10 +1088,13 @@ in  [ { name = "ALGOL 58"
           ''
       , yearFirstPublished = 2013
       , compilationTargets = [ compilationTarget.javascript ]
-      , typing = [ typingSystem.static, typingSystem.strong, typingSystem.inferred ]
+      , typing =
+        [ typingSystem.static, typingSystem.strong, typingSystem.inferred ]
       , resources =
         [ { title = "PureScript Homepage", url = "https://www.purescript.org/" }
-        , { title = "PureScript Documentation", url = "https://github.com/purescript/documentation" }
+        , { title = "PureScript Documentation"
+          , url = "https://github.com/purescript/documentation"
+          }
         , { title = "Try PureScript", url = "https://try.purescript.org/" }
         ]
       }
