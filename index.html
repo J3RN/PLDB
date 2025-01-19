@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Programming Languages Database</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 0px 10px;
+            margin: 0;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        #search-input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        #list {
+            list-style: none;
+            padding: 0;
+        }
+
+        #list li {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        #list li .header {
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+            /* align-items: center; */
+        }
+
+        #list li .header h4 {
+            margin: 0;
+        }
+
+        #list li .paradigms {
+            display: flex;
+            justify-content: flex-end;
+            gap: 5px;
+            flex-wrap: wrap;
+            max-width: 50%;
+        }
+
+        #list li .paradigms .paradigm {
+            border: 1px solid #ccc;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        #list li .first-appeared {
+            /* font-size: 12px; */
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        #filters {
+            display: flex;
+            gap: 10px;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #111;
+                color: #eee;
+            }
+
+            a {
+                color: #888;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    
+    <main>
+        <h1>Programming<br> Languages<br> Database</h1>
+        <div id="search">
+            <input type="text" id="search-input" placeholder="Search for a language">
+            <form id="filters">
+                <div>
+                    <h3>Paradigms</h3>
+                    <div>
+                        <input type="checkbox" id="imperative" name="imperative">
+                        <label for="imperative">Imperative</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="declarative" name="declarative">
+                        <label for="declarative">Declarative</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="procedural" name="procedural">
+                        <label for="procedural">Procedural</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="functional" name="functional">
+                        <label for="functional">Functional</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="array" name="array">
+                        <label for="array">Array</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="objectOriented" name="objectOriented">
+                        <label for="objectOriented">Object Oriented</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="logic" name="logic">
+                        <label for="logic">Logic</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="stack" name="stack">
+                        <label for="stack">Stack</label>
+                    </div>
+                </div>
+                <div>
+                    <h3>Typing</h3>
+                    <div>
+                        <input type="checkbox" id="static" name="static">
+                        <label for="static">Static</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="dynamic" name="dynamic">
+                        <label for="dynamic">Dynamic</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="duck" name="duck">
+                        <label for="duck">Duck</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="strong" name="strong">
+                        <label for="strong">Strong</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="weak" name="weak">
+                        <label for="weak">Weak</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="gradual" name="gradual">
+                        <label for="gradual">Gradual</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="nominal" name="nominal">
+                        <label for="nominal">Nominal</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="structural" name="structural">
+                        <label for="structural">Structural</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="dependent" name="dependent">
+                        <label for="dependent">Dependent</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <ul id="list"></ul>
+    </main>
+    <script>
+        let languages = [];
+        const list = document.getElementById('list');
+
+        const humanize = (text) => {
+            return text.replace(/([A-Z])/g, ' $1').replace(/^./, (firstChar) => firstChar.toUpperCase());
+        }
+
+        const renderLang = (lang) => {
+            const li = document.createElement('li');
+            li.innerHTML = `<div data-name="${lang.name}">
+                <div class="header">
+                    <h4>${lang.name}</h4>
+                    <div class="paradigms">
+                    ${lang.paradigms.map(paradigm => `<span class="paradigm">${humanize(paradigm)}</span>`).join('')}
+                    </div>
+                    </div>
+                    <div class="first-appeared">First Appeared: ${lang.yearFirstPublished}</div>
+                    <div class="original-authors">Original Authors: ${lang.originalAuthors.join(', ')}</div>
+                    <p>${lang.description}</p>
+                    <div class="resources">
+                        ${lang.resources.map(resource => `<a href="${resource.url}" target="_blank">${resource.title}</a>`).join(' | ')}
+                    </div>
+                </div>`;
+            list.appendChild(li);
+        }
+
+        fetch('/pldb.json').then(response => response.json()).then((langs) => {
+            languages = langs;
+
+            langs.forEach(renderLang);
+        });
+
+        document.getElementById('search-input').addEventListener('keyup', (e) => {
+            const search = e.target.value.toLowerCase();
+            list.innerHTML = '';
+            const matchingLangs = languages.filter(lang => lang.name.toLowerCase().includes(search) || lang.description.toLowerCase().includes(search) || lang.originalAuthors.some(author => author.toLowerCase().includes(search)));
+            matchingLangs.forEach(renderLang);
+            if (matchingLangs.length === 0) {
+                list.innerHTML = '<li><div>No results</div></li>';
+            }
+        });
+
+        document.getElementById('filters').addEventListener('change', (e) => {
+            const filters = e.target.value;
+            list.innerHTML = '';
+            const matchingLangs = languages.filter(lang => lang.name.toLowerCase().includes(search) || lang.description.toLowerCase().includes(search));
+            matchingLangs.forEach(renderLang);
+            if (matchingLangs.length === 0) {
+                list.innerHTML = '<li><div>No results</div></li>';
+            }
+        });
+    </script>
+</body>
+
+</html>
