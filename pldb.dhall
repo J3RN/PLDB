@@ -171,7 +171,7 @@ in  [ { name = "ALGOL 58"
       , originalAuthors = [ "Dennis Ritchie" ]
       , yearFirstPublished = 1972
       , description =
-          "Originally developed in service of developing the UNIX operating system, C is one of the most influential and widely-used programming languages today."
+          "Originally developed in service of developing the UNIX operating system, C is one of the most influential and widely-used programming languages today.\nC was originally standardized by the ANSI in 1989 (C89), but that standard was later superceded by the ISO in 1990 and since."
       , examples =
             [ ''
               #include <stdio.h>
@@ -186,7 +186,7 @@ in  [ { name = "ALGOL 58"
       , typing = [ typingSystem.static, typingSystem.weak ]
       , resources =
         [ { title = "C Programming Language Standard"
-          , url = "https://www.iso.org/standard/74528.html"
+          , url = "https://www.iso.org/standard/82075.html"
           }
         , { title = "Learn C", url = "https://www.learn-c.org/" }
         ]
