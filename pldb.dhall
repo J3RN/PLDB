@@ -45,7 +45,7 @@ in  [ { name = "ALGOL 58"
         ]
       , paradigms = [ paradigms.imperative, paradigms.procedural ]
       , examples = [] : List Text
-      , description = ""
+      , description = "Originally termed International Algebraic Language (IAL), ALGOL 58 was an attempt to create a universal programming language.  The Communications of the ACM (CACM) used ALGOL notation to publish algorithms.  ALGOL 58 was rapidly succeeded by ALOGOL 60."
       , yearFirstPublished = 1958
       , compilationTargets = [ compilationTarget.machineCode ]
       , typing = [ typingSystem.static, typingSystem.strong ]
