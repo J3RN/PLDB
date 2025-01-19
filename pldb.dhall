@@ -295,6 +295,24 @@ in  [ { name = "ALGOL 58"
         , { title = "Common Lisp Wiki", url = "https://www.cliki.net/" }
         ]
       }
+    , { name = "Curry"
+      , originalAuthors = [ "Michael Hanus" ]
+      , paradigms = [ paradigms.functional, paradigms.logic ]
+      , examples = [] : List Text
+      , description =
+          "A declarative programming language that combines functional programming with logic programming features. Named after Haskell B. Curry, it integrates the most important features of functional languages like Haskell and logic languages like Prolog."
+      , yearFirstPublished = 1999
+      , compilationTargets = [ compilationTarget.interpreted ]
+      , typing = [ typingSystem.static, typingSystem.strong ]
+      , resources =
+        [ { title = "Curry Homepage"
+          , url = "http://www.curry-lang.org/"
+          }
+        , { title = "Curry Documentation"
+          , url = "http://www.curry-lang.org/documentation/"
+          }
+        ]
+      }
     , { name = "D"
       , originalAuthors = [ "Walter Bright", "Andrei Alexandrescu" ]
       , paradigms = [ paradigms.imperative, paradigms.objectOriented ]
