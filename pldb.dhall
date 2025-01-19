@@ -306,6 +306,28 @@ in  [ { name = "ALGOL 58"
         , { title = "Common Lisp Wiki", url = "https://www.cliki.net/" }
         ]
       }
+    , { name = "Crystal"
+      , originalAuthors =
+        [ "Ary Borenszweig", "Juan Wajnerman", "Brian Cardiff" ]
+      , paradigms = [ paradigms.objectOriented ]
+      , examples =
+            [ ''
+              puts "Hello, World!"
+              ''
+            ]
+          : List Text
+      , description =
+          "A programming language with Ruby-like syntax that compiles to native code. It aims to provide the productivity of Ruby with the performance and type safety of a compiled language."
+      , yearFirstPublished = 2014
+      , compilationTargets = [ compilationTarget.machineCode ]
+      , typing = [ typingSystem.static, typingSystem.strong ]
+      , resources =
+        [ { title = "Crystal Homepage", url = "https://crystal-lang.org/" }
+        , { title = "Crystal Documentation"
+          , url = "https://crystal-lang.org/reference/"
+          }
+        ]
+      }
     , { name = "Curry"
       , originalAuthors = [ "Michael Hanus" ]
       , paradigms = [ paradigms.functional, paradigms.logic ]
