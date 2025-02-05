@@ -187,7 +187,7 @@
                 <div class="header">
                     <h4>${lang.name}</h4>
                     <div class="paradigms">
-                    ${lang.paradigms.map(paradigm => `<span class="paradigm">${humanize(paradigm)}</span>`).join('')}
+                    ${lang.paradigms.sort().map(paradigm => `<span class="paradigm">${humanize(paradigm)}</span>`).join('')}
                     </div>
                     </div>
                     <div class="first-appeared">First Appeared: ${lang.yearFirstPublished}</div>
