@@ -1,7 +1,6 @@
 let paradigms =
       < imperative
       | declarative
-      | procedural
       | functional
       | array
       | objectOriented
@@ -43,7 +42,7 @@ in  [ { name = "ALGOL 58"
         , "Joseph Wegstein"
         , "Hermann Bottenbruch"
         ]
-      , paradigms = [ paradigms.imperative, paradigms.procedural ]
+      , paradigms = [ paradigms.imperative ]
       , examples = [] : List Text
       , description =
           ''
@@ -169,7 +168,7 @@ in  [ { name = "ALGOL 58"
       }
     , { name = "BASIC"
       , originalAuthors = [ "John G. Kemeny", "Thomas E. Kurtz" ]
-      , paradigms = [ paradigms.imperative, paradigms.procedural ]
+      , paradigms = [ paradigms.imperative ]
       , examples = [] : List Text
       , description =
           ''
@@ -186,7 +185,7 @@ in  [ { name = "ALGOL 58"
           ''
           Basic Combined Programming Language; a language originally designed to implement compilers in.  BCPL was later simplified into B, which was then developed into the still-widely-used C programming language.
           ''
-      , paradigms = [ paradigms.imperative, paradigms.procedural ]
+      , paradigms = [ paradigms.imperative ]
       , yearFirstPublished = 1967
       , examples = [] : List Text
       , compilationTargets = [ compilationTarget.machineCode ]
@@ -198,7 +197,7 @@ in  [ { name = "ALGOL 58"
         ]
       }
     , { name = "C"
-      , paradigms = [ paradigms.imperative, paradigms.procedural ]
+      , paradigms = [ paradigms.imperative ]
       , originalAuthors = [ "Dennis Ritchie" ]
       , yearFirstPublished = 1972
       , description =
@@ -251,8 +250,7 @@ in  [ { name = "ALGOL 58"
         ]
       }
     , { name = "C++"
-      , paradigms =
-        [ paradigms.imperative, paradigms.procedural, paradigms.objectOriented ]
+      , paradigms = [ paradigms.imperative, paradigms.objectOriented ]
       , originalAuthors = [ "Bjarne Stroustroup" ]
       , yearFirstPublished = 1985
       , description =
@@ -277,7 +275,7 @@ in  [ { name = "ALGOL 58"
         , "Gertrude Tierney"
         , "Grace Hopper"
         ]
-      , paradigms = [ paradigms.imperative, paradigms.procedural ]
+      , paradigms = [ paradigms.imperative ]
       , examples = [] : List Text
       , description =
           ''
@@ -563,7 +561,7 @@ in  [ { name = "ALGOL 58"
       }
     , { name = "Fortran"
       , originalAuthors = [ "John Backus" ]
-      , paradigms = [ paradigms.imperative, paradigms.procedural ]
+      , paradigms = [ paradigms.imperative ]
       , examples = [] : List Text
       , description =
           ''
@@ -600,7 +598,7 @@ in  [ { name = "ALGOL 58"
       }
     , { name = "Go"
       , originalAuthors = [ "Robert Griesemer", "Rob Pike", "Ken Thompson" ]
-      , paradigms = [ paradigms.imperative, paradigms.procedural ]
+      , paradigms = [ paradigms.imperative ]
       , examples = [] : List Text
       , description =
           ''
@@ -783,7 +781,6 @@ in  [ { name = "ALGOL 58"
         [ paradigms.objectOriented
         , paradigms.functional
         , paradigms.imperative
-        , paradigms.procedural
         , paradigms.declarative
         ]
       , examples = [] : List Text
@@ -808,8 +805,7 @@ in  [ { name = "ALGOL 58"
         , "Waldemar Celes"
         , "Luiz Henrique de Figueiredo"
         ]
-      , paradigms =
-        [ paradigms.imperative, paradigms.functional, paradigms.procedural ]
+      , paradigms = [ paradigms.imperative, paradigms.functional ]
       , examples = [] : List Text
       , description =
           ''
@@ -882,7 +878,7 @@ in  [ { name = "ALGOL 58"
       }
     , { name = "Modula"
       , originalAuthors = [ "Niklaus Wirth" ]
-      , paradigms = [ paradigms.imperative, paradigms.procedural ]
+      , paradigms = [ paradigms.imperative ]
       , examples = [] : List Text
       , description =
           ''
@@ -895,7 +891,7 @@ in  [ { name = "ALGOL 58"
       }
     , { name = "Modula-2"
       , originalAuthors = [ "Niklaus Wirth" ]
-      , paradigms = [ paradigms.imperative, paradigms.procedural ]
+      , paradigms = [ paradigms.imperative ]
       , examples = [] : List Text
       , description =
           ''
@@ -935,8 +931,7 @@ in  [ { name = "ALGOL 58"
       }
     , { name = "Oberon"
       , originalAuthors = [ "Niklaus Wirth" ]
-      , paradigms =
-        [ paradigms.imperative, paradigms.procedural, paradigms.objectOriented ]
+      , paradigms = [ paradigms.imperative, paradigms.objectOriented ]
       , examples = [] : List Text
       , description =
           ''
@@ -953,7 +948,7 @@ in  [ { name = "ALGOL 58"
       }
     , { name = "Octave"
       , originalAuthors = [ "John W. Eaton" ]
-      , paradigms = [ paradigms.imperative, paradigms.procedural ]
+      , paradigms = [ paradigms.imperative ]
       , examples = [] : List Text
       , description =
           ''
@@ -971,8 +966,7 @@ in  [ { name = "ALGOL 58"
       }
     , { name = "PHP"
       , originalAuthors = [ "Rasmus Lerdorf" ]
-      , paradigms =
-        [ paradigms.imperative, paradigms.procedural, paradigms.objectOriented ]
+      , paradigms = [ paradigms.imperative, paradigms.objectOriented ]
       , examples = [] : List Text
       , description =
           ''
@@ -988,7 +982,7 @@ in  [ { name = "ALGOL 58"
       }
     , { name = "PL/I"
       , originalAuthors = [ "IBM" ]
-      , paradigms = [ paradigms.imperative, paradigms.procedural ]
+      , paradigms = [ paradigms.imperative ]
       , examples = [] : List Text
       , description =
           ''
@@ -1001,7 +995,7 @@ in  [ { name = "ALGOL 58"
       }
     , { name = "Pascal"
       , originalAuthors = [ "Niklaus Wirth" ]
-      , paradigms = [ paradigms.imperative, paradigms.procedural ]
+      , paradigms = [ paradigms.imperative ]
       , examples = [] : List Text
       , description =
           ''
@@ -1021,7 +1015,7 @@ in  [ { name = "ALGOL 58"
       }
     , { name = "Perl"
       , originalAuthors = [ "Larry Wall" ]
-      , paradigms = [ paradigms.imperative, paradigms.procedural ]
+      , paradigms = [ paradigms.imperative ]
       , examples = [] : List Text
       , description =
           ''
@@ -1139,7 +1133,7 @@ in  [ { name = "ALGOL 58"
       }
     , { name = "QBasic"
       , originalAuthors = [ "Microsoft" ]
-      , paradigms = [ paradigms.imperative, paradigms.procedural ]
+      , paradigms = [ paradigms.imperative ]
       , examples = [] : List Text
       , description =
           ''
@@ -1156,7 +1150,7 @@ in  [ { name = "ALGOL 58"
       }
     , { name = "R"
       , originalAuthors = [ "Ross Ihaka", "Robert Gentleman" ]
-      , paradigms = [ paradigms.functional, paradigms.procedural ]
+      , paradigms = [ paradigms.functional ]
       , examples = [] : List Text
       , description =
           ''
@@ -1403,7 +1397,7 @@ in  [ { name = "ALGOL 58"
       }
     , { name = "Simula"
       , originalAuthors = [ "Ole-Johan Dahl", "Kristen Nygaard" ]
-      , paradigms = [ paradigms.objectOriented, paradigms.procedural ]
+      , paradigms = [ paradigms.objectOriented ]
       , examples = [] : List Text
       , description =
           ''
@@ -1495,7 +1489,7 @@ in  [ { name = "ALGOL 58"
       }
     , { name = "V"
       , originalAuthors = [ "Alexander Medvednikov" ]
-      , paradigms = [ paradigms.imperative, paradigms.procedural ]
+      , paradigms = [ paradigms.imperative ]
       , examples = [] : List Text
       , description =
           ''
@@ -1532,8 +1526,7 @@ in  [ { name = "ALGOL 58"
       }
     , { name = "Zig"
       , originalAuthors = [ "Andrew Kelley" ]
-      , paradigms =
-        [ paradigms.imperative, paradigms.procedural, paradigms.functional ]
+      , paradigms = [ paradigms.imperative, paradigms.functional ]
       , examples = [] : List Text
       , description =
           ''

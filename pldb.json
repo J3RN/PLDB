@@ -17,8 +17,7 @@
       "Hermann Bottenbruch"
     ],
     "paradigms": [
-      "imperative",
-      "procedural"
+      "imperative"
     ],
     "resources": [],
     "typing": [
@@ -203,8 +202,7 @@
       "Thomas E. Kurtz"
     ],
     "paradigms": [
-      "imperative",
-      "procedural"
+      "imperative"
     ],
     "resources": [],
     "typing": [
@@ -223,8 +221,7 @@
       "Martin Richards"
     ],
     "paradigms": [
-      "imperative",
-      "procedural"
+      "imperative"
     ],
     "resources": [
       {
@@ -250,8 +247,7 @@
       "Dennis Ritchie"
     ],
     "paradigms": [
-      "imperative",
-      "procedural"
+      "imperative"
     ],
     "resources": [
       {
@@ -315,7 +311,6 @@
     ],
     "paradigms": [
       "imperative",
-      "procedural",
       "objectOriented"
     ],
     "resources": [
@@ -351,8 +346,7 @@
       "Grace Hopper"
     ],
     "paradigms": [
-      "imperative",
-      "procedural"
+      "imperative"
     ],
     "resources": [
       {
@@ -816,8 +810,7 @@
       "John Backus"
     ],
     "paradigms": [
-      "imperative",
-      "procedural"
+      "imperative"
     ],
     "resources": [
       {
@@ -878,8 +871,7 @@
       "Ken Thompson"
     ],
     "paradigms": [
-      "imperative",
-      "procedural"
+      "imperative"
     ],
     "resources": [
       {
@@ -1142,7 +1134,6 @@
       "objectOriented",
       "functional",
       "imperative",
-      "procedural",
       "declarative"
     ],
     "resources": [
@@ -1175,8 +1166,7 @@
     ],
     "paradigms": [
       "imperative",
-      "functional",
-      "procedural"
+      "functional"
     ],
     "resources": [
       {
@@ -1294,8 +1284,7 @@
       "Niklaus Wirth"
     ],
     "paradigms": [
-      "imperative",
-      "procedural"
+      "imperative"
     ],
     "resources": [],
     "typing": [
@@ -1315,8 +1304,7 @@
       "Niklaus Wirth"
     ],
     "paradigms": [
-      "imperative",
-      "procedural"
+      "imperative"
     ],
     "resources": [
       {
@@ -1381,7 +1369,6 @@
     ],
     "paradigms": [
       "imperative",
-      "procedural",
       "objectOriented"
     ],
     "resources": [
@@ -1407,8 +1394,7 @@
       "John W. Eaton"
     ],
     "paradigms": [
-      "imperative",
-      "procedural"
+      "imperative"
     ],
     "resources": [
       {
@@ -1437,7 +1423,6 @@
     ],
     "paradigms": [
       "imperative",
-      "procedural",
       "objectOriented"
     ],
     "resources": [
@@ -1467,8 +1452,7 @@
       "IBM"
     ],
     "paradigms": [
-      "imperative",
-      "procedural"
+      "imperative"
     ],
     "resources": [],
     "typing": [
@@ -1487,8 +1471,7 @@
       "Niklaus Wirth"
     ],
     "paradigms": [
-      "imperative",
-      "procedural"
+      "imperative"
     ],
     "resources": [
       {
@@ -1517,8 +1500,7 @@
       "Larry Wall"
     ],
     "paradigms": [
-      "imperative",
-      "procedural"
+      "imperative"
     ],
     "resources": [
       {
@@ -1720,8 +1702,7 @@
       "Microsoft"
     ],
     "paradigms": [
-      "imperative",
-      "procedural"
+      "imperative"
     ],
     "resources": [
       {
@@ -1746,8 +1727,7 @@
       "Robert Gentleman"
     ],
     "paradigms": [
-      "functional",
-      "procedural"
+      "functional"
     ],
     "resources": [
       {
@@ -2145,8 +2125,7 @@
       "Kristen Nygaard"
     ],
     "paradigms": [
-      "objectOriented",
-      "procedural"
+      "objectOriented"
     ],
     "resources": [
       {
@@ -2285,8 +2264,7 @@
       "Alexander Medvednikov"
     ],
     "paradigms": [
-      "imperative",
-      "procedural"
+      "imperative"
     ],
     "resources": [
       {
@@ -2349,7 +2327,6 @@
     ],
     "paradigms": [
       "imperative",
-      "procedural",
       "functional"
     ],
     "resources": [

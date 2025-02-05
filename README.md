@@ -12,6 +12,12 @@ dhall-to-json --file pldb.dhall --output pldb.json
 
 This will create a `pldb.json` file with the data in JSON format.
 
+## Errata
+
+### No "Procedural" Paradigm
+
+Programming language paradigms are rather loosely defined.  Wikipedia describes a "procedural" language as an imperative language with block structure like `if`, `while`, etc.  So far as I'm aware, this definition includes every imperative language after ALOGOL 58; the only imperative language in PLDB that does not qualify is Assembly.  Therefore, the distinction did not seem worthwhile.
+
 ## Contributing
 
 If you want to contribute to this database, please feel free to submit a pull request!  I know that there are many languages, resources, etc that I have missed, and I would love to have help adding them.
