@@ -89,13 +89,12 @@
 </head>
 
 <body>
-    
     <main>
         <h1>Programming<br> Languages<br> Database</h1>
         <div id="search">
             <input type="text" id="search-input" placeholder="Search for a language">
             <form id="filters">
-                <div>
+                <div id="paradigms">
                     <h3>Paradigms</h3>
                     <div>
                         <input type="checkbox" id="imperative" name="imperative">
@@ -130,7 +129,7 @@
                         <label for="stack">Stack</label>
                     </div>
                 </div>
-                <div>
+                <div id="typing">
                     <h3>Typing</h3>
                     <div>
                         <input type="checkbox" id="static" name="static">
@@ -207,25 +206,28 @@
             langs.forEach(renderLang);
         });
 
-        document.getElementById('search-input').addEventListener('keyup', (e) => {
-            const search = e.target.value.toLowerCase();
-            list.innerHTML = '';
-            const matchingLangs = languages.filter(lang => lang.name.toLowerCase().includes(search) || lang.description.toLowerCase().includes(search) || lang.originalAuthors.some(author => author.toLowerCase().includes(search)));
-            matchingLangs.forEach(renderLang);
-            if (matchingLangs.length === 0) {
-                list.innerHTML = '<li><div>No results</div></li>';
-            }
-        });
+        const filterLangs = () => {
+            const searchInput = document.getElementById('search-input');
+            const search = searchInput.value.toLowerCase();
 
-        document.getElementById('filters').addEventListener('change', (e) => {
-            const filters = e.target.value;
+            const selectedParadigms = Array.from(document.querySelectorAll('#paradigms input:checked')).map(cb => cb.id);
+            const selectedTyping = Array.from(document.querySelectorAll('#typing input:checked')).map(cb => cb.id);
+
+            const matchingLangs = languages.filter(lang => {
+                const matchesParadigms = selectedParadigms.every(paradigm => lang.paradigms.includes(paradigm));
+                const matchesTyping = selectedTyping.every(type => lang.typing.includes(type));
+                const matchesSearch = lang.name.toLowerCase().includes(search) || lang.description.toLowerCase().includes(search);
+                return matchesParadigms && matchesTyping && matchesSearch;
+            });
             list.innerHTML = '';
-            const matchingLangs = languages.filter(lang => lang.name.toLowerCase().includes(search) || lang.description.toLowerCase().includes(search));
             matchingLangs.forEach(renderLang);
             if (matchingLangs.length === 0) {
                 list.innerHTML = '<li><div>No results</div></li>';
             }
-        });
+        };
+
+        document.getElementById('search-input').addEventListener('keyup', filterLangs);
+        document.getElementById('filters').addEventListener('change', filterLangs);
     </script>
 </body>
 
