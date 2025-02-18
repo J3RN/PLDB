@@ -200,7 +200,7 @@
             list.appendChild(li);
         }
 
-        fetch('/pldb.json').then(response => response.json()).then((langs) => {
+        fetch('pldb.json').then(response => response.json()).then((langs) => {
             languages = langs;
 
             langs.forEach(renderLang);
