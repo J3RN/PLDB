@@ -31,7 +31,45 @@ let typingSystem =
       | dependent
       >
 
-in  [ { name = "ALGOL 58"
+in  [ { name = "Agda"
+      , originalAuthors = [ "Ulf Norell", "Catarina Coquand" ]
+      , paradigms = [ paradigms.functional ]
+      , examples =
+            [ ''
+              module hello-world where
+
+              open import Agda.Builtin.IO using (IO)
+              open import Agda.Builtin.Unit using (⊤)
+              open import Agda.Builtin.String using (String)
+
+              postulate putStrLn : String → IO ⊤
+              {-# FOREIGN GHC import qualified Data.Text as T #-}
+              {-# COMPILE GHC putStrLn = putStrLn . T.unpack #-}
+
+              main : IO ⊤
+              main = putStrLn "Hello, World!"
+              ''
+            ]
+          : List Text
+      , description =
+          ''
+          A dependently typed functional programming language and proof assistant. Agda is used for writing and verifying mathematical proofs and functional programs.
+          ''
+      , yearFirstPublished = 1999
+      , compilationTargets = [ compilationTarget.machineCode ]
+      , typing =
+        [ typingSystem.static, typingSystem.strong, typingSystem.dependent ]
+      , resources =
+        [ { title = "Agda Homepage"
+          , url = "https://wiki.portal.chalmers.se/agda/"
+          }
+        , { title = "Agda Documentation", url = "https://agda.readthedocs.io/" }
+        , { title = "Agda GitHub Repository"
+          , url = "https://github.com/agda/agda"
+          }
+        ]
+      }
+    , { name = "ALGOL 58"
       , originalAuthors =
         [ "John Backus"
         , "Friedrich Bauer"
@@ -660,6 +698,39 @@ in  [ { name = "ALGOL 58"
           }
         ]
       }
+    , { name = "Idris"
+      , originalAuthors = [ "Edwin Brady" ]
+      , paradigms = [ paradigms.functional ]
+      , examples =
+            [ ''
+              main : IO ()
+              main = putStrLn "Hello, World!"
+              ''
+            , ''
+              data Vect : Nat -> Type -> Type where
+                Nil : Vect Z a
+                (::) : a -> Vect n a -> Vect (S n) a
+              ''
+            ]
+          : List Text
+      , description =
+          ''
+          A general-purpose functional programming language with dependent types, which allows types to be predicated on values. Idris aims to provide a practical programming language with full dependent types.
+          ''
+      , yearFirstPublished = 2013
+      , compilationTargets = [ compilationTarget.machineCode ]
+      , typing =
+        [ typingSystem.static, typingSystem.strong, typingSystem.dependent ]
+      , resources =
+        [ { title = "Idris Homepage", url = "https://www.idris-lang.org/" }
+        , { title = "Idris Documentation"
+          , url = "https://idris2.readthedocs.io/en/latest/"
+          }
+        , { title = "Idris GitHub Repository"
+          , url = "https://github.com/idris-lang/Idris2"
+          }
+        ]
+      }
     , { name = "Io"
       , originalAuthors = [ "Steve Dekorte" ]
       , paradigms = [ paradigms.objectOriented ]
@@ -774,6 +845,28 @@ in  [ { name = "ALGOL 58"
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.dynamic ]
       , resources = [ { title = "Kx Systems", url = "https://kx.com/" } ]
+      }
+    , { name = "Koka"
+      , originalAuthors = [ "Daan Leijen" ]
+      , paradigms = [ paradigms.functional ]
+      , examples = [] : List Text
+      , description =
+          ''
+          A strongly-typed functional programming language with a focus on effect systems and algebraic effects. Koka aims to provide a clear separation between pure and effectful computations.
+          ''
+      , yearFirstPublished = 2014
+      , compilationTargets = [ compilationTarget.machineCode ]
+      , typing =
+        [ typingSystem.static, typingSystem.strong, typingSystem.inferred ]
+      , resources =
+        [ { title = "Koka Homepage", url = "https://koka-lang.github.io/koka/" }
+        , { title = "Koka Documentation"
+          , url = "https://koka-lang.github.io/koka/doc/book.html"
+          }
+        , { title = "Koka GitHub Repository"
+          , url = "https://github.com/koka-lang/koka"
+          }
+        ]
       }
     , { name = "Kotlin"
       , originalAuthors = [ "JetBrains Team" ]
@@ -1484,6 +1577,28 @@ in  [ { name = "ALGOL 58"
           }
         , { title = "The TypeScript Handbook"
           , url = "https://www.typescriptlang.org/docs/handbook/intro.html"
+          }
+        ]
+      }
+    , { name = "Unison"
+      , originalAuthors = [ "Paul Chiusano", "Rúnar Bjarnason" ]
+      , paradigms = [ paradigms.functional ]
+      , examples = [] : List Text
+      , description =
+          ''
+          A modern functional programming language that emphasizes immutability, distributed computing, and a unique content-addressed codebase. Unison aims to simplify code collaboration and versioning.
+          ''
+      , yearFirstPublished = 2019
+      , compilationTargets = [ compilationTarget.interpreted ]
+      , typing = [ typingSystem.static, typingSystem.strong ]
+      , resources =
+        [ { title = "Unison Homepage", url = "https://www.unison-lang.org/" }
+        , { title = "Unison Documentation"
+          , url = "https://www.unison-lang.org/docs/"
+          }
+        , { title = "Unison Cloud", url = "https://www.unison.cloud/" }
+        , { title = "Unison GitHub Repository"
+          , url = "https://github.com/unisonweb/unison"
           }
         ]
       }
