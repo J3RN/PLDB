@@ -1517,6 +1517,31 @@ in  [ { name = "ALGOL 58"
         , { title = "Raku Documentation", url = "https://docs.raku.org/" }
         ]
       }
+    , { name = "ReasonML"
+      , originalAuthors = [ "Jordan Walke" ]
+      , paradigms = [ paradigms.functional ]
+      , examples = [] : List Text
+      , description =
+          ''
+          A syntax and toolchain for OCaml, created at Facebook. ReasonML provides a more familiar C-style syntax while leveraging OCaml's type system and compilation.
+          ''
+      , yearFirstPublished = 2016
+      , compilationTargets =
+        [ compilationTarget.machineCode, compilationTarget.javascript ]
+      , typing = [ typingSystem.static, typingSystem.strong ]
+      , resources =
+        [ { title = "ReasonML Homepage", url = "https://reasonml.github.io/" }
+        , { title = "ReasonML Documentation"
+          , url = "https://reasonml.github.io/docs/en/what-and-why"
+          }
+        , { title = "Try ReasonML Online"
+          , url = "https://reasonml.github.io/en/try"
+          }
+        , { title = "ReasonML GitHub Repository"
+          , url = "https://github.com/reasonml/reason"
+          }
+        ]
+      }
     , { name = "Rebol"
       , originalAuthors = [ "Carl Sassenrath" ]
       , paradigms = [ paradigms.functional, paradigms.imperative ]
@@ -1550,6 +1575,30 @@ in  [ { name = "ALGOL 58"
         [ { title = "Red Homepage", url = "https://www.red-lang.org" }
         , { title = "Red Documentation", url = "https://docs.red-lang.org" }
         , { title = "GitHub Repository", url = "https://github.com/red/red" }
+        ]
+      }
+    , { name = "Roc"
+      , originalAuthors = [ "Richard Feldman" ]
+      , paradigms = [ paradigms.functional ]
+      , examples =
+        [ ''
+          credits = List.map(songs, |song|
+              "Performed by ''${song.artist}"
+          )
+          ''
+        ]
+      , description =
+          ''
+          A fast, friendly, functional programming language focusing on zero-cost abstractions, great error messages, and first-class support for building command-line interfaces and network services.
+          ''
+      , yearFirstPublished = 2020
+      , compilationTargets = [ compilationTarget.machineCode ]
+      , typing = [ typingSystem.static, typingSystem.strong ]
+      , resources =
+        [ { title = "Roc Homepage", url = "https://www.roc-lang.org/" }
+        , { title = "Roc Documentation"
+          , url = "https://www.roc-lang.org/tutorial"
+          }
         ]
       }
     , { name = "Ruby"
