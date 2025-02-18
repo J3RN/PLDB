@@ -977,6 +977,23 @@ in  [ { name = "Agda"
           }
         ]
       }
+    , { name = "Lisp"
+      , originalAuthors = [ "John McCarthy", "Steve Russell" ]
+      , paradigms = [ paradigms.functional, paradigms.declarative ]
+      , examples = [] : List Text
+      , description =
+          ''
+          The original LISt Processing language, designed for symbolic computation and known for its simple, yet powerful, syntax based on S-expressions. Lisp has influenced many other programming languages and has numerous dialects, including Common Lisp and Scheme.
+          ''
+      , yearFirstPublished = 1958
+      , compilationTargets = [ compilationTarget.interpreted ]
+      , typing = [ typingSystem.dynamic ]
+      , resources =
+        [ { title = "Wikipedia: Lisp (programming language)"
+          , url = "https://en.wikipedia.org/wiki/Lisp_(programming_language)"
+          }
+        ]
+      }
     , { name = "Lua"
       , originalAuthors =
         [ "Roberto Ierusalimschy"
