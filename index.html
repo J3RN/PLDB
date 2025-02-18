@@ -12,12 +12,18 @@
         body {
             font-family: Arial, sans-serif;
             padding: 0px 10px;
+            min-height: 100vh;
             margin: 0;
+            background: #fafafa;
         }
 
         main {
             max-width: 800px;
             margin: 0 auto;
+        }
+
+        h1 {
+            font-weight: lighter;
         }
 
         #search-input {
@@ -33,7 +39,9 @@
         }
 
         #list li {
-            border: 1px solid #ccc;
+            border: 1px solid #eee;
+            box-shadow: -5px 5px 5px #eee;
+            background: #fff;
             padding: 10px;
             margin-bottom: 20px;
             border-radius: 5px;
@@ -79,6 +87,12 @@
             body {
                 background-color: #111;
                 color: #eee;
+            }
+
+            #list li {
+                background: #333;
+                border-color: #555;
+                box-shadow: -5px 5px 5px #555;
             }
 
             a {
