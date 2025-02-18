@@ -488,6 +488,22 @@ in  [ { name = "Agda"
           }
         ]
       }
+    , { name = "Eiffel"
+      , originalAuthors = [ "Bertrand Meyer" ]
+      , paradigms = [ paradigms.declarative, paradigms.objectOriented ]
+      , examples = [] : List Text
+      , description =
+          ''
+          An object-oriented programming language designed to promote software quality through the use of Design by Contract (DbC). Eiffel emphasizes readability, reusability, and reliability.
+          ''
+      , yearFirstPublished = 1986
+      , compilationTargets = [ compilationTarget.machineCode ]
+      , typing = [ typingSystem.static, typingSystem.strong ]
+      , resources =
+        [ { title = "Eiffel Homepage", url = "https://www.eiffel.org/" }
+        , { title = "Eiffel Documentation", url = "https://docs.eiffel.org/" }
+        ]
+      }
     , { name = "Elixir"
       , originalAuthors = [ "José Valim" ]
       , paradigms = [ paradigms.functional, paradigms.declarative ]
