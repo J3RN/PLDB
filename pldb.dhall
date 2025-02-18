@@ -31,45 +31,7 @@ let typingSystem =
       | dependent
       >
 
-in  [ { name = "Agda"
-      , originalAuthors = [ "Ulf Norell", "Catarina Coquand" ]
-      , paradigms = [ paradigms.functional ]
-      , examples =
-            [ ''
-              module hello-world where
-
-              open import Agda.Builtin.IO using (IO)
-              open import Agda.Builtin.Unit using (⊤)
-              open import Agda.Builtin.String using (String)
-
-              postulate putStrLn : String → IO ⊤
-              {-# FOREIGN GHC import qualified Data.Text as T #-}
-              {-# COMPILE GHC putStrLn = putStrLn . T.unpack #-}
-
-              main : IO ⊤
-              main = putStrLn "Hello, World!"
-              ''
-            ]
-          : List Text
-      , description =
-          ''
-          A dependently typed functional programming language and proof assistant. Agda is used for writing and verifying mathematical proofs and functional programs.
-          ''
-      , yearFirstPublished = 1999
-      , compilationTargets = [ compilationTarget.machineCode ]
-      , typing =
-        [ typingSystem.static, typingSystem.strong, typingSystem.dependent ]
-      , resources =
-        [ { title = "Agda Homepage"
-          , url = "https://wiki.portal.chalmers.se/agda/"
-          }
-        , { title = "Agda Documentation", url = "https://agda.readthedocs.io/" }
-        , { title = "Agda GitHub Repository"
-          , url = "https://github.com/agda/agda"
-          }
-        ]
-      }
-    , { name = "ALGOL 58"
+in  [ { name = "ALGOL 58"
       , originalAuthors =
         [ "John Backus"
         , "Friedrich Bauer"
@@ -176,6 +138,44 @@ in  [ { name = "Agda"
           , url = "https://www.adaic.org/"
           }
         , { title = "Learn Ada", url = "https://learn.adacore.com/" }
+        ]
+      }
+    , { name = "Agda"
+      , originalAuthors = [ "Ulf Norell", "Catarina Coquand" ]
+      , paradigms = [ paradigms.functional ]
+      , examples =
+            [ ''
+              module hello-world where
+
+              open import Agda.Builtin.IO using (IO)
+              open import Agda.Builtin.Unit using (⊤)
+              open import Agda.Builtin.String using (String)
+
+              postulate putStrLn : String → IO ⊤
+              {-# FOREIGN GHC import qualified Data.Text as T #-}
+              {-# COMPILE GHC putStrLn = putStrLn . T.unpack #-}
+
+              main : IO ⊤
+              main = putStrLn "Hello, World!"
+              ''
+            ]
+          : List Text
+      , description =
+          ''
+          A dependently typed functional programming language and proof assistant. Agda is used for writing and verifying mathematical proofs and functional programs.
+          ''
+      , yearFirstPublished = 1999
+      , compilationTargets = [ compilationTarget.machineCode ]
+      , typing =
+        [ typingSystem.static, typingSystem.strong, typingSystem.dependent ]
+      , resources =
+        [ { title = "Agda Homepage"
+          , url = "https://wiki.portal.chalmers.se/agda/"
+          }
+        , { title = "Agda Documentation", url = "https://agda.readthedocs.io/" }
+        , { title = "Agda GitHub Repository"
+          , url = "https://github.com/agda/agda"
+          }
         ]
       }
     , { name = "Assembly"
