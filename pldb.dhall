@@ -467,6 +467,31 @@ in  [ { name = "Agda"
           }
         ]
       }
+    , { name = "Delphi"
+      , originalAuthors =
+        [ "Borland Software Corporation"
+        , "CodeGear"
+        , "Embarcadero Technologies"
+        , "Anders Hejlsberg"
+        ]
+      , paradigms = [ paradigms.objectOriented, paradigms.imperative ]
+      , examples = [] : List Text
+      , description =
+          ''
+          A high-level, compiled, strongly typed language that evolved from Pascal. Delphi is known for its rapid application development (RAD) capabilities, particularly for Windows applications.
+          ''
+      , yearFirstPublished = 1995
+      , compilationTargets = [ compilationTarget.machineCode ]
+      , typing = [ typingSystem.static, typingSystem.strong ]
+      , resources =
+        [ { title = "Delphi Homepage"
+          , url = "https://www.embarcadero.com/products/delphi"
+          }
+        , { title = "Delphi Documentation"
+          , url = "https://docwiki.embarcadero.com/RADStudio/en/Main_Page"
+          }
+        ]
+      }
     , { name = "Dhall"
       , originalAuthors = [ "Gabriel Gonzalez" ]
       , paradigms = [ paradigms.functional, paradigms.declarative ]
@@ -868,6 +893,31 @@ in  [ { name = "Agda"
           }
         ]
       }
+    , { name = "Julia"
+      , originalAuthors =
+        [ "Jeff Bezanson", "Stefan Karpinski", "Viral B. Shah", "Alan Edelman" ]
+      , paradigms = [ paradigms.functional, paradigms.imperative ]
+      , examples = [ "println(\"Hello, World!\")" ] : List Text
+      , description =
+          ''
+          A high-performance, general-purpose programming language, with syntax that is familiar to users of scripting languages. Julia provides a sophisticated compiler, distributed parallel execution, numerical accuracy, and an extensive mathematical function library.
+          ''
+      , yearFirstPublished = 2012
+      , compilationTargets = [ compilationTarget.machineCode ]
+      , typing =
+        [ typingSystem.dynamic
+        , typingSystem.inferred
+        , typingSystem.nominal
+        , typingSystem.strong
+        ]
+      , resources =
+        [ { title = "Julia Homepage", url = "https://julialang.org/" }
+        , { title = "Julia Documentation", url = "https://docs.julialang.org/" }
+        , { title = "Julia GitHub Repository"
+          , url = "https://github.com/JuliaLang/julia"
+          }
+        ]
+      }
     , { name = "K"
       , originalAuthors = [ "Arthur Whitney" ]
       , paradigms = [ paradigms.array, paradigms.declarative ]
@@ -1071,6 +1121,45 @@ in  [ { name = "Agda"
       , resources =
         [ { title = "ETH Oberon"
           , url = "https://www.inf.ethz.ch/personal/wirth/Oberon/"
+          }
+        ]
+      }
+    , { name = "Object Pascal"
+      , originalAuthors =
+        [ "Larry Tesler", "Niklaus Wirth", "Anders Hejlsberg" ]
+      , paradigms = [ paradigms.objectOriented, paradigms.imperative ]
+      , examples = [] : List Text
+      , description =
+          ''
+          An extension of the Pascal programming language (by way of the obscure language Clascal) that supports object-oriented programming. It was developed by Apple Computer with the help of Niklaus Wirth and later integrated by Borland into Turbo Pascal to become the basis of their Delphi product.
+          ''
+      , yearFirstPublished = 1986
+      , compilationTargets = [ compilationTarget.machineCode ]
+      , typing = [ typingSystem.static, typingSystem.strong ]
+      , resources =
+        [ { title = "Free Pascal (an Object Pascal compiler) Documentation"
+          , url = "https://www.freepascal.org/docs.html"
+          }
+        ]
+      }
+    , { name = "Objective-C"
+      , originalAuthors = [ "Brad Cox", "Tom Love" ]
+      , paradigms = [ paradigms.objectOriented, paradigms.imperative ]
+      , examples = [] : List Text
+      , description =
+          ''
+          A general-purpose, object-oriented programming language that adds Smalltalk-style messaging to the C programming language. It was the main programming language used by Apple for macOS and iOS development before the introduction of Swift.
+          ''
+      , yearFirstPublished = 1984
+      , compilationTargets = [ compilationTarget.machineCode ]
+      , typing = [ typingSystem.static, typingSystem.strong ]
+      , resources =
+        [ { title = "Objective-C Documentation"
+          , url = "https://developer.apple.com/documentation/objectivec"
+          }
+        , { title = "Objective-C Programming Guide"
+          , url =
+              "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html"
           }
         ]
       }
@@ -1587,6 +1676,23 @@ in  [ { name = "Agda"
           }
         , { title = "Apple Documentation"
           , url = "https://developer.apple.com/swift/"
+          }
+        ]
+      }
+    , { name = "Turbo Pascal"
+      , originalAuthors = [ "Borland Software Corporation", "Anders Hejlsberg" ]
+      , paradigms = [ paradigms.imperative ]
+      , examples = [] : List Text
+      , description =
+          ''
+          A software development system that includes a compiler and an integrated development environment (IDE) for the Pascal programming language on CP/M, CP/M-86, and MS-DOS. Turbo Pascal was developed by Borland and was popular in the 1980s and early 1990s.
+          ''
+      , yearFirstPublished = 1983
+      , compilationTargets = [ compilationTarget.machineCode ]
+      , typing = [ typingSystem.static, typingSystem.strong ]
+      , resources =
+        [ { title = "Wikipedia: Turbo Pascal"
+          , url = "https://en.wikipedia.org/wiki/Turbo_Pascal"
           }
         ]
       }
