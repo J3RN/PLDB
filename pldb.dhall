@@ -122,6 +122,24 @@ in  [ { name = "ALGOL 58"
         , { title = "TryAPL", url = "https://tryapl.org/" }
         ]
       }
+    , { name = "AWK"
+      , originalAuthors =
+        [ "Alfred Aho", "Peter Weinberger", "Brian Kernighan" ]
+      , paradigms = [ paradigms.declarative ]
+      , examples = [] : List Text
+      , description =
+          ''
+          A programming language designed for text processing. Named after its authors, AWK is known for its use of regular expressions and associative arrays.
+          ''
+      , yearFirstPublished = 1977
+      , compilationTargets = [ compilationTarget.interpreted ]
+      , typing = [ typingSystem.dynamic ]
+      , resources =
+        [ { title = "GAWK (GNU AWK) Documentation"
+          , url = "https://www.gnu.org/software/gawk/manual/gawk.html"
+          }
+        ]
+      }
     , { name = "Ada"
       , paradigms = [ paradigms.imperative, paradigms.objectOriented ]
       , originalAuthors = [ "Jean Ichbiah et al" ]
@@ -328,6 +346,21 @@ in  [ { name = "ALGOL 58"
           }
         ]
       }
+    , { name = "Ceylon"
+      , originalAuthors = [ "Gavin King" ]
+      , paradigms = [ paradigms.objectOriented, paradigms.functional ]
+      , examples = [] : List Text
+      , description =
+          ''
+          Eclipe Ceylon is a defunct programming language designed for writing large programs in teams originally developed by Red Hat. Ceylon emphasized readability, modularity, and type safety.
+          ''
+      , yearFirstPublished = 2011
+      , compilationTargets =
+        [ compilationTarget.jvmBytecode, compilationTarget.javascript ]
+      , typing = [ typingSystem.static, typingSystem.strong ]
+      , resources =
+        [ { title = "Ceylon Homepage", url = "https://ceylon-lang.org/" } ]
+      }
     , { name = "Clojure"
       , originalAuthors = [ "Rich Hickey" ]
       , paradigms = [ paradigms.functional ]
@@ -344,6 +377,28 @@ in  [ { name = "ALGOL 58"
         [ { title = "Clojure Homepage", url = "https://clojure.org/" }
         , { title = "Clojure Documentation"
           , url = "https://clojure.org/reference/documentation"
+          }
+        ]
+      }
+    , { name = "CoffeeScript"
+      , originalAuthors = [ "Jeremy Ashkenas" ]
+      , paradigms = [ paradigms.functional, paradigms.imperative ]
+      , examples =
+        [ ''
+          console.log 'Hello, World!'
+          ''
+        ]
+      , description =
+          ''
+          A language that compiles to JavaScript, aiming to make code more readable and to provide syntactic sugar for common JavaScript idioms.  Its syntax is inspired by Ruby, Python, and Haskell.
+          ''
+      , yearFirstPublished = 2009
+      , compilationTargets = [ compilationTarget.javascript ]
+      , typing = [ typingSystem.dynamic ]
+      , resources =
+        [ { title = "CoffeeScript Homepage", url = "https://coffeescript.org/" }
+        , { title = "CoffeeScript Documentation"
+          , url = "https://coffeescript.org/#documentation"
           }
         ]
       }
@@ -1098,6 +1153,29 @@ in  [ { name = "ALGOL 58"
       , resources =
         [ { title = "ADW Modula-2 Homepage", url = "http://www.modula2.org/" } ]
       }
+    , { name = "Nim"
+      , originalAuthors = [ "Andreas Rumpf" ]
+      , paradigms =
+        [ paradigms.imperative, paradigms.objectOriented, paradigms.functional ]
+      , examples = [] : List Text
+      , description =
+          ''
+          Nim (originally Nimrod) is a statically typed compiled systems programming language that combines the performance and control of C with a Python-like syntax. Nim is designed to be efficient, expressive, and elegant, with a focus on metaprogramming and compile-time execution.
+          ''
+      , yearFirstPublished = 2008
+      , compilationTargets =
+        [ compilationTarget.machineCode, compilationTarget.javascript ]
+      , typing = [ typingSystem.static, typingSystem.strong ]
+      , resources =
+        [ { title = "Nim Homepage", url = "https://nim-lang.org/" }
+        , { title = "Nim Documentation"
+          , url = "https://nim-lang.org/documentation.html"
+          }
+        , { title = "Nim GitHub Repository"
+          , url = "https://github.com/nim-lang/Nim"
+          }
+        ]
+      }
     , { name = "OCaml"
       , originalAuthors =
         [ "Xavier Leroy"
@@ -1585,6 +1663,20 @@ in  [ { name = "ALGOL 58"
           }
         ]
       }
+    , { name = "Scratch"
+      , originalAuthors = [ "Mitchel Resnick" ]
+      , paradigms = [ paradigms.imperative, paradigms.declarative ]
+      , examples = [] : List Text
+      , description =
+          ''
+          A block-based visual programming language and online community targeted primarily at children. Scratch allows users to create programs by snapping together code blocks in a drag-and-drop interface.
+          ''
+      , yearFirstPublished = 2003
+      , compilationTargets = [ compilationTarget.interpreted ]
+      , typing = [ typingSystem.dynamic ]
+      , resources =
+        [ { title = "Scratch Homepage", url = "https://scratch.mit.edu/" } ]
+      }
     , { name = "Self"
       , originalAuthors = [ "David Ungar", "Randall Smith" ]
       , paradigms = [ paradigms.objectOriented ]
@@ -1694,6 +1786,30 @@ in  [ { name = "ALGOL 58"
         , { title = "Apple Documentation"
           , url = "https://developer.apple.com/swift/"
           }
+        ]
+      }
+    , { name = "Tcl"
+      , originalAuthors = [ "John Ousterhout" ]
+      , paradigms = [ paradigms.imperative ]
+      , examples =
+        [ ''
+          puts "Hello, World!"
+          ''
+        , ''
+          set sum [expr 1+2+3+4+5]
+          puts "The sum of the numbers 1..5 is $sum."
+          ''
+        ]
+      , description =
+          ''
+          Tool Command Language, a scripting language commonly used for rapid prototyping, scripted applications, GUIs, and testing.
+          ''
+      , yearFirstPublished = 1988
+      , compilationTargets = [ compilationTarget.interpreted ]
+      , typing = [ typingSystem.dynamic ]
+      , resources =
+        [ { title = "Tcl Homepage", url = "https://www.tcl-lang.org/" }
+        , { title = "Tcl Documentation", url = "https://www.tcl-lang.org/doc/" }
         ]
       }
     , { name = "Turbo Pascal"
