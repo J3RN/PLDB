@@ -666,6 +666,25 @@ in  [ { name = "Agda"
         , { title = "Go Documentation", url = "https://golang.org/doc/" }
         ]
       }
+    , { name = "Groovy"
+      , originalAuthors = [ "James Strachan" ]
+      , paradigms =
+        [ paradigms.objectOriented, paradigms.functional, paradigms.imperative ]
+      , examples = [] : List Text
+      , description =
+          ''
+          An object-oriented programming language for the Java platform. Most valid Java files are also valid Groovy files, allowing Java developers to easily pick up the langauge. Groovy features some more concise syntax than Java for certain operations, as well as dynamic typing, operator overloading, and more.
+          ''
+      , yearFirstPublished = 2003
+      , compilationTargets = [ compilationTarget.jvmBytecode ]
+      , typing = [ typingSystem.dynamic, typingSystem.strong ]
+      , resources =
+        [ { title = "Groovy Homepage", url = "https://groovy-lang.org/" }
+        , { title = "Groovy Documentation"
+          , url = "https://groovy-lang.org/documentation.html"
+          }
+        ]
+      }
     , { name = "Haskell"
       , originalAuthors =
         [ "Lennart Augustsson"
