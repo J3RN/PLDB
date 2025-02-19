@@ -1325,6 +1325,34 @@ in  [ { name = "8th"
           }
         ]
       }
+    , { name = "Hack"
+      , originalAuthors =
+        [ "Julien Verlaguet", "Alok Menghrajani", "Drew Paroski" ]
+      , paradigms =
+        [ paradigms.imperative, paradigms.functional, paradigms.objectOriented ]
+      , examples =
+        [ ''
+          use namespace HH\Lib\IO;
+
+          <<__EntryPoint>>
+          async function main(): Awaitable<void> {
+            await IO\request_output()->writeAllAsync("Hello World!\n");
+          }
+          ''
+        ]
+      , description =
+          ''
+
+          Hack was developed at Facebook as a derivative of PHP. Much PHP code
+          is compatible with Hack. Hack runs on the HipHop Virtual Machine
+          (HHVM), also developed at Facebook.
+
+          ''
+      , yearFirstPublished = 2014
+      , typing = [ typingSystem.gradual ]
+      , compilationTargets = [ compilationTarget.interpreted ]
+      , resources = [ { title = "Hack Website", url = "https://hacklang.org" } ]
+      }
     , { name = "Haskell"
       , originalAuthors =
         [ "Lennart Augustsson"
