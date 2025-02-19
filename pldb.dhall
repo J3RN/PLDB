@@ -1773,9 +1773,9 @@ in  [ { name = "8th"
           ''
 
           A dynamic object-oriented programming language originally developed by
-          Smallworld for developing geographical information systems
-          (GIS). Features multiple inheritance, dynamic typing, and garbage
-          collection.
+          Smallworld for developing geographical information systems (GIS), now
+          offered by GE Energy. Features multiple inheritance, dynamic typing,
+          and garbage collection.
 
           ''
       , yearFirstPublished = 1990
