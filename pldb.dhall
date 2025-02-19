@@ -1032,6 +1032,40 @@ in  [ { name = "8th"
           }
         ]
       }
+    , { name = "Emacs Lisp"
+      , originalAuthors = [ "Richard Stallman" ]
+      , paradigms = [ paradigms.functional, paradigms.imperative ]
+      , examples =
+        [ ''
+          (message "Hello, World!")
+          ''
+        , ''
+          (defun fib (n)
+            (if (< n 2)
+                n
+              (+ (fib (- n 1)) (fib (- n 2)))))
+          ''
+        ]
+      , description =
+          ''
+
+          A dialect of the Lisp programming language used as a scripting language by the Emacs text editor. Emacs Lisp provides text manipulation capabilities and is used to extend and customize Emacs.
+
+          ''
+      , yearFirstPublished = 1985
+      , compilationTargets = [ compilationTarget.interpreted ]
+      , typing = [ typingSystem.dynamic ]
+      , resources =
+        [ { title = "Emacs Lisp Introduction"
+          , url =
+              "https://www.gnu.org/software/emacs/manual/html_node/eintr/index.html"
+          }
+        , { title = "Emacs Lisp Reference Manual"
+          , url =
+              "https://www.gnu.org/software/emacs/manual/html_node/elisp/index.html"
+          }
+        ]
+      }
     , { name = "Erlang"
       , originalAuthors = [ "Joe Armstrong", "Robert Virding", "Mike Williams" ]
       , paradigms = [ paradigms.functional, paradigms.declarative ]
