@@ -2848,7 +2848,8 @@ in  [ { name = "8th"
 
           ''
       , yearFirstPublished = 1991
-      , compilationTargets = [ compilationTarget.machineCode ]
+      , compilationTargets =
+        [ compilationTarget.machineCode, compilationTarget.cli ]
       , typing = [ typingSystem.static ]
       , resources =
         [ { title = "Visual Basic Documentation"
