@@ -627,6 +627,48 @@ in  [ { name = "8th"
       , resources =
         [ { title = "Ceylon Homepage", url = "https://ceylon-lang.org" } ]
       }
+    , { name = "Chez Scheme"
+      , originalAuthors = [ "R. Kent Dybvig" ]
+      , paradigms = [ paradigms.functional ]
+      , examples = [] : List Text
+      , description =
+          ''
+
+          A high-performance superset of R6RS Scheme known for its speed and reliability. Chez Scheme was originally developed at Cadence Research Systems and was open sourced after Cadence was acquired by Cisco Systems. Chez Scheme ships with a second implementation, named Petite Chez Scheme, which uses a threaded interpreter as opposed to Chez Scheme's incremental native compilation.
+
+          ''
+      , yearFirstPublished = 1985
+      , compilationTargets = [ compilationTarget.machineCode ]
+      , typing = [ typingSystem.dynamic, typingSystem.strong ]
+      , resources =
+        [ { title = "Chez Scheme", url = "https://cisco.github.io/ChezScheme" }
+        , { title = "User's Guide"
+          , url = "https://cisco.github.io/ChezScheme/csug9.5/csug.html"
+          }
+        ]
+      }
+    , { name = "Chicken Scheme"
+      , originalAuthors = [ "Felix Winkelmann" ]
+      , paradigms = [ paradigms.functional ]
+      , examples =
+        [ ''
+          (print "Hello, World!")
+          ''
+        ]
+      , description =
+          ''
+
+          A Scheme that supports R5RS and R7RS and compiles to C. Known for its extensive library ecosystem and ease of deployment. CHICKEN Scheme aims to be free, simple, portable, extensible, well documented, and actively supported.
+
+          ''
+      , yearFirstPublished = 2000
+      , compilationTargets = [ compilationTarget.machineCode ]
+      , typing = [ typingSystem.dynamic, typingSystem.strong ]
+      , resources =
+        [ { title = "CHICKEN Scheme", url = "https://www.call-cc.org" }
+        , { title = "Documentation", url = "https://wiki.call-cc.org" }
+        ]
+      }
     , { name = "Clojure"
       , originalAuthors = [ "Rich Hickey" ]
       , paradigms = [ paradigms.functional ]
