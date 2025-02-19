@@ -439,6 +439,38 @@ in  [ { name = "8th"
           }
         ]
       }
+    , { name = "Bash"
+      , originalAuthors = [ "Brian Fox" ]
+      , paradigms = [ paradigms.imperative ]
+      , examples =
+        [ ''
+          echo "Hello, World!"
+          ''
+        , ''
+          for i in {1..5}; do
+            echo "Welcome $i times"
+          done
+          ''
+        ]
+      , description =
+          ''
+
+          The Bourne Again SHell (Bash) is a Unix shell and command language
+          written as a free software replacement for the Bourne shell. It is widely
+          available on various operating systems and is the default shell on most
+          Linux distributions.
+
+          ''
+      , yearFirstPublished = 1989
+      , compilationTargets = [ compilationTarget.interpreted ]
+      , typing = [ typingSystem.dynamic ]
+      , resources =
+        [ { title = "Bash Homepage", url = "https://www.gnu.org/software/bash" }
+        , { title = "Bash Documentation"
+          , url = "https://www.gnu.org/software/bash/manual/bash.html"
+          }
+        ]
+      }
     , { name = "C"
       , paradigms = [ paradigms.imperative ]
       , originalAuthors = [ "Dennis Ritchie" ]
