@@ -298,6 +298,42 @@ in  [ { name = "8th"
           }
         ]
       }
+    , { name = "Arturo"
+      , originalAuthors = [ "Yanis Zafirópulos" ]
+      , paradigms = [ paradigms.functional ]
+      , examples =
+        [ ''
+          factorial: function [n][
+              (n > 1)? -> n * factorial n-1
+                       -> 1
+          ]
+          ''
+        , ''
+          0..10 | map => factorial
+                | select.first => [& > 123]
+                | print
+          ''
+        ]
+      , description =
+          ''
+
+          A programming language focused on simplicity and expressiveness, with
+          built-in support for desktop, web, and shell scripting applications.
+
+          ''
+      , yearFirstPublished = 2019
+      , compilationTargets = [ compilationTarget.interpreted ]
+      , typing = [ typingSystem.dynamic ]
+      , resources =
+        [ { title = "Arturo Homepage", url = "https://arturo-lang.io" }
+        , { title = "Arturo Documentation"
+          , url = "https://arturo-lang.io/documentation"
+          }
+        , { title = "Arture Playground"
+          , url = "https://arturo-lang.io/playground"
+          }
+        ]
+      }
     , { name = "Assembly"
       , originalAuthors = [ "Kathleen Booth", "Andrew Donald Booth" ]
       , paradigms = [ paradigms.imperative ]
