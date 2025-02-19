@@ -1153,7 +1153,11 @@ in  [ { name = "8th"
       , originalAuthors = [ "Slava Pestov" ]
       , paradigms =
         [ paradigms.functional, paradigms.declarative, paradigms.stack ]
-      , examples = [] : List Text
+      , examples =
+        [ ''
+          "Hello, World!" print
+          ''
+        ]
       , description =
           ''
 
