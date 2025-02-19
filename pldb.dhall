@@ -1299,6 +1299,32 @@ in  [ { name = "8th"
           }
         ]
       }
+    , { name = "Guile"
+      , originalAuthors =
+        [ "Aubrey Jaffer", "Tom Lord", "Miles Bader", "Jim Blandy" ]
+      , paradigms = [ paradigms.functional, paradigms.imperative ]
+      , examples = [] : List Text
+      , description =
+          ''
+
+          GNU Ubiquitous Intelligent Language for Extensions (Guile) is an
+          implementation of the Scheme programming language, designed to be
+          embedded in other applications to provide scripting and extension
+          capabilities.
+
+          ''
+      , yearFirstPublished = 1993
+      , compilationTargets = [ compilationTarget.interpreted ]
+      , typing = [ typingSystem.dynamic ]
+      , resources =
+        [ { title = "Guile Homepage"
+          , url = "https://www.gnu.org/software/guile"
+          }
+        , { title = "Guile Documentation"
+          , url = "https://www.gnu.org/software/guile/docs"
+          }
+        ]
+      }
     , { name = "Haskell"
       , originalAuthors =
         [ "Lennart Augustsson"
