@@ -31,7 +31,33 @@ let typingSystem =
       | dependent
       >
 
-in  [ { name = "ALGOL 58"
+in  [ { name = "8th"
+      , originalAuthors = [ "Ron Nicholson" ]
+      , paradigms = [ paradigms.stack, paradigms.imperative ]
+      , examples =
+        [ ''
+          "Hello, world!\n" . bye
+          ''
+        ]
+      , description =
+          ''
+
+          A cross-platform programming language focused on mobile and desktop
+          development with a Forth-like syntax. 8th is a commercial product, but
+          offers a free version.
+
+          ''
+      , yearFirstPublished = 2012
+      , compilationTargets = [ compilationTarget.machineCode ]
+      , typing = [ typingSystem.strong ]
+      , resources =
+        [ { title = "8th Homepage", url = "https://8th-dev.com" }
+        , { title = "8th Documentation"
+          , url = "https://8th-dev.com/manual.html"
+          }
+        ]
+      }
+    , { name = "ALGOL 58"
       , originalAuthors =
         [ "John Backus"
         , "Friedrich Bauer"
