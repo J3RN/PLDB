@@ -1091,6 +1091,42 @@ in  [ { name = "8th"
           }
         ]
       }
+    , { name = "Euphoria"
+      , originalAuthors = [ "Robert Craig" ]
+      , paradigms = [ paradigms.imperative ]
+      , examples =
+        [ ''
+          procedure Hello(sequence place)
+            puts(1, "Hello, " & place & "!\n")
+          end procedure
+
+          Hello("World")
+          ''
+        ]
+      , description =
+          ''
+
+          The Euphoria programming language strives to be simple, flexible, and
+          easy-to-learn. It was designed to be easy to read and write, and
+          prefers English keywords over symbols in its syntax.
+
+          ''
+      , yearFirstPublished = 1993
+      , compilationTargets = [ compilationTarget.interpreted ]
+      , typing = [ typingSystem.dynamic ]
+      , resources =
+        [ { title = "Open Euphoria Homepage", url = "http://openeuphoria.org" }
+        , { title = "Open Euphoria Manual"
+          , url = "https://openeuphoria.org/docs"
+          }
+        , { title = "Rapide Euphoria Homepage"
+          , url = "https://www.rapideuphoria.com"
+          }
+        , { title = "Rapide Euphoria Documentation"
+          , url = "https://www.rapideuphoria.com/docs.htm"
+          }
+        ]
+      }
     , { name = "F#"
       , originalAuthors = [ "Don Syme" ]
       , paradigms = [ paradigms.functional, paradigms.objectOriented ]
