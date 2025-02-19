@@ -583,6 +583,31 @@ in  [ { name = "8th"
           }
         ]
       }
+    , { name = "Cairo"
+      , originalAuthors = [ "StarkWare" ]
+      , paradigms = [ paradigms.functional ]
+      , examples = [] : List Text
+      , description =
+          ''
+
+          Cairo is a Rust-inspired programming language. It is used as the
+          smart contract language for Starknet.
+
+          ''
+      , yearFirstPublished = 2020
+      , compilationTargets = [ compilationTarget.machineCode ]
+      , typing = [ typingSystem.static, typingSystem.strong ]
+      , resources =
+        [ { title = "Cairo Homepage", url = "https://www.cairo-lang.org" }
+        , { title = "The Cairo Book", url = "https://book.cairo-lang.org" }
+        , { title = "Cairo Playground (online editor)"
+          , url = "https://www.cairo-lang.org/cairovm"
+          }
+        , { title = "Cairo GitHub Repository"
+          , url = "https://github.com/starkware-libs/cairo-lang"
+          }
+        ]
+      }
     , { name = "Ceylon"
       , originalAuthors = [ "Gavin King" ]
       , paradigms = [ paradigms.objectOriented, paradigms.functional ]
