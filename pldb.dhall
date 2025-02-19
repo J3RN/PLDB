@@ -189,8 +189,8 @@ in  [ { name = "8th"
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.dynamic ]
       , resources =
-        [ { title = "Dyalog APL", url = "https://www.dyalog.com/" }
-        , { title = "TryAPL", url = "https://tryapl.org/" }
+        [ { title = "Dyalog APL", url = "https://www.dyalog.com" }
+        , { title = "TryAPL", url = "https://tryapl.org" }
         ]
       }
     , { name = "AWK"
@@ -238,9 +238,9 @@ in  [ { name = "8th"
       , typing = [ typingSystem.static, typingSystem.strong ]
       , resources =
         [ { title = "Ada Information Clearinghouse"
-          , url = "https://www.adaic.org/"
+          , url = "https://www.adaic.org"
           }
-        , { title = "Learn Ada", url = "https://learn.adacore.com/" }
+        , { title = "Learn Ada", url = "https://learn.adacore.com" }
         ]
       }
     , { name = "Agda"
@@ -287,14 +287,14 @@ in  [ { name = "8th"
         [ typingSystem.static, typingSystem.strong, typingSystem.dependent ]
       , resources =
         [ { title = "Agda Homepage"
-          , url = "https://wiki.portal.chalmers.se/agda/"
+          , url = "https://wiki.portal.chalmers.se/agda"
           }
-        , { title = "Agda Documentation", url = "https://agda.readthedocs.io/" }
+        , { title = "Agda Documentation", url = "https://agda.readthedocs.io" }
         , { title = "Agda GitHub Repository"
           , url = "https://github.com/agda/agda"
           }
         , { title = "Programming Language Foundations in Agda"
-          , url = "https://plfa.github.io/"
+          , url = "https://plfa.github.io"
           }
         ]
       }
@@ -402,7 +402,7 @@ in  [ { name = "8th"
         [ { title = "C Programming Language Standard"
           , url = "https://www.iso.org/standard/82075.html"
           }
-        , { title = "Learn C", url = "https://www.learn-c.org/" }
+        , { title = "Learn C", url = "https://www.learn-c.org" }
         ]
       }
     , { name = "C#"
@@ -428,7 +428,7 @@ in  [ { name = "8th"
       , typing = [ typingSystem.static, typingSystem.strong ]
       , resources =
         [ { title = "C# Documentation"
-          , url = "https://docs.microsoft.com/en-us/dotnet/csharp/"
+          , url = "https://docs.microsoft.com/en-us/dotnet/csharp"
           }
         , { title = "Learn C#"
           , url = "https://dotnet.microsoft.com/learn/csharp"
@@ -452,8 +452,8 @@ in  [ { name = "8th"
       , compilationTargets = [ compilationTarget.machineCode ]
       , typing = [ typingSystem.static, typingSystem.strong ]
       , resources =
-        [ { title = "C++ Standard", url = "https://isocpp.org/" }
-        , { title = "CPP Reference", url = "https://en.cppreference.com/" }
+        [ { title = "C++ Standard", url = "https://isocpp.org" }
+        , { title = "CPP Reference", url = "https://en.cppreference.com" }
         ]
       }
     , { name = "COBOL"
@@ -502,7 +502,7 @@ in  [ { name = "8th"
         [ compilationTarget.jvmBytecode, compilationTarget.javascript ]
       , typing = [ typingSystem.static, typingSystem.strong ]
       , resources =
-        [ { title = "Ceylon Homepage", url = "https://ceylon-lang.org/" } ]
+        [ { title = "Ceylon Homepage", url = "https://ceylon-lang.org" } ]
       }
     , { name = "Clojure"
       , originalAuthors = [ "Rich Hickey" ]
@@ -520,7 +520,7 @@ in  [ { name = "8th"
         [ compilationTarget.jvmBytecode, compilationTarget.javascript ]
       , typing = [ typingSystem.dynamic, typingSystem.strong ]
       , resources =
-        [ { title = "Clojure Homepage", url = "https://clojure.org/" }
+        [ { title = "Clojure Homepage", url = "https://clojure.org" }
         , { title = "Clojure Documentation"
           , url = "https://clojure.org/reference/documentation"
           }
@@ -546,7 +546,7 @@ in  [ { name = "8th"
       , compilationTargets = [ compilationTarget.javascript ]
       , typing = [ typingSystem.dynamic ]
       , resources =
-        [ { title = "CoffeeScript Homepage", url = "https://coffeescript.org/" }
+        [ { title = "CoffeeScript Homepage", url = "https://coffeescript.org" }
         , { title = "CoffeeScript Documentation"
           , url = "https://coffeescript.org/#documentation"
           }
@@ -579,9 +579,9 @@ in  [ { name = "8th"
       , typing = [ typingSystem.dynamic, typingSystem.strong ]
       , resources =
         [ { title = "Common Lisp HyperSpec"
-          , url = "http://www.lispworks.com/documentation/HyperSpec/Front/"
+          , url = "http://www.lispworks.com/documentation/HyperSpec/Front"
           }
-        , { title = "Common Lisp Wiki", url = "https://www.cliki.net/" }
+        , { title = "Common Lisp Wiki", url = "https://www.cliki.net" }
         ]
       }
     , { name = "Crystal"
@@ -605,9 +605,9 @@ in  [ { name = "8th"
       , compilationTargets = [ compilationTarget.machineCode ]
       , typing = [ typingSystem.static, typingSystem.strong ]
       , resources =
-        [ { title = "Crystal Homepage", url = "https://crystal-lang.org/" }
+        [ { title = "Crystal Homepage", url = "https://crystal-lang.org" }
         , { title = "Crystal Documentation"
-          , url = "https://crystal-lang.org/reference/"
+          , url = "https://crystal-lang.org/reference"
           }
         ]
       }
@@ -629,9 +629,9 @@ in  [ { name = "8th"
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.static, typingSystem.strong ]
       , resources =
-        [ { title = "Curry Homepage", url = "http://www.curry-lang.org/" }
+        [ { title = "Curry Homepage", url = "http://www.curry-lang.org" }
         , { title = "Curry Documentation"
-          , url = "http://www.curry-lang.org/documentation/"
+          , url = "http://www.curry-lang.org/documentation"
           }
         ]
       }
@@ -665,7 +665,7 @@ in  [ { name = "8th"
       , compilationTargets = [ compilationTarget.machineCode ]
       , typing = [ typingSystem.static, typingSystem.strong ]
       , resources =
-        [ { title = "D Language Homepage", url = "https://dlang.org/" }
+        [ { title = "D Language Homepage", url = "https://dlang.org" }
         , { title = "D Language Documentation"
           , url = "https://dlang.org/documentation.html"
           }
@@ -692,7 +692,7 @@ in  [ { name = "8th"
         [ { title = "Dart Homepage", url = "https://dart.dev" }
         , { title = "Dart Documentation", url = "https://dart.dev/guides" }
         , { title = "Dartpad (Online Editor)", url = "https://dartpad.dev" }
-        , { title = "Flutter", url = "https://flutter.dev/" }
+        , { title = "Flutter", url = "https://flutter.dev" }
         ]
       }
     , { name = "Datalog"
@@ -765,10 +765,8 @@ in  [ { name = "8th"
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.static, typingSystem.strong ]
       , resources =
-        [ { title = "Dhall Homepage", url = "https://dhall-lang.org/" }
-        , { title = "Dhall Documentation"
-          , url = "https://docs.dhall-lang.org/"
-          }
+        [ { title = "Dhall Homepage", url = "https://dhall-lang.org" }
+        , { title = "Dhall Documentation", url = "https://docs.dhall-lang.org" }
         , { title = "Dhall GitHub"
           , url = "https://github.com/dhall-lang/dhall-lang"
           }
@@ -790,8 +788,8 @@ in  [ { name = "8th"
       , compilationTargets = [ compilationTarget.machineCode ]
       , typing = [ typingSystem.static, typingSystem.strong ]
       , resources =
-        [ { title = "Eiffel Homepage", url = "https://www.eiffel.org/" }
-        , { title = "Eiffel Documentation", url = "https://docs.eiffel.org/" }
+        [ { title = "Eiffel Homepage", url = "https://www.eiffel.org" }
+        , { title = "Eiffel Documentation", url = "https://docs.eiffel.org" }
         ]
       }
     , { name = "Elixir"
@@ -811,10 +809,10 @@ in  [ { name = "8th"
       , compilationTargets = [ compilationTarget.beamBytecode ]
       , typing = [ typingSystem.dynamic, typingSystem.strong ]
       , resources =
-        [ { title = "Elixir Homepage", url = "https://elixir-lang.org/" }
-        , { title = "Elixir Documentation", url = "https://hexdocs.pm/elixir/" }
+        [ { title = "Elixir Homepage", url = "https://elixir-lang.org" }
+        , { title = "Elixir Documentation", url = "https://hexdocs.pm/elixir" }
         , { title = "Phoenix Framework"
-          , url = "https://www.phoenixframework.org/"
+          , url = "https://www.phoenixframework.org"
           }
         ]
       }
@@ -835,10 +833,10 @@ in  [ { name = "8th"
       , compilationTargets = [ compilationTarget.javascript ]
       , typing = [ typingSystem.static, typingSystem.strong ]
       , resources =
-        [ { title = "Elm Homepage", url = "https://elm-lang.org/" }
-        , { title = "Elm Guide", url = "https://guide.elm-lang.org/" }
+        [ { title = "Elm Homepage", url = "https://elm-lang.org" }
+        , { title = "Elm Guide", url = "https://guide.elm-lang.org" }
         , { title = "Elm Package Documentation"
-          , url = "https://package.elm-lang.org/"
+          , url = "https://package.elm-lang.org"
           }
         ]
       }
@@ -861,7 +859,7 @@ in  [ { name = "8th"
       , compilationTargets = [ compilationTarget.beamBytecode ]
       , typing = [ typingSystem.dynamic, typingSystem.strong ]
       , resources =
-        [ { title = "Erlang Homepage", url = "https://www.erlang.org/" }
+        [ { title = "Erlang Homepage", url = "https://www.erlang.org" }
         , { title = "Erlang Documentation"
           , url = "https://www.erlang.org/docs"
           }
@@ -883,9 +881,9 @@ in  [ { name = "8th"
       , typing =
         [ typingSystem.static, typingSystem.strong, typingSystem.inferred ]
       , resources =
-        [ { title = "F# Homepage", url = "https://fsharp.org/" }
+        [ { title = "F# Homepage", url = "https://fsharp.org" }
         , { title = "F# Documentation"
-          , url = "https://docs.microsoft.com/en-us/dotnet/fsharp/"
+          , url = "https://docs.microsoft.com/en-us/dotnet/fsharp"
           }
         ]
       }
@@ -907,9 +905,9 @@ in  [ { name = "8th"
       , compilationTargets = [ compilationTarget.machineCode ]
       , typing = [ typingSystem.dynamic, typingSystem.strong ]
       , resources =
-        [ { title = "Factor Homepage", url = "https://factorcode.org/" }
+        [ { title = "Factor Homepage", url = "https://factorcode.org" }
         , { title = "Factor Documentation"
-          , url = "https://docs.factorcode.org/"
+          , url = "https://docs.factorcode.org"
           }
         , { title = "Factor GitHub Repository"
           , url = "https://github.com/factor/factor"
@@ -932,7 +930,7 @@ in  [ { name = "8th"
         [ compilationTarget.interpreted, compilationTarget.machineCode ]
       , typing = [ typingSystem.weak ]
       , resources =
-        [ { title = "Forth Interest Group", url = "http://www.forth.org/" } ]
+        [ { title = "Forth Interest Group", url = "http://www.forth.org" } ]
       }
     , { name = "Fortran"
       , originalAuthors = [ "John Backus" ]
@@ -950,9 +948,9 @@ in  [ { name = "8th"
       , compilationTargets = [ compilationTarget.machineCode ]
       , typing = [ typingSystem.static, typingSystem.strong ]
       , resources =
-        [ { title = "Fortran Homepage", url = "https://fortran-lang.org/" }
+        [ { title = "Fortran Homepage", url = "https://fortran-lang.org" }
         , { title = "Fortran Documentation"
-          , url = "https://fortran-lang.org/learn/"
+          , url = "https://fortran-lang.org/learn"
           }
         ]
       }
@@ -975,9 +973,9 @@ in  [ { name = "8th"
       , typing =
         [ typingSystem.static, typingSystem.strong, typingSystem.inferred ]
       , resources =
-        [ { title = "Gleam Homepage", url = "https://gleam.run/" }
+        [ { title = "Gleam Homepage", url = "https://gleam.run" }
         , { title = "Gleam Documentation"
-          , url = "https://gleam.run/documentation/"
+          , url = "https://gleam.run/documentation"
           }
         , { title = "Gleam Discord", url = "https://discord.gg/Fm8Pwmy" }
         ]
@@ -1010,8 +1008,8 @@ in  [ { name = "8th"
       , compilationTargets = [ compilationTarget.machineCode ]
       , typing = [ typingSystem.static, typingSystem.strong ]
       , resources =
-        [ { title = "Go Homepage", url = "https://golang.org/" }
-        , { title = "Go Documentation", url = "https://golang.org/doc/" }
+        [ { title = "Go Homepage", url = "https://golang.org" }
+        , { title = "Go Documentation", url = "https://golang.org/doc" }
         ]
       }
     , { name = "Groovy"
@@ -1033,7 +1031,7 @@ in  [ { name = "8th"
       , compilationTargets = [ compilationTarget.jvmBytecode ]
       , typing = [ typingSystem.dynamic, typingSystem.strong ]
       , resources =
-        [ { title = "Groovy Homepage", url = "https://groovy-lang.org/" }
+        [ { title = "Groovy Homepage", url = "https://groovy-lang.org" }
         , { title = "Groovy Documentation"
           , url = "https://groovy-lang.org/documentation.html"
           }
@@ -1084,9 +1082,9 @@ in  [ { name = "8th"
       , typing =
         [ typingSystem.static, typingSystem.strong, typingSystem.inferred ]
       , resources =
-        [ { title = "Haskell Homepage", url = "https://www.haskell.org/" }
+        [ { title = "Haskell Homepage", url = "https://www.haskell.org" }
         , { title = "Haskell Documentation"
-          , url = "https://www.haskell.org/documentation/"
+          , url = "https://www.haskell.org/documentation"
           }
         ]
       }
@@ -1117,9 +1115,9 @@ in  [ { name = "8th"
       , typing =
         [ typingSystem.static, typingSystem.strong, typingSystem.dependent ]
       , resources =
-        [ { title = "Idris Homepage", url = "https://www.idris-lang.org/" }
+        [ { title = "Idris Homepage", url = "https://www.idris-lang.org" }
         , { title = "Idris Documentation"
-          , url = "https://idris2.readthedocs.io/en/latest/"
+          , url = "https://idris2.readthedocs.io/en/latest"
           }
         , { title = "Idris GitHub Repository"
           , url = "https://github.com/idris-lang/Idris2"
@@ -1143,7 +1141,7 @@ in  [ { name = "8th"
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.dynamic, typingSystem.strong ]
       , resources =
-        [ { title = "Io Language", url = "https://iolanguage.org/" }
+        [ { title = "Io Language", url = "https://iolanguage.org" }
         , { title = "Io Guide"
           , url = "https://iolanguage.org/guide/guide.html"
           }
@@ -1165,7 +1163,7 @@ in  [ { name = "8th"
       , compilationTargets = [ compilationTarget.jvmBytecode ]
       , typing = [ typingSystem.dynamic, typingSystem.strong ]
       , resources =
-        [ { title = "Ioke Language", url = "https://ioke.org/" }
+        [ { title = "Ioke Language", url = "https://ioke.org" }
         , { title = "Ioke Documentation"
           , url = "https://ioke.org/documentation.html"
           }
@@ -1187,7 +1185,7 @@ in  [ { name = "8th"
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.dynamic ]
       , resources =
-        [ { title = "J Homepage", url = "https://www.jsoftware.com/" }
+        [ { title = "J Homepage", url = "https://www.jsoftware.com" }
         , { title = "J Documentation"
           , url = "https://code.jsoftware.com/wiki/Main_Page"
           }
@@ -1211,9 +1209,9 @@ in  [ { name = "8th"
       , typing =
         [ typingSystem.static, typingSystem.strong, typingSystem.nominal ]
       , resources =
-        [ { title = "Java Homepage", url = "https://www.java.com/" }
+        [ { title = "Java Homepage", url = "https://www.java.com" }
         , { title = "Java Documentation"
-          , url = "https://docs.oracle.com/en/java/"
+          , url = "https://docs.oracle.com/en/java"
           }
         ]
       }
@@ -1254,7 +1252,7 @@ in  [ { name = "8th"
           }
         , { title = "ECMAScript Specification"
           , url =
-              "https://www.ecma-international.org/publications-and-standards/standards/ecma-262/"
+              "https://www.ecma-international.org/publications-and-standards/standards/ecma-262"
           }
         ]
       }
@@ -1281,8 +1279,8 @@ in  [ { name = "8th"
         , typingSystem.strong
         ]
       , resources =
-        [ { title = "Julia Homepage", url = "https://julialang.org/" }
-        , { title = "Julia Documentation", url = "https://docs.julialang.org/" }
+        [ { title = "Julia Homepage", url = "https://julialang.org" }
+        , { title = "Julia Documentation", url = "https://docs.julialang.org" }
         , { title = "Julia GitHub Repository"
           , url = "https://github.com/JuliaLang/julia"
           }
@@ -1302,7 +1300,7 @@ in  [ { name = "8th"
       , yearFirstPublished = 1993
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.dynamic ]
-      , resources = [ { title = "Kx Systems", url = "https://kx.com/" } ]
+      , resources = [ { title = "Kx Systems", url = "https://kx.com" } ]
       }
     , { name = "Koka"
       , originalAuthors = [ "Daan Leijen" ]
@@ -1321,7 +1319,7 @@ in  [ { name = "8th"
       , typing =
         [ typingSystem.static, typingSystem.strong, typingSystem.inferred ]
       , resources =
-        [ { title = "Koka Homepage", url = "https://koka-lang.github.io/koka/" }
+        [ { title = "Koka Homepage", url = "https://koka-lang.github.io/koka" }
         , { title = "Koka Documentation"
           , url = "https://koka-lang.github.io/koka/doc/book.html"
           }
@@ -1353,9 +1351,9 @@ in  [ { name = "8th"
         [ compilationTarget.jvmBytecode, compilationTarget.javascript ]
       , typing = [ typingSystem.static, typingSystem.strong ]
       , resources =
-        [ { title = "Kotlin Homepage", url = "https://kotlinlang.org/" }
+        [ { title = "Kotlin Homepage", url = "https://kotlinlang.org" }
         , { title = "Kotlin Documentation"
-          , url = "https://kotlinlang.org/docs/"
+          , url = "https://kotlinlang.org/docs"
           }
         ]
       }
@@ -1401,7 +1399,7 @@ in  [ { name = "8th"
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.dynamic, typingSystem.strong ]
       , resources =
-        [ { title = "Lua Homepage", url = "https://www.lua.org/" }
+        [ { title = "Lua Homepage", url = "https://www.lua.org" }
         , { title = "Lua Documentation", url = "https://www.lua.org/docs.html" }
         ]
       }
@@ -1425,7 +1423,7 @@ in  [ { name = "8th"
           , url = "https://www.mathworks.com/products/matlab.html"
           }
         , { title = "MATLAB Documentation"
-          , url = "https://www.mathworks.com/help/matlab/"
+          , url = "https://www.mathworks.com/help/matlab"
           }
         ]
       }
@@ -1470,7 +1468,7 @@ in  [ { name = "8th"
       , compilationTargets = [ compilationTarget.machineCode ]
       , typing = [ typingSystem.static, typingSystem.strong ]
       , resources =
-        [ { title = "Mercury Homepage", url = "https://mercurylang.org/" }
+        [ { title = "Mercury Homepage", url = "https://mercurylang.org" }
         , { title = "Mercury Documentation"
           , url = "https://mercurylang.org/documentation/documentation.html"
           }
@@ -1509,7 +1507,7 @@ in  [ { name = "8th"
       , compilationTargets = [ compilationTarget.machineCode ]
       , typing = [ typingSystem.static, typingSystem.strong ]
       , resources =
-        [ { title = "ADW Modula-2 Homepage", url = "http://www.modula2.org/" } ]
+        [ { title = "ADW Modula-2 Homepage", url = "http://www.modula2.org" } ]
       }
     , { name = "Nim"
       , originalAuthors = [ "Andreas Rumpf" ]
@@ -1531,7 +1529,7 @@ in  [ { name = "8th"
         [ compilationTarget.machineCode, compilationTarget.javascript ]
       , typing = [ typingSystem.static, typingSystem.strong ]
       , resources =
-        [ { title = "Nim Homepage", url = "https://nim-lang.org/" }
+        [ { title = "Nim Homepage", url = "https://nim-lang.org" }
         , { title = "Nim Documentation"
           , url = "https://nim-lang.org/documentation.html"
           }
@@ -1565,10 +1563,10 @@ in  [ { name = "8th"
       , compilationTargets = [ compilationTarget.machineCode ]
       , typing = [ typingSystem.static, typingSystem.strong ]
       , resources =
-        [ { title = "OCaml Homepage", url = "https://ocaml.org/" }
-        , { title = "OCaml Documentation", url = "https://ocaml.org/docs/" }
+        [ { title = "OCaml Homepage", url = "https://ocaml.org" }
+        , { title = "OCaml Documentation", url = "https://ocaml.org/docs" }
         , { title = "Real World OCaml (book)"
-          , url = "https://dev.realworldocaml.org/"
+          , url = "https://dev.realworldocaml.org"
           }
         ]
       }
@@ -1589,7 +1587,7 @@ in  [ { name = "8th"
       , typing = [ typingSystem.static, typingSystem.strong ]
       , resources =
         [ { title = "ETH Oberon"
-          , url = "https://www.inf.ethz.ch/personal/wirth/Oberon/"
+          , url = "https://www.inf.ethz.ch/personal/wirth/Oberon"
           }
         ]
       }
@@ -1658,9 +1656,9 @@ in  [ { name = "8th"
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.dynamic ]
       , resources =
-        [ { title = "GNU Octave", url = "https://www.gnu.org/software/octave/" }
+        [ { title = "GNU Octave", url = "https://www.gnu.org/software/octave" }
         , { title = "Octave Documentation"
-          , url = "https://octave.org/doc/interpreter/"
+          , url = "https://octave.org/doc/interpreter"
           }
         ]
       }
@@ -1680,7 +1678,7 @@ in  [ { name = "8th"
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.dynamic, typingSystem.weak ]
       , resources =
-        [ { title = "PHP Homepage", url = "https://www.php.net/" }
+        [ { title = "PHP Homepage", url = "https://www.php.net" }
         , { title = "PHP Documentation", url = "https://www.php.net/docs.php" }
         ]
       }
@@ -1723,7 +1721,7 @@ in  [ { name = "8th"
           , url = "https://en.wikipedia.org/wiki/Pascal_(programming_language)"
           }
         , { title = "Free Pascal (a Pascal compiler)"
-          , url = "https://www.freepascal.org/"
+          , url = "https://www.freepascal.org"
           }
         ]
       }
@@ -1743,8 +1741,8 @@ in  [ { name = "8th"
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.dynamic ]
       , resources =
-        [ { title = "Perl Homepage", url = "https://www.perl.org/" }
-        , { title = "Perl Documentation", url = "https://perldoc.perl.org/" }
+        [ { title = "Perl Homepage", url = "https://www.perl.org" }
+        , { title = "Perl Documentation", url = "https://perldoc.perl.org" }
         ]
       }
     , { name = "Pony"
@@ -1771,10 +1769,10 @@ in  [ { name = "8th"
       , typing =
         [ typingSystem.static, typingSystem.strong, typingSystem.nominal ]
       , resources =
-        [ { title = "Pony Homepage", url = "https://www.ponylang.io/" }
-        , { title = "Pony Tutorial", url = "https://tutorial.ponylang.io/" }
+        [ { title = "Pony Homepage", url = "https://www.ponylang.io" }
+        , { title = "Pony Tutorial", url = "https://tutorial.ponylang.io" }
         , { title = "Pony Documentation"
-          , url = "https://www.ponylang.io/learn/"
+          , url = "https://www.ponylang.io/learn"
           }
         ]
       }
@@ -1801,7 +1799,7 @@ in  [ { name = "8th"
           , url = "https://www.swi-prolog.org/pldoc/man?section=quickstart"
           }
         , { title = "GNU Prolog (a Prolog implementation)"
-          , url = "http://gprolog.org/"
+          , url = "http://gprolog.org"
           }
         ]
       }
@@ -1823,11 +1821,11 @@ in  [ { name = "8th"
       , typing =
         [ typingSystem.static, typingSystem.strong, typingSystem.inferred ]
       , resources =
-        [ { title = "PureScript Homepage", url = "https://www.purescript.org/" }
+        [ { title = "PureScript Homepage", url = "https://www.purescript.org" }
         , { title = "PureScript Documentation"
           , url = "https://github.com/purescript/documentation"
           }
-        , { title = "Try PureScript", url = "https://try.purescript.org/" }
+        , { title = "Try PureScript", url = "https://try.purescript.org" }
         ]
       }
     , { name = "Pyret"
@@ -1856,9 +1854,9 @@ in  [ { name = "8th"
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.dynamic, typingSystem.strong ]
       , resources =
-        [ { title = "Pyret Homepage", url = "https://www.pyret.org/" }
-        , { title = "Pyret Documentation", url = "https://www.pyret.org/docs/" }
-        , { title = "Online Editor", url = "https://code.pyret.org/" }
+        [ { title = "Pyret Homepage", url = "https://www.pyret.org" }
+        , { title = "Pyret Documentation", url = "https://www.pyret.org/docs" }
+        , { title = "Online Editor", url = "https://code.pyret.org" }
         ]
       }
     , { name = "Python"
@@ -1883,8 +1881,8 @@ in  [ { name = "8th"
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.dynamic, typingSystem.strong ]
       , resources =
-        [ { title = "Python Homepage", url = "https://www.python.org/" }
-        , { title = "Python Documentation", url = "https://docs.python.org/" }
+        [ { title = "Python Homepage", url = "https://www.python.org" }
+        , { title = "Python Documentation", url = "https://docs.python.org" }
         ]
       }
     , { name = "QBasic"
@@ -1904,7 +1902,7 @@ in  [ { name = "8th"
       , typing = [ typingSystem.dynamic ]
       , resources =
         [ { title = "QB64 (a modern implementation of QBASIC)"
-          , url = "https://qb64.com/"
+          , url = "https://qb64.com"
           }
         ]
       }
@@ -1920,8 +1918,8 @@ in  [ { name = "8th"
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.dynamic ]
       , resources =
-        [ { title = "R Homepage", url = "https://www.r-project.org/" }
-        , { title = "R Documentation", url = "https://www.rdocumentation.org/" }
+        [ { title = "R Homepage", url = "https://www.r-project.org" }
+        , { title = "R Documentation", url = "https://www.rdocumentation.org" }
         ]
       }
     , { name = "Racket"
@@ -1969,7 +1967,7 @@ in  [ { name = "8th"
         [ typingSystem.dynamic, typingSystem.gradual, typingSystem.strong ]
       , resources =
         [ { title = "Raku Homepage", url = "https://raku.org" }
-        , { title = "Raku Documentation", url = "https://docs.raku.org/" }
+        , { title = "Raku Documentation", url = "https://docs.raku.org" }
         ]
       }
     , { name = "ReasonML"
@@ -1989,7 +1987,7 @@ in  [ { name = "8th"
         [ compilationTarget.machineCode, compilationTarget.javascript ]
       , typing = [ typingSystem.static, typingSystem.strong ]
       , resources =
-        [ { title = "ReasonML Homepage", url = "https://reasonml.github.io/" }
+        [ { title = "ReasonML Homepage", url = "https://reasonml.github.io" }
         , { title = "ReasonML Documentation"
           , url = "https://reasonml.github.io/docs/en/what-and-why"
           }
@@ -2066,7 +2064,7 @@ in  [ { name = "8th"
       , compilationTargets = [ compilationTarget.machineCode ]
       , typing = [ typingSystem.static, typingSystem.strong ]
       , resources =
-        [ { title = "Roc Homepage", url = "https://www.roc-lang.org/" }
+        [ { title = "Roc Homepage", url = "https://www.roc-lang.org" }
         , { title = "Roc Documentation"
           , url = "https://www.roc-lang.org/tutorial"
           }
@@ -2091,10 +2089,10 @@ in  [ { name = "8th"
       , resources =
         [ { title = "Ruby Homepage", url = "https://ruby-lang.org" }
         , { title = "Ruby Documentation"
-          , url = "https://www.ruby-lang.org/en/documentation/"
+          , url = "https://www.ruby-lang.org/en/documentation"
           }
         , { title = "Try Ruby (browser REPL)"
-          , url = "https://try.ruby-lang.org/"
+          , url = "https://try.ruby-lang.org"
           }
         ]
       }
@@ -2116,10 +2114,10 @@ in  [ { name = "8th"
         [ compilationTarget.machineCode, compilationTarget.webassembly ]
       , typing = [ typingSystem.static, typingSystem.strong ]
       , resources =
-        [ { title = "Rust Homepage", url = "https://www.rust-lang.org/" }
-        , { title = "Rust Documentation", url = "https://doc.rust-lang.org/" }
+        [ { title = "Rust Homepage", url = "https://www.rust-lang.org" }
+        , { title = "Rust Documentation", url = "https://doc.rust-lang.org" }
         , { title = "The Rust Programming Language (book)"
-          , url = "https://doc.rust-lang.org/book/"
+          , url = "https://doc.rust-lang.org/book"
           }
         ]
       }
@@ -2183,10 +2181,8 @@ in  [ { name = "8th"
         [ compilationTarget.jvmBytecode, compilationTarget.javascript ]
       , typing = [ typingSystem.static, typingSystem.strong ]
       , resources =
-        [ { title = "Scala Homepage", url = "https://www.scala-lang.org/" }
-        , { title = "Scala Documentation"
-          , url = "https://docs.scala-lang.org/"
-          }
+        [ { title = "Scala Homepage", url = "https://www.scala-lang.org" }
+        , { title = "Scala Documentation", url = "https://docs.scala-lang.org" }
         ]
       }
     , { name = "Scheme"
@@ -2210,7 +2206,7 @@ in  [ { name = "8th"
         [ { title = "Wikipedia: Scheme (programming language)"
           , url = "https://en.wikipedia.org/wiki/Scheme_(programming_language)"
           }
-        , { title = "R7RS Website", url = "https://r7rs.org/" }
+        , { title = "R7RS Website", url = "https://r7rs.org" }
         ]
       }
     , { name = "Scratch"
@@ -2230,7 +2226,7 @@ in  [ { name = "8th"
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.dynamic ]
       , resources =
-        [ { title = "Scratch Homepage", url = "https://scratch.mit.edu/" } ]
+        [ { title = "Scratch Homepage", url = "https://scratch.mit.edu" } ]
       }
     , { name = "Self"
       , originalAuthors = [ "David Ungar", "Randall Smith" ]
@@ -2280,10 +2276,10 @@ in  [ { name = "8th"
       , typing = [ typingSystem.dynamic, typingSystem.strong ]
       , resources =
         [ { title = "Squeak Homepage (Smalltalk Implementation)"
-          , url = "https://squeak.org/"
+          , url = "https://squeak.org"
           }
         , { title = "Pharo Homepage (Smalltalk Implementation)"
-          , url = "https://pharo.org/"
+          , url = "https://pharo.org"
           }
         ]
       }
@@ -2327,12 +2323,12 @@ in  [ { name = "8th"
       , typing = [ typingSystem.static, typingSystem.strong ]
       , resources =
         [ { title = "Standard ML Family GitHub"
-          , url = "https://smlfamily.github.io/"
+          , url = "https://smlfamily.github.io"
           }
         , { title = "SML/NJ (a compiler for SML)"
-          , url = "https://www.smlnj.org/"
+          , url = "https://www.smlnj.org"
           }
-        , { title = "MLton (a compiler for SML)", url = "http://mlton.org/" }
+        , { title = "MLton (a compiler for SML)", url = "http://mlton.org" }
         ]
       }
     , { name = "Swift"
@@ -2357,14 +2353,14 @@ in  [ { name = "8th"
       , compilationTargets = [ compilationTarget.machineCode ]
       , typing = [ typingSystem.static, typingSystem.strong ]
       , resources =
-        [ { title = "Swift Homepage", url = "https://www.swift.org/" }
-        , { title = "Swift Documentation", url = "https://docs.swift.org/" }
+        [ { title = "Swift Homepage", url = "https://www.swift.org" }
+        , { title = "Swift Documentation", url = "https://docs.swift.org" }
         , { title = "The Swift Programming Language (book)"
           , url =
-              "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/"
+              "https://docs.swift.org/swift-book/documentation/the-swift-programming-language"
           }
         , { title = "Apple Documentation"
-          , url = "https://developer.apple.com/swift/"
+          , url = "https://developer.apple.com/swift"
           }
         ]
       }
@@ -2393,8 +2389,8 @@ in  [ { name = "8th"
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.dynamic ]
       , resources =
-        [ { title = "Tcl Homepage", url = "https://www.tcl-lang.org/" }
-        , { title = "Tcl Documentation", url = "https://www.tcl-lang.org/doc/" }
+        [ { title = "Tcl Homepage", url = "https://www.tcl-lang.org" }
+        , { title = "Tcl Documentation", url = "https://www.tcl-lang.org/doc" }
         ]
       }
     , { name = "Turbo Pascal"
@@ -2439,10 +2435,10 @@ in  [ { name = "8th"
         [ typingSystem.static, typingSystem.strong, typingSystem.structural ]
       , resources =
         [ { title = "TypeScript Homepage"
-          , url = "https://www.typescriptlang.org/"
+          , url = "https://www.typescriptlang.org"
           }
         , { title = "TypeScript Documentation"
-          , url = "https://www.typescriptlang.org/docs/"
+          , url = "https://www.typescriptlang.org/docs"
           }
         , { title = "The TypeScript Handbook"
           , url = "https://www.typescriptlang.org/docs/handbook/intro.html"
@@ -2465,13 +2461,13 @@ in  [ { name = "8th"
       , compilationTargets = [ compilationTarget.interpreted ]
       , typing = [ typingSystem.static, typingSystem.strong ]
       , resources =
-        [ { title = "Unison Homepage", url = "https://www.unison-lang.org/" }
+        [ { title = "Unison Homepage", url = "https://www.unison-lang.org" }
         , { title = "Unison Documentation"
-          , url = "https://www.unison-lang.org/docs/"
+          , url = "https://www.unison-lang.org/docs"
           }
         , { title = "Unison Discord", url = "https://unison-lang.org/discord" }
-        , { title = "Unison Blog", url = "https://www.unison-lang.org/blog/" }
-        , { title = "Unison Cloud", url = "https://www.unison.cloud/" }
+        , { title = "Unison Blog", url = "https://www.unison-lang.org/blog" }
+        , { title = "Unison Cloud", url = "https://www.unison.cloud" }
         , { title = "Unison GitHub Repository"
           , url = "https://github.com/unisonweb/unison"
           }
@@ -2493,11 +2489,11 @@ in  [ { name = "8th"
       , compilationTargets = [ compilationTarget.machineCode ]
       , typing = [ typingSystem.static, typingSystem.strong ]
       , resources =
-        [ { title = "V Programming Language", url = "https://vlang.io/" }
-        , { title = "V Documentation", url = "https://docs.vlang.io/" }
+        [ { title = "V Programming Language", url = "https://vlang.io" }
+        , { title = "V Documentation", url = "https://docs.vlang.io" }
         , { title = "V GitHub Repository", url = "https://github.com/vlang/v" }
         , { title = "V Playground (online editor)"
-          , url = "https://play.vlang.io/"
+          , url = "https://play.vlang.io"
           }
         ]
       }
@@ -2518,7 +2514,7 @@ in  [ { name = "8th"
       , typing = [ typingSystem.static ]
       , resources =
         [ { title = "Visual Basic Documentation"
-          , url = "https://learn.microsoft.com/en-us/dotnet/visual-basic/"
+          , url = "https://learn.microsoft.com/en-us/dotnet/visual-basic"
           }
         ]
       }
