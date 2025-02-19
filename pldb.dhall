@@ -717,6 +717,33 @@ in  [ { name = "8th"
           }
         ]
       }
+    , { name = "ColdFusion Markup Langauge (CFML)"
+      , originalAuthors = [ "J. J. Allaire", "Jeremy Allaire" ]
+      , paradigms = [ paradigms.imperative, paradigms.objectOriented ]
+      , examples = [] : List Text
+      , description =
+          ''
+
+          ColdFusion is a web application and mobile development platform
+          created by Allaire and now owned by Adobe. ColdFusion Markup Language
+          (CFML) is a scripting language that runs on the JVM and .NET
+          framework. CFML augments HTML with syntax for database access, file
+          manipulation, and other common web development tasks.
+
+          ''
+      , yearFirstPublished = 1995
+      , compilationTargets =
+        [ compilationTarget.jvmBytecode, compilationTarget.cli ]
+      , typing = [ typingSystem.dynamic ]
+      , resources =
+        [ { title = "ColdFusion Homepage"
+          , url = "https://www.adobe.com/products/coldfusion-family.html"
+          }
+        , { title = "ColdFusion Developers User Guide"
+          , url = "https://helpx.adobe.com/coldfusion/cf-dev-user-guide.html"
+          }
+        ]
+      }
     , { name = "Common Lisp"
       , originalAuthors =
         [ "Scott Fahlman"
