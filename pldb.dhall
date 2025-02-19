@@ -1695,6 +1695,28 @@ in  [ { name = "8th"
           }
         ]
       }
+    , { name = "Lisp Flavored Erlang (LFE)"
+      , originalAuthors = [ "Robert Virding" ]
+      , paradigms = [ paradigms.functional, paradigms.declarative ]
+      , examples = [] : List Text
+      , description =
+          ''
+
+          A Lisp syntax front-end to BEAM (the Erlang virtual machine). LFE combines the power of
+          Lisp with the robustness and concurrency of the Erlang ecosystem.
+
+          ''
+      , yearFirstPublished = 2007
+      , compilationTargets = [ compilationTarget.beamBytecode ]
+      , typing = [ typingSystem.dynamic, typingSystem.strong ]
+      , resources =
+        [ { title = "LFE Homepage", url = "https://lfe.io" }
+        , { title = "LFE Documentation", url = "https://docs.lfe.io" }
+        , { title = "LFE GitHub Repository"
+          , url = "https://github.com/lfe/lfe"
+          }
+        ]
+      }
     , { name = "Lua"
       , originalAuthors =
         [ "Roberto Ierusalimschy"
