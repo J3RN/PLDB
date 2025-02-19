@@ -409,6 +409,36 @@ in  [ { name = "8th"
           }
         ]
       }
+    , { name = "Ballerina"
+      , originalAuthors = [ "WSO2" ]
+      , paradigms = [ paradigms.imperative ]
+      , examples =
+        [ ''
+          import ballerina/io;
+
+          public function main() {
+              io:println("Hello World!");
+          }
+          ''
+        ]
+      , description =
+          ''
+
+          An open-source, general-purpose programming language for cloud-native
+          development. Ballerina is designed to simplify writing distributed
+          programs.
+
+          ''
+      , yearFirstPublished = 2017
+      , compilationTargets = [ compilationTarget.jvmBytecode ]
+      , typing = [ typingSystem.static, typingSystem.strong ]
+      , resources =
+        [ { title = "Ballerina Homepage", url = "https://ballerina.io" }
+        , { title = "Ballerina Documentation"
+          , url = "https://ballerina.io/learn"
+          }
+        ]
+      }
     , { name = "C"
       , paradigms = [ paradigms.imperative ]
       , originalAuthors = [ "Dennis Ritchie" ]
