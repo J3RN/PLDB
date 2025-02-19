@@ -57,6 +57,28 @@ in  [ { name = "8th"
           }
         ]
       }
+    , { name = "ABAP"
+      , originalAuthors = [ "SAP SE" ]
+      , paradigms = [ paradigms.imperative, paradigms.objectOriented ]
+      , examples = [] : List Text
+      , description =
+          ''
+
+          Advanced Business Application Programming, a high-level programming
+          language created by SAP for developing business applications in the
+          SAP environment.
+
+          ''
+      , yearFirstPublished = 1983
+      , compilationTargets = [ compilationTarget.interpreted ]
+      , typing = [ typingSystem.static, typingSystem.strong ]
+      , resources =
+        [ { title = "ABAP Documentation"
+          , url =
+              "https://help.sap.com/doc/abapdocu_latest_index_htm/latest/en-US/index.htm"
+          }
+        ]
+      }
     , { name = "ALGOL 58"
       , originalAuthors =
         [ "John Backus"
