@@ -509,7 +509,6 @@ in  [ { name = "8th"
       , paradigms =
         [ paradigms.objectOriented
         , paradigms.imperative
-        , paradigms.functional
         , paradigms.declarative
         ]
       , examples = [] : List Text
