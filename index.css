@@ -1,0 +1,94 @@
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 0px 10px;
+            min-height: 100vh;
+            margin: 0;
+            background: #fafafa;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-weight: lighter;
+        }
+
+        #search-input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        #list {
+            list-style: none;
+            padding: 0;
+        }
+
+        #list li {
+            border: 1px solid #eee;
+            box-shadow: -5px 5px 5px #eee;
+            background: #fff;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        #list li .header {
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+            /* align-items: center; */
+        }
+
+        #list li .header h4 {
+            margin: 0;
+        }
+
+        #list li .paradigms {
+            display: flex;
+            justify-content: flex-end;
+            gap: 5px;
+            flex-wrap: wrap;
+            max-width: 50%;
+        }
+
+        #list li .paradigms .paradigm {
+            border: 1px solid #ccc;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        #list li .first-appeared {
+            /* font-size: 12px; */
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        #filters {
+            display: flex;
+            gap: 10px;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #111;
+                color: #eee;
+            }
+
+            #list li {
+                background: #333;
+                border-color: #555;
+                box-shadow: -5px 5px 5px #555;
+            }
+
+            a {
+                color: #888;
+            }
+        }
