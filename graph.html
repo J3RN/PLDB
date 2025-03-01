@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Programming Language Database</title>
+        <script type="module" defer>
+         import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
+         import {forceSimulation, forceCollide, forceX} from "https://cdn.jsdelivr.net/npm/d3-force@3/+esm";
+
+         const width = 640;
+         const height = 400;
+
+         const svg = d3.create("svg")
+                       .attr("width", width)
+                       .attr("height", height);
+
+         const nodes =  [
+             {"name": "Travis"},
+             {"name": "Diana"},
+             {"name": "Rachel"},
+             {"name": "Shawn"},
+             {"name": "Emerald"}
+         ]
+
+         const node = svg.append("g")
+            .attr("class", "node")
+            .selectAll("circle")
+            .data(nodes)
+            .enter()
+            .append("circle")
+            .attr("r", 5)
+            .attr("fill", "red");
+
+         const tickActions = () => {
+             node.attr("cx", (d) => d.x)
+                 .attr("cy", (d) => d.y)
+         }
+
+         const simulation = forceSimulation(nodes)
+             .force("charge_force", d3.forceManyBody())
+             .force("center_force", d3.forceCenter(width/2, height/2))
+             .force("collide", forceCollide(5))
+             .on("tick", tickActions);
+
+         const container = document.getElementById("main");
+         container.append(svg.node());
+        </script>
+    </head>
+    <body>
+        <div id="main"></div>
+    </body>
+</html>
