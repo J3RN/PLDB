@@ -12,11 +12,16 @@ body {
 
 main {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 20px auto 0 auto;
 }
 
 h1 {
     font-weight: lighter;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 10px 0;
+    padding: 0;
 }
 
 #search-input {
@@ -24,11 +29,29 @@ h1 {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+#paradigms, #typing {
+    border: 1px solid #eee;
+    box-shadow: -5px 5px 5px #eee;
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
 }
 
 #list {
     list-style: none;
     padding: 0;
+}
+
+@media screen and (min-width: 500px) {
+    #list {
+        display: grid;
+        grid: auto-flow / 1fr 1fr;
+        gap: 20px;
+    }
 }
 
 #list li {
@@ -66,7 +89,7 @@ h1 {
 }
 
 #list li .first-appeared {
-    /* font-size: 12px; */
+    font-size: 12px;
     font-style: italic;
     margin-bottom: 10px;
 }
@@ -83,7 +106,13 @@ h1 {
     }
 
     #list li {
-        background: #333;
+        background: linear-gradient(#333333, #222222, #232323);
+        border-color: #555;
+        box-shadow: -5px 5px 5px #555;
+    }
+
+    #paradigms, #typing {
+        background: linear-gradient(#333333, #222222, #232323);
         border-color: #555;
         box-shadow: -5px 5px 5px #555;
     }
