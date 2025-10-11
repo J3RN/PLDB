@@ -17,16 +17,27 @@ const renderLang = (lang) => {
                                 .sort()
                                 .map(
                                   (paradigm) =>
-                                    `<span class="paradigm">${humanize(paradigm)}</span>`,
+                                    `<span class="paradigm">${humanize(
+                                      paradigm
+                                    )}</span>`
                                 )
                                 .join("")}
                           </div>
                       </div>
-                      <div class="first-appeared">First Appeared: ${lang.yearFirstPublished}</div>
-                      <div class="original-authors">Original Authors: ${lang.originalAuthors.join(", ")}</div>
+                      <div class="first-appeared">First Appeared: ${
+                        lang.yearFirstPublished
+                      }</div>
+                      <div class="original-authors">Original Authors: ${lang.originalAuthors.join(
+                        ", "
+                      )}</div>
                       <p>${lang.description}</p>
                       <div class="resources">
-                          ${lang.resources.map((resource) => `<a href="${resource.href}">${resource.title}</a>`).join(" | ")}
+                          ${lang.resources
+                            .map(
+                              (resource) =>
+                                `<a href="${resource.href}">${resource.title}</a>`
+                            )
+                            .join(" | ")}
                       </div>
                     </div>`;
   list.appendChild(li);
@@ -37,18 +48,18 @@ const filterLangs = () => {
   const search = searchInput.value.toLowerCase();
 
   const selectedParadigms = Array.from(
-    document.querySelectorAll("#paradigms input:checked"),
+    document.querySelectorAll("#paradigms input:checked")
   ).map((cb) => cb.id);
   const selectedTyping = Array.from(
-    document.querySelectorAll("#typing input:checked"),
+    document.querySelectorAll("#typing input:checked")
   ).map((cb) => cb.id);
 
   const matchingLangs = languages.filter((lang) => {
     const matchesParadigms = selectedParadigms.every((paradigm) =>
-      lang.paradigms.includes(paradigm),
+      lang.paradigms.includes(paradigm)
     );
     const matchesTyping = selectedTyping.every((type) =>
-      lang.typing.includes(type),
+      lang.typing.includes(type)
     );
     const matchesSearch =
       lang.name.toLowerCase().includes(search) ||
