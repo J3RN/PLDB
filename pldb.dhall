@@ -2098,6 +2098,62 @@ in    [ { name = "8th"
             }
           ]
         }
+      , { name = "Lean"
+        , originalAuthors = [ "Leonardo de Moura" ]
+        , paradigms = [ Paradigm.functional ]
+        , examples =
+          [ { type = ExampleType.helloWorld
+            , content =
+                ''
+                def main : IO Unit :=
+                  IO.println "Hello, World!"
+                ''
+            }
+          ]
+        , description =
+            ''
+
+            A functional programming language and interactive theorem prover
+            developed at Microsoft Research. Lean is designed for both
+            mathematics formalization and general-purpose programming. It
+            features dependent types which facilitates mathematical theorems to
+            be expressed and proven. Lean 4, the latest version, includes
+            significant improvements to performance and usability as a
+            programming language while maintaining its capabilities as a proof
+            assistant.
+
+            ''
+        , yearFirstPublished = 2013
+        , compilationTargets = [ CompilationTarget.machineCode ]
+        , typing =
+          [ TypingSystem.static, TypingSystem.strong, TypingSystem.dependent ]
+        , resources =
+          [ { type = ResourceType.homepage
+            , title = "Lean Homepage"
+            , href = "https://lean-lang.org"
+            }
+          , { type = ResourceType.documentation
+            , title = "Lean 4 Documentation"
+            , href = "https://lean-lang.org/lean4/doc"
+            }
+          , { type = ResourceType.book
+            , title = "Theorem Proving in Lean 4"
+            , href = "https://lean-lang.org/theorem_proving_in_lean4"
+            }
+          , { type = ResourceType.playground
+            , title = "Lean Web Editor"
+            , href = "https://live.lean-lang.org"
+            }
+          , { type = ResourceType.sourceRepository
+            , title = "Lean 4 GitHub Repository"
+            , href = "https://github.com/leanprover/lean4"
+            }
+          , { type = ResourceType.wikipediaEntry
+            , title = "Lean Wikipedia Entry"
+            , href = "https://en.wikipedia.org/wiki/Lean_(proof_assistant)"
+            }
+          ]
+        }
       , { name = "Lisp"
         , originalAuthors = [ "John McCarthy", "Steve Russell" ]
         , paradigms = [ Paradigm.functional, Paradigm.declarative ]
