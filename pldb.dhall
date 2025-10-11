@@ -1657,6 +1657,52 @@ in    [ { name = "8th"
             }
           ]
         }
+      , { name = "Hare"
+        , originalAuthors = [ "Drew DeVault" ]
+        , paradigms = [ Paradigm.imperative ]
+        , examples =
+          [ { type = ExampleType.helloWorld
+            , content =
+                ''
+                use fmt;
+
+                export fn main() void = {
+                	fmt::println("Hello, World!")!;
+                };
+                ''
+            }
+          ]
+        , description =
+            ''
+
+            Hare is a systems programming language designed to be simple, stable,
+            and robust. It aims to provide a safer alternative to C while maintaining
+            direct hardware access and manual memory management. The language features
+            a minimal runtime and no hidden control flow.
+
+            ''
+        , yearFirstPublished = 2022
+        , compilationTargets = [ CompilationTarget.machineCode ]
+        , typing = [ TypingSystem.static, TypingSystem.strong ]
+        , resources =
+          [ { title = "Hare Homepage"
+            , type = ResourceType.homepage
+            , href = "https://harelang.org"
+            }
+          , { title = "Hare Tutorial"
+            , type = ResourceType.tutorial
+            , href = "https://harelang.org/tutorials/introduction/"
+            }
+          , { title = "Hare Documentation"
+            , type = ResourceType.documentation
+            , href = "https://docs.harelang.org"
+            }
+          , { title = "Hare Source Repository"
+            , type = ResourceType.sourceRepository
+            , href = "https://git.sr.ht/~sircmpwn/hare"
+            }
+          ]
+        }
       , { name = "Haskell"
         , originalAuthors =
           [ "Lennart Augustsson"
