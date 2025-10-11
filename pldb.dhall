@@ -3286,7 +3286,14 @@ in    [ { name = "8th"
       , { name = "Self"
         , originalAuthors = [ "David Ungar", "Randall Smith" ]
         , paradigms = [ Paradigm.objectOriented ]
-        , examples = [] : List Example
+        , examples =
+          [ { type = ExampleType.helloWorld
+            , content =
+                ''
+                'Hello, World!' print.
+                ''
+            }
+          ]
         , description =
             ''
 
@@ -3317,7 +3324,15 @@ in    [ { name = "8th"
           , "Scott Wallace"
           ]
         , paradigms = [ Paradigm.objectOriented ]
-        , examples = [] : List Example
+        , examples =
+              [ { type = ExampleType.helloWorld
+                , content =
+                    ''
+                    Transcript show: 'Hello, World!'.
+                    ''
+                }
+              ]
+            : List Example
         , description =
             ''
 
@@ -3344,7 +3359,18 @@ in    [ { name = "8th"
       , { name = "Simula"
         , originalAuthors = [ "Ole-Johan Dahl", "Kristen Nygaard" ]
         , paradigms = [ Paradigm.objectOriented ]
-        , examples = [] : List Example
+        , examples =
+              [ { type = ExampleType.helloWorld
+                , content =
+                    ''
+                    Begin
+                        OutText ("Hello, World!");
+                        Outimage;
+                    End;
+                    ''
+                }
+              ]
+            : List Example
         , description =
             ''
 
