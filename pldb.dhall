@@ -3177,6 +3177,56 @@ in    [ { name = "8th"
             }
           ]
         }
+      , { name = "Seed7"
+        , originalAuthors = [ "Thomas Mertes" ]
+        , paradigms =
+          [ Paradigm.imperative, Paradigm.objectOriented, Paradigm.declarative ]
+        , examples =
+          [ { type = ExampleType.helloWorld
+            , content =
+                ''
+                $ include "seed7_05.s7i";
+
+                const proc: main is func
+                  begin
+                    writeln("Hello, world!");
+                  end func;
+                ''
+            }
+          ]
+        , description =
+            ''
+
+            Seed7 is a general-purpose programming language designed by Thomas
+            Mertes, aiming to be expressive and extensible. Seed7 has a unique
+            approach to extensibility, allowing programmers to define new
+            syntax and control structures. The language includes static typing
+            with type inference, support for Unicode, and a comprehensive
+            standard library.
+
+            ''
+        , yearFirstPublished = 2005
+        , compilationTargets = [ CompilationTarget.machineCode ]
+        , typing = [ TypingSystem.static, TypingSystem.strong ]
+        , resources =
+          [ { type = ResourceType.homepage
+            , title = "Seed7 Homepage"
+            , href = "https://seed7.net/"
+            }
+          , { type = ResourceType.sourceRepository
+            , title = "Seed7 Source Repository"
+            , href = "https://github.com/ThomasMertes/seed7"
+            }
+          , { type = ResourceType.documentation
+            , title = "Seed7 Manual"
+            , href = "https://seed7.net/manual/index.htm"
+            }
+          , { type = ResourceType.wikipediaEntry
+            , title = "Wikipedia: Seed7"
+            , href = "https://en.wikipedia.org/wiki/Seed7"
+            }
+          ]
+        }
       , { name = "Self"
         , originalAuthors = [ "David Ungar", "Randall Smith" ]
         , paradigms = [ Paradigm.objectOriented ]
