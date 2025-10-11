@@ -26,7 +26,7 @@ const renderLang = (lang) => {
                       <div class="original-authors">Original Authors: ${lang.originalAuthors.join(", ")}</div>
                       <p>${lang.description}</p>
                       <div class="resources">
-                          ${lang.resources.map((resource) => `<a href="${resource.url}">${resource.title}</a>`).join(" | ")}
+                          ${lang.resources.map((resource) => `<a href="${resource.href}">${resource.title}</a>`).join(" | ")}
                       </div>
                     </div>`;
   list.appendChild(li);
