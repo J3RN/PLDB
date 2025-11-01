@@ -53,6 +53,7 @@ let ResourceType =
       | languageSpecification
       | playground
       | popularLibrary
+      | notableApplication
       | sourceRepository
       | tutorial
       | wikipediaEntry
@@ -607,6 +608,14 @@ in    [ { name = "8th"
             , type = ResourceType.tutorial
             , href = "https://www.learn-c.org"
             }
+          , { title = "Git"
+            , type = ResourceType.notableApplication
+            , href = "https://github.com/git/git"
+            }
+          , { title = "Linux Kernel"
+            , type = ResourceType.notableApplication
+            , href = "https://github.com/torvalds/linux"
+            }
           ]
         }
       , { name = "C#"
@@ -622,6 +631,13 @@ in    [ { name = "8th"
             the .NET platform. While initially similar to Java, C# has evolved to
             incorporate a large variety of programming language features.
 
+            C# is used for:
+            - Desktop applications (Windows applications using WPF, WinForms, or WinUI)
+            - Web applications and services (ASP.NET Core, Blazor)
+            - Cloud-based applications and microservices (Azure services)
+            - Game development (Unity game engine)
+            - Mobile applications (Xamarin, .NET MAUI)
+
             ''
         , yearFirstPublished = 2000
         , compilationTargets = [ CompilationTarget.cli ]
@@ -634,6 +650,14 @@ in    [ { name = "8th"
           , { title = "Learn C#"
             , type = ResourceType.tutorial
             , href = "https://dotnet.microsoft.com/learn/csharp"
+            }
+          , { title = "ShareX"
+            , type = ResourceType.notableApplication
+            , href = "https://github.com/ShareX/ShareX"
+            }
+          , { title = "Jellyfin"
+            , type = ResourceType.notableApplication
+            , href = "https://github.com/jellyfin/jellyfin"
             }
           ]
         }
@@ -673,6 +697,14 @@ in    [ { name = "8th"
           , { title = "CPP Reference"
             , type = ResourceType.languageReference
             , href = "https://en.cppreference.com"
+            }
+          , { title = "Blender"
+            , type = ResourceType.notableApplication
+            , href = "https://github.com/blender/blender"
+            }
+          , { title = "Godot Engine"
+            , type = ResourceType.notableApplication
+            , href = "https://github.com/godotengine/godot"
             }
           ]
         }
@@ -1300,6 +1332,10 @@ in    [ { name = "8th"
             , href =
                 "https://www.gnu.org/software/emacs/manual/html_node/elisp/index.html"
             }
+          , { title = "GNU Emacs"
+            , type = ResourceType.notableApplication
+            , href = "https://github.com/emacs-mirror/emacs"
+            }
           ]
         }
       , { name = "Erlang"
@@ -1329,6 +1365,14 @@ in    [ { name = "8th"
           , { title = "Erlang Documentation"
             , type = ResourceType.documentation
             , href = "https://www.erlang.org/docs"
+            }
+          , { title = "RabbitMQ"
+            , type = ResourceType.notableApplication
+            , href = "https://github.com/rabbitmq/rabbitmq-server"
+            }
+          , { title = "CouchDB"
+            , type = ResourceType.notableApplication
+            , href = "https://github.com/apache/couchdb"
             }
           ]
         }
@@ -1562,6 +1606,14 @@ in    [ { name = "8th"
             , type = ResourceType.documentation
             , href = "https://golang.org/doc"
             }
+          , { title = "Docker"
+            , type = ResourceType.notableApplication
+            , href = "https://github.com/docker/docker"
+            }
+          , { title = "Kubernetes"
+            , type = ResourceType.notableApplication
+            , href = "https://github.com/kubernetes/kubernetes"
+            }
           ]
         }
       , { name = "Groovy"
@@ -1759,6 +1811,14 @@ in    [ { name = "8th"
             , type = ResourceType.documentation
             , href = "https://www.haskell.org/documentation"
             }
+          , { title = "Pandoc"
+            , type = ResourceType.notableApplication
+            , href = "https://github.com/jgm/pandoc"
+            }
+          , { title = "xmonad"
+            , type = ResourceType.notableApplication
+            , href = "https://github.com/xmonad/xmonad"
+            }
           ]
         }
       , { name = "Idris"
@@ -1913,6 +1973,14 @@ in    [ { name = "8th"
             , type = ResourceType.documentation
             , href = "https://docs.oracle.com/en/java"
             }
+          , { title = "Elasticsearch"
+            , type = ResourceType.notableApplication
+            , href = "https://github.com/elastic/elasticsearch"
+            }
+          , { title = "Jenkins"
+            , type = ResourceType.notableApplication
+            , href = "https://github.com/jenkinsci/jenkins"
+            }
           ]
         }
       , { name = "JavaScript"
@@ -1964,6 +2032,14 @@ in    [ { name = "8th"
             , type = ResourceType.languageSpecification
             , href =
                 "https://www.ecma-international.org/publications-and-standards/standards/ecma-262"
+            }
+          , { title = "Visual Studio Code"
+            , type = ResourceType.notableApplication
+            , href = "https://github.com/microsoft/vscode"
+            }
+          , { title = "Node.js"
+            , type = ResourceType.implementation
+            , href = "https://github.com/nodejs/node"
             }
           ]
         }
@@ -2427,6 +2503,14 @@ in    [ { name = "8th"
             , title = "Real World OCaml (book)"
             , href = "https://dev.realworldocaml.org"
             }
+          , { title = "Flow"
+            , type = ResourceType.notableApplication
+            , href = "https://github.com/facebook/flow"
+            }
+          , { title = "Coq"
+            , type = ResourceType.notableApplication
+            , href = "https://github.com/coq/coq"
+            }
           ]
         }
       , { name = "Oberon"
@@ -2552,6 +2636,14 @@ in    [ { name = "8th"
           , { type = ResourceType.documentation
             , title = "PHP Documentation"
             , href = "https://www.php.net/docs.php"
+            }
+          , { title = "WordPress"
+            , type = ResourceType.notableApplication
+            , href = "https://github.com/WordPress/WordPress"
+            }
+          , { title = "Nextcloud"
+            , type = ResourceType.notableApplication
+            , href = "https://github.com/nextcloud/server"
             }
           ]
         }
@@ -2808,6 +2900,14 @@ in    [ { name = "8th"
           , { type = ResourceType.documentation
             , title = "Python Documentation"
             , href = "https://docs.python.org"
+            }
+          , { title = "Django"
+            , type = ResourceType.popularLibrary
+            , href = "https://github.com/django/django"
+            }
+          , { title = "Ansible"
+            , type = ResourceType.notableApplication
+            , href = "https://github.com/ansible/ansible"
             }
           ]
         }
@@ -3074,6 +3174,14 @@ in    [ { name = "8th"
             , title = "Try Ruby (browser REPL)"
             , href = "https://try.ruby-lang.org"
             }
+          , { title = "GitLab"
+            , type = ResourceType.notableApplication
+            , href = "https://github.com/gitlabhq/gitlabhq"
+            }
+          , { title = "Homebrew"
+            , type = ResourceType.notableApplication
+            , href = "https://github.com/Homebrew/brew"
+            }
           ]
         }
       , { name = "Rust"
@@ -3105,6 +3213,14 @@ in    [ { name = "8th"
           , { type = ResourceType.book
             , title = "The Rust Programming Language (book)"
             , href = "https://doc.rust-lang.org/book"
+            }
+          , { title = "Servo"
+            , type = ResourceType.notableApplication
+            , href = "https://github.com/servo/servo"
+            }
+          , { title = "ripgrep"
+            , type = ResourceType.notableApplication
+            , href = "https://github.com/BurntSushi/ripgrep"
             }
           ]
         }
@@ -3178,6 +3294,10 @@ in    [ { name = "8th"
           , { type = ResourceType.documentation
             , title = "Scala Documentation"
             , href = "https://docs.scala-lang.org"
+            }
+          , { title = "Apache Spark"
+            , type = ResourceType.notableApplication
+            , href = "https://github.com/apache/spark"
             }
           ]
         }
@@ -3613,6 +3733,9 @@ in    [ { name = "8th"
             A systems programming language, very similar to Go. V emphasizes
             safety, performance, and simplicity with fast compilation, memory
             safety without garbage collection, and C-style syntax.
+
+            V has a few notable projects, including Vinix and Gitly, a OS
+            kernel and GitHub/Gitlab clone each written in V, respectively.            
 
             ''
         , yearFirstPublished = 2019
