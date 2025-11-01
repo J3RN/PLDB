@@ -613,7 +613,7 @@ in    [ { name = "8th"
         , originalAuthors =
           [ "Anders Hejlsberg", "Scott Wiltamuth", "Peter Golde" ]
         , paradigms =
-          [ Paradigm.objectOriented, Paradigm.imperative, Paradigm.declarative ]
+          [ Paradigm.objectOriented, Paradigm.imperative ]
         , examples = [] : List Example
         , description =
             ''
