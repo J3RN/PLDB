@@ -2598,7 +2598,7 @@ in    [ { name = "8th"
         , description =
             ''
 
-            Originally \"MATrix LABoratory\", MATLAB is a widely-used,
+            Originally "MATrix LABoratory", MATLAB is a widely-used,
             closed-source numerical computing environment and programming
             language.
 
