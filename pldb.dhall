@@ -1559,6 +1559,47 @@ in    [ { name = "8th"
             }
           ]
         }
+      , { name = "F*"
+        , originalAuthors =
+          [ "Antoine Delignat-Lavaud", "Microsoft Research", "Inria" ]
+        , paradigms = [ Paradigm.functional, Paradigm.objectOriented ]
+        , examples =
+          [ { type = ExampleType.vector
+            , content =
+                ''
+                type vec (a:Type) : nat -> Type =
+                  | Nil : vec a 0
+                  | Cons : #n:nat -> hd:a -> tl:vec a n -> vec a (n + 1)
+                ''
+            }
+          ]
+        , description =
+            ''
+
+            F* is a general-purpose, proof-oriented programming language featuring
+            dependent types that compiles to C, F#, OCaml, or WASM.
+
+            ''
+        , yearFirstPublished = 2011
+        , compilationTargets =
+          [ CompilationTarget.language { name = "C" }
+          , CompilationTarget.language { name = "F#" }
+          , CompilationTarget.language { name = "OCaml" }
+          , CompilationTarget.webassembly
+          ]
+        , typing = [ TypingSystem.dependent, TypingSystem.static ]
+        , resources =
+          [ { type = ResourceType.homepage
+            , title = "F* Homepage"
+            , href = "https://fstar-lang.org/"
+            }
+          , { type = ResourceType.tutorial
+            , title = "Proof-Oriented Programming in F* (PDF)"
+            , href =
+                "https://fstar-lang.org/tutorial/proof-oriented-programming-in-fstar.pdf"
+            }
+          ]
+        }
       , { name = "Factor"
         , originalAuthors = [ "Slava Pestov" ]
         , paradigms =
@@ -2494,6 +2535,29 @@ in    [ { name = "8th"
           , { type = ResourceType.sourceRepository
             , title = "LFE GitHub Repository"
             , href = "https://github.com/lfe/lfe"
+            }
+          ]
+        }
+      , { name = "Low*"
+        , originalAuthors = [ "Microsoft Research", "Inria" ]
+        , paradigms = [ Paradigm.functional ]
+        , examples = [] : List Example
+        , description =
+            ''
+
+            Low* is a subset of the F* programming language, tailored for
+            low-level programming. To this end, Low* does not have garbage
+            collection or implicit heap allocation. Instead, Low* can guarantee
+            memory safety through its (F*'s), type system.
+
+            ''
+        , yearFirstPublished = 2017
+        , compilationTargets = [ CompilationTarget.language { name = "C" } ]
+        , typing = [ TypingSystem.static ]
+        , resources =
+          [ { type = ResourceType.homepage
+            , title = "The Low* Subset of F*"
+            , href = "https://fstarlang.github.io/lowstar/html/LowStar.html"
             }
           ]
         }
