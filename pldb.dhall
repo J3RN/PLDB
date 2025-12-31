@@ -12,10 +12,10 @@ let CompilationTarget =
       < machineCode
       | jvmBytecode
       | beamBytecode
-      | javascript
       | cil
       | interpreted
       | webassembly
+      | language : { name : Text }
       >
 
 let TypingSystem =
@@ -869,7 +869,9 @@ in    [ { name = "8th"
             ''
         , yearFirstPublished = 2011
         , compilationTargets =
-          [ CompilationTarget.jvmBytecode, CompilationTarget.javascript ]
+          [ CompilationTarget.jvmBytecode
+          , CompilationTarget.language { name = "JavaScript" }
+          ]
         , typing = [ TypingSystem.static, TypingSystem.strong ]
         , resources =
           [ { title = "Ceylon Homepage"
@@ -946,7 +948,9 @@ in    [ { name = "8th"
             ''
         , yearFirstPublished = 2007
         , compilationTargets =
-          [ CompilationTarget.jvmBytecode, CompilationTarget.javascript ]
+          [ CompilationTarget.jvmBytecode
+          , CompilationTarget.language { name = "JavaScript" }
+          ]
         , typing = [ TypingSystem.dynamic, TypingSystem.strong ]
         , resources =
           [ { title = "Clojure Homepage"
@@ -979,7 +983,8 @@ in    [ { name = "8th"
 
             ''
         , yearFirstPublished = 2009
-        , compilationTargets = [ CompilationTarget.javascript ]
+        , compilationTargets =
+          [ CompilationTarget.language { name = "JavaScript" } ]
         , typing = [ TypingSystem.dynamic ]
         , resources =
           [ { title = "CoffeeScript Homepage"
@@ -1177,7 +1182,8 @@ in    [ { name = "8th"
 
             ''
         , yearFirstPublished = 2011
-        , compilationTargets = [ CompilationTarget.javascript ]
+        , compilationTargets =
+          [ CompilationTarget.language { name = "JavaScript" } ]
         , typing = [ TypingSystem.static, TypingSystem.strong ]
         , resources =
           [ { title = "Dart Homepage"
@@ -1380,7 +1386,8 @@ in    [ { name = "8th"
 
             ''
         , yearFirstPublished = 2012
-        , compilationTargets = [ CompilationTarget.javascript ]
+        , compilationTargets =
+          [ CompilationTarget.language { name = "JavaScript" } ]
         , typing = [ TypingSystem.static, TypingSystem.strong ]
         , resources =
           [ { title = "Elm Homepage"
@@ -1980,7 +1987,7 @@ in    [ { name = "8th"
         , yearFirstPublished = 1990
         , compilationTargets =
           [ CompilationTarget.machineCode
-          , CompilationTarget.javascript
+          , CompilationTarget.language { name = "JavaScript" }
           , CompilationTarget.webassembly
           ]
         , typing =
@@ -2225,7 +2232,8 @@ in    [ { name = "8th"
 
             ''
         , yearFirstPublished = 1995
-        , compilationTargets = [ CompilationTarget.javascript ]
+        , compilationTargets =
+          [ CompilationTarget.language { name = "JavaScript" } ]
         , typing = [ TypingSystem.dynamic, TypingSystem.weak ]
         , resources =
           [ { title = "MDN JavaScript Guide"
@@ -2366,7 +2374,9 @@ in    [ { name = "8th"
             ''
         , yearFirstPublished = 2011
         , compilationTargets =
-          [ CompilationTarget.jvmBytecode, CompilationTarget.javascript ]
+          [ CompilationTarget.jvmBytecode
+          , CompilationTarget.language { name = "JavaScript" }
+          ]
         , typing = [ TypingSystem.static, TypingSystem.strong ]
         , resources =
           [ { type = ResourceType.homepage
@@ -2654,7 +2664,9 @@ in    [ { name = "8th"
             ''
         , yearFirstPublished = 2008
         , compilationTargets =
-          [ CompilationTarget.machineCode, CompilationTarget.javascript ]
+          [ CompilationTarget.machineCode
+          , CompilationTarget.language { name = "JavaScript" }
+          ]
         , typing = [ TypingSystem.static, TypingSystem.strong ]
         , resources =
           [ { type = ResourceType.homepage
@@ -3064,7 +3076,8 @@ in    [ { name = "8th"
 
             ''
         , yearFirstPublished = 2013
-        , compilationTargets = [ CompilationTarget.javascript ]
+        , compilationTargets =
+          [ CompilationTarget.language { name = "JavaScript" } ]
         , typing =
           [ TypingSystem.static, TypingSystem.strong, TypingSystem.inferred ]
         , resources =
@@ -3286,7 +3299,9 @@ in    [ { name = "8th"
             ''
         , yearFirstPublished = 2016
         , compilationTargets =
-          [ CompilationTarget.machineCode, CompilationTarget.javascript ]
+          [ CompilationTarget.machineCode
+          , CompilationTarget.language { name = "JavaScript" }
+          ]
         , typing = [ TypingSystem.static, TypingSystem.strong ]
         , resources =
           [ { type = ResourceType.homepage
@@ -3543,7 +3558,9 @@ in    [ { name = "8th"
             ''
         , yearFirstPublished = 2004
         , compilationTargets =
-          [ CompilationTarget.jvmBytecode, CompilationTarget.javascript ]
+          [ CompilationTarget.jvmBytecode
+          , CompilationTarget.language { name = "JavaScript" }
+          ]
         , typing = [ TypingSystem.static, TypingSystem.strong ]
         , resources =
           [ { type = ResourceType.homepage
@@ -3975,7 +3992,8 @@ in    [ { name = "8th"
 
             ''
         , yearFirstPublished = 2012
-        , compilationTargets = [ CompilationTarget.javascript ]
+        , compilationTargets =
+          [ CompilationTarget.language { name = "JavaScript" } ]
         , typing =
           [ TypingSystem.static, TypingSystem.strong, TypingSystem.structural ]
         , resources =
