@@ -12,8 +12,8 @@ let CompilationTarget =
       < machineCode
       | jvmBytecode
       | beamBytecode
-      | cli
       | javascript
+      | cil
       | interpreted
       | webassembly
       >
@@ -724,7 +724,7 @@ in    [ { name = "8th"
 
             ''
         , yearFirstPublished = 2000
-        , compilationTargets = [ CompilationTarget.cli ]
+        , compilationTargets = [ CompilationTarget.cil ]
         , typing = [ TypingSystem.static, TypingSystem.strong ]
         , resources =
           [ { title = "C# Documentation"
@@ -1008,7 +1008,7 @@ in    [ { name = "8th"
             ''
         , yearFirstPublished = 1995
         , compilationTargets =
-          [ CompilationTarget.jvmBytecode, CompilationTarget.cli ]
+          [ CompilationTarget.jvmBytecode, CompilationTarget.cil ]
         , typing = [ TypingSystem.dynamic ]
         , resources =
           [ { title = "ColdFusion Homepage"
@@ -1538,7 +1538,7 @@ in    [ { name = "8th"
 
             ''
         , yearFirstPublished = 2005
-        , compilationTargets = [ CompilationTarget.cli ]
+        , compilationTargets = [ CompilationTarget.cil ]
         , typing =
           [ TypingSystem.static, TypingSystem.strong, TypingSystem.inferred ]
         , resources =
@@ -4086,7 +4086,7 @@ in    [ { name = "8th"
             ''
         , yearFirstPublished = 1991
         , compilationTargets =
-          [ CompilationTarget.machineCode, CompilationTarget.cli ]
+          [ CompilationTarget.machineCode, CompilationTarget.cil ]
         , typing = [ TypingSystem.static ]
         , resources =
           [ { type = ResourceType.documentation
