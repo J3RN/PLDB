@@ -382,6 +382,28 @@ in    [ { name = "8th"
             }
           ]
         }
+      , { name = "Ari"
+        , originalAuthors = [ "Kira Bruneau" ]
+        , paradigms = [ Paradigm.functional ]
+        , examples = [] : List Example
+        , description =
+            ''
+
+            A type-centered purely functional programming language designed to
+            type binary files. Ari focuses on providing strong type guarantees
+            for working with binary data structures.
+
+            ''
+        , yearFirstPublished = 2022
+        , compilationTargets = [ CompilationTarget.interpreted ]
+        , typing = [ TypingSystem.static, TypingSystem.strong ]
+        , resources =
+          [ { type = ResourceType.sourceRepository
+            , title = "Ari GitLab Repository"
+            , href = "https://gitlab.com/ari-lang/ari"
+            }
+          ]
+        }
       , { name = "Arturo"
         , originalAuthors = [ "Yanis Zafirópulos" ]
         , paradigms = [ Paradigm.functional ]
@@ -571,6 +593,69 @@ in    [ { name = "8th"
             }
           ]
         }
+      , { name = "Befunge"
+        , originalAuthors = [ "Chris Pressey" ]
+        , paradigms = [ Paradigm.imperative ]
+        , examples =
+          [ { type = ExampleType.helloWorld
+            , content =
+                ''
+                >              v
+                v  ,,,,,"Hello"<
+                >48*,          v
+                v,,,,,,"World!"<
+                >25*,@
+                ''
+            }
+          ]
+        , description =
+            ''
+
+            An esoteric programming language where the program is laid out on a
+            two-dimensional grid. The instruction pointer moves through this grid
+            in cardinal directions, making programs that look like abstract art.
+            Befunge was designed to be as difficult to compile as possible.
+
+            ''
+        , yearFirstPublished = 1993
+        , compilationTargets = [ CompilationTarget.interpreted ]
+        , typing = [ TypingSystem.dynamic ]
+        , resources =
+          [ { type = ResourceType.wikipediaEntry
+            , title = "Befunge on Esolangs Wiki"
+            , href = "https://esolangs.org/wiki/Befunge"
+            }
+          ]
+        }
+      , { name = "Brainfuck"
+        , originalAuthors = [ "Urban Müller" ]
+        , paradigms = [ Paradigm.imperative ]
+        , examples =
+          [ { type = ExampleType.helloWorld
+            , content =
+                ''
+                ++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>->>+[<]<-]>>.>---.+++++++..+++.>>.<-.<.+++.------.--------.>>+.>++.
+                ''
+            }
+          ]
+        , description =
+            ''
+
+            An esoteric programming language notable for its extreme minimalism.
+            Brainfuck has only eight simple commands and operates on an array of
+            memory cells. Despite its simplicity, it is Turing-complete.
+
+            ''
+        , yearFirstPublished = 1993
+        , compilationTargets = [ CompilationTarget.interpreted ]
+        , typing = [ TypingSystem.weak ]
+        , resources =
+          [ { type = ResourceType.wikipediaEntry
+            , title = "Wikipedia: Brainfuck"
+            , href = "https://en.wikipedia.org/wiki/Brainfuck"
+            }
+          ]
+        }
       , { name = "C"
         , paradigms = [ Paradigm.imperative ]
         , originalAuthors = [ "Dennis Ritchie" ]
@@ -621,8 +706,7 @@ in    [ { name = "8th"
       , { name = "C#"
         , originalAuthors =
           [ "Anders Hejlsberg", "Scott Wiltamuth", "Peter Golde" ]
-        , paradigms =
-          [ Paradigm.objectOriented, Paradigm.imperative ]
+        , paradigms = [ Paradigm.objectOriented, Paradigm.imperative ]
         , examples = [] : List Example
         , description =
             ''
@@ -1204,6 +1288,27 @@ in    [ { name = "8th"
             }
           ]
         }
+      , { name = "Dusa"
+        , originalAuthors = [ "Rob Simmons" ]
+        , paradigms = [ Paradigm.logic, Paradigm.declarative ]
+        , examples = [] : List Example
+        , description =
+            ''
+
+            A logic programming language that explores bottom-up logical
+            inference with support for open and closed world reasoning.
+
+            ''
+        , yearFirstPublished = 2023
+        , compilationTargets = [ CompilationTarget.interpreted ]
+        , typing = [ TypingSystem.dynamic ]
+        , resources =
+          [ { type = ResourceType.documentation
+            , title = "Dusa Documentation"
+            , href = "https://dusa.rocks/docs"
+            }
+          ]
+        }
       , { name = "Eiffel"
         , originalAuthors = [ "Bertrand Meyer" ]
         , paradigms = [ Paradigm.declarative, Paradigm.objectOriented ]
@@ -1486,6 +1591,56 @@ in    [ { name = "8th"
             }
           ]
         }
+      , { name = "False"
+        , originalAuthors = [ "Wouter van Oortmerssen" ]
+        , paradigms = [ Paradigm.stack, Paradigm.imperative ]
+        , examples = [] : List Example
+        , description =
+            ''
+
+            An esoteric stack-based programming language designed to be highly
+            compact. False influenced the design of Brainfuck and other
+            minimalist languages.
+
+            ''
+        , yearFirstPublished = 1993
+        , compilationTargets = [ CompilationTarget.interpreted ]
+        , typing = [ TypingSystem.weak ]
+        , resources =
+          [ { type = ResourceType.homepage
+            , title = "False Language Homepage"
+            , href = "https://strlen.com/false-language/"
+            }
+          ]
+        }
+      , { name = "Flix"
+        , originalAuthors = [ "Magnus Madsen" ]
+        , paradigms = [ Paradigm.functional, Paradigm.logic ]
+        , examples = [] : List Example
+        , description =
+            ''
+
+            A functional and logic programming language inspired by Scala, OCaml,
+            and Datalog. Flix features a unique type and effect system and
+            supports both functional programming and Datalog-style logic
+            programming.
+
+            ''
+        , yearFirstPublished = 2016
+        , compilationTargets = [ CompilationTarget.jvmBytecode ]
+        , typing =
+          [ TypingSystem.static, TypingSystem.strong, TypingSystem.inferred ]
+        , resources =
+          [ { type = ResourceType.homepage
+            , title = "Flix Homepage"
+            , href = "https://flix.dev"
+            }
+          , { type = ResourceType.documentation
+            , title = "Flix Documentation"
+            , href = "https://flix.dev/documentation/"
+            }
+          ]
+        }
       , { name = "Forth"
         , originalAuthors = [ "Charles H. Moore" ]
         , paradigms = [ Paradigm.imperative, Paradigm.stack ]
@@ -1613,6 +1768,34 @@ in    [ { name = "8th"
           , { title = "Kubernetes"
             , type = ResourceType.notableApplication
             , href = "https://github.com/kubernetes/kubernetes"
+            }
+          ]
+        }
+      , { name = "Grain"
+        , originalAuthors = [ "Oscar Spencer", "Blaine Bublitz" ]
+        , paradigms = [ Paradigm.functional ]
+        , examples = [] : List Example
+        , description =
+            ''
+
+            A strongly-typed functional programming language that compiles to
+            WebAssembly. Grain has syntax and semantics similar to Rust, but
+            with some notable changes (no borrow checking or lifetimes, row
+            types). Semantically, Grain is close to PureScript.
+
+            ''
+        , yearFirstPublished = 2017
+        , compilationTargets = [ CompilationTarget.webassembly ]
+        , typing =
+          [ TypingSystem.static, TypingSystem.strong, TypingSystem.inferred ]
+        , resources =
+          [ { type = ResourceType.homepage
+            , title = "Grain Homepage"
+            , href = "https://grain-lang.org"
+            }
+          , { type = ResourceType.documentation
+            , title = "Grain Documentation"
+            , href = "https://grain-lang.org/docs/"
             }
           ]
         }
@@ -1818,6 +2001,28 @@ in    [ { name = "8th"
           , { title = "xmonad"
             , type = ResourceType.notableApplication
             , href = "https://github.com/xmonad/xmonad"
+            }
+          ]
+        }
+      , { name = "INTERCAL"
+        , originalAuthors = [ "Don Woods", "James M. Lyon" ]
+        , paradigms = [ Paradigm.imperative ]
+        , examples = [] : List Example
+        , description =
+            ''
+
+            An esoteric programming language created as a parody of languages of
+            the time. INTERCAL (Compiler Language With No Pronounceable Acronym)
+            features intentionally complex syntax and unusual control structures.
+
+            ''
+        , yearFirstPublished = 1972
+        , compilationTargets = [ CompilationTarget.interpreted ]
+        , typing = [ TypingSystem.weak ]
+        , resources =
+          [ { type = ResourceType.wikipediaEntry
+            , title = "Wikipedia: INTERCAL"
+            , href = "https://en.wikipedia.org/wiki/INTERCAL"
             }
           ]
         }
@@ -2588,6 +2793,33 @@ in    [ { name = "8th"
             }
           ]
         }
+      , { name = "Occam"
+        , originalAuthors = [ "David May" ]
+        , paradigms = [ Paradigm.imperative ]
+        , examples = [] : List Example
+        , description =
+            ''
+
+            A concurrent programming language based on Tony Hoare's Communicating
+            Sequential Processes (CSP). Occam was designed by INMOS for
+            programming the Transputer parallel processor, featuring channel-based
+            message passing and parallel execution primitives.
+
+            ''
+        , yearFirstPublished = 1983
+        , compilationTargets = [ CompilationTarget.machineCode ]
+        , typing = [ TypingSystem.static, TypingSystem.strong ]
+        , resources =
+          [ { type = ResourceType.documentation
+            , title = "Occam 2 Reference Manual"
+            , href = "https://www.wotug.org/occam/documentation/oc21refman.pdf"
+            }
+          , { type = ResourceType.homepage
+            , title = "WoTUG - World occam and Transputer User Group"
+            , href = "https://www.wotug.org/occam"
+            }
+          ]
+        }
       , { name = "Octave"
         , originalAuthors = [ "John W. Eaton" ]
         , paradigms = [ Paradigm.imperative ]
@@ -2610,6 +2842,33 @@ in    [ { name = "8th"
           , { type = ResourceType.documentation
             , title = "Octave Documentation"
             , href = "https://octave.org/doc/interpreter"
+            }
+          ]
+        }
+      , { name = "OpenSCAD"
+        , originalAuthors = [ "Clifford Wolf", "Marius Kintel" ]
+        , paradigms = [ Paradigm.declarative, Paradigm.functional ]
+        , examples = [] : List Example
+        , description =
+            ''
+
+            A script-based 3D CAD modeler. OpenSCAD uses a functional
+            programming approach to create 3D models, making it particularly
+            suited for parametric design and programmatic generation of 3D
+            objects.
+
+            ''
+        , yearFirstPublished = 2010
+        , compilationTargets = [ CompilationTarget.interpreted ]
+        , typing = [ TypingSystem.dynamic ]
+        , resources =
+          [ { type = ResourceType.homepage
+            , title = "OpenSCAD Homepage"
+            , href = "https://openscad.org/"
+            }
+          , { type = ResourceType.documentation
+            , title = "OpenSCAD User Manual"
+            , href = "https://en.wikibooks.org/wiki/OpenSCAD_User_Manual"
             }
           ]
         }
@@ -3434,6 +3693,66 @@ in    [ { name = "8th"
             }
           ]
         }
+      , { name = "Shen"
+        , originalAuthors = [ "Mark Tarver" ]
+        , paradigms = [ Paradigm.functional ]
+        , examples = [] : List Example
+        , description =
+            ''
+
+            A functional programming language with an integrated type system
+            based on sequent calculus. Shen is notable for its pattern matching,
+            optional typing via Sequent Calculus, and Lisp-like syntax.
+
+            ''
+        , yearFirstPublished = 2011
+        , compilationTargets = [ CompilationTarget.interpreted ]
+        , typing =
+          [ TypingSystem.static, TypingSystem.dynamic, TypingSystem.strong ]
+        , resources =
+          [ { type = ResourceType.homepage
+            , title = "Shen Language Homepage"
+            , href = "https://shenlanguage.org/"
+            }
+          , { type = ResourceType.documentation
+            , title = "Shen Documentation"
+            , href = "https://shenlanguage.org/learn-shen/index.html"
+            }
+          ]
+        }
+      , { name = "Simula"
+        , originalAuthors = [ "Ole-Johan Dahl", "Kristen Nygaard" ]
+        , paradigms = [ Paradigm.objectOriented ]
+        , examples =
+              [ { type = ExampleType.helloWorld
+                , content =
+                    ''
+                    Begin
+                        OutText ("Hello, World!");
+                        Outimage;
+                    End;
+                    ''
+                }
+              ]
+            : List Example
+        , description =
+            ''
+
+            A simulation programming language, Simula is considered the first
+            object-oriented programming language. It is an approximate superset of
+            ALGOL 60.
+
+            ''
+        , yearFirstPublished = 1965
+        , compilationTargets = [ CompilationTarget.machineCode ]
+        , typing = [ TypingSystem.static, TypingSystem.strong ]
+        , resources =
+          [ { type = ResourceType.wikipediaEntry
+            , title = "Wikipedia: Simula"
+            , href = "https://en.wikipedia.org/wiki/Simula"
+            }
+          ]
+        }
       , { name = "Smalltalk"
         , originalAuthors =
           [ "Dan Ingalls"
@@ -3476,36 +3795,29 @@ in    [ { name = "8th"
             }
           ]
         }
-      , { name = "Simula"
-        , originalAuthors = [ "Ole-Johan Dahl", "Kristen Nygaard" ]
-        , paradigms = [ Paradigm.objectOriented ]
-        , examples =
-              [ { type = ExampleType.helloWorld
-                , content =
-                    ''
-                    Begin
-                        OutText ("Hello, World!");
-                        Outimage;
-                    End;
-                    ''
-                }
-              ]
-            : List Example
+      , { name = "Souffle"
+        , originalAuthors = [ "Bernhard Scholz" ]
+        , paradigms = [ Paradigm.logic, Paradigm.declarative ]
+        , examples = [] : List Example
         , description =
             ''
 
-            A simulation programming language, Simula is considered the first
-            object-oriented programming language. It is an approximate superset of
-            ALGOL 60.
+            A logic programming language inspired by Datalog but with extensions
+            beyond classical Datalog. Souffle was designed for large-scale static
+            program analysis and compiles to parallel C++ for high performance.
 
             ''
-        , yearFirstPublished = 1965
+        , yearFirstPublished = 2016
         , compilationTargets = [ CompilationTarget.machineCode ]
         , typing = [ TypingSystem.static, TypingSystem.strong ]
         , resources =
-          [ { type = ResourceType.wikipediaEntry
-            , title = "Wikipedia: Simula"
-            , href = "https://en.wikipedia.org/wiki/Simula"
+          [ { type = ResourceType.homepage
+            , title = "Souffle Homepage"
+            , href = "https://souffle-lang.github.io/"
+            }
+          , { type = ResourceType.documentation
+            , title = "Souffle Documentation"
+            , href = "https://souffle-lang.github.io/docs.html"
             }
           ]
         }
@@ -3808,6 +4120,76 @@ in    [ { name = "8th"
           , { type = ResourceType.sourceRepository
             , title = "Compiler repository"
             , href = "https://github.com/ziglang/zig"
+            }
+          ]
+        }
+      , { name = "csh"
+        , originalAuthors = [ "Bill Joy" ]
+        , paradigms = [ Paradigm.imperative ]
+        , examples = [] : List Example
+        , description =
+            ''
+
+            The C shell, a Unix shell with C-like syntax. Developed at UC
+            Berkeley, csh introduced features like aliases, command history, and
+            job control that influenced later shells.
+
+            ''
+        , yearFirstPublished = 1978
+        , compilationTargets = [ CompilationTarget.interpreted ]
+        , typing = [ TypingSystem.dynamic ]
+        , resources =
+          [ { type = ResourceType.wikipediaEntry
+            , title = "Wikipedia: C shell"
+            , href = "https://en.wikipedia.org/wiki/C_shell"
+            }
+          ]
+        }
+      , { name = "ksh"
+        , originalAuthors = [ "David Korn" ]
+        , paradigms = [ Paradigm.imperative ]
+        , examples = [] : List Example
+        , description =
+            ''
+
+            The Korn shell, a Unix shell developed at AT&T Bell Laboratories.
+            ksh combines features from the Bourne shell and C shell, adding
+            command-line editing and other improvements that influenced Bash.
+
+            ''
+        , yearFirstPublished = 1983
+        , compilationTargets = [ CompilationTarget.interpreted ]
+        , typing = [ TypingSystem.dynamic ]
+        , resources =
+          [ { type = ResourceType.wikipediaEntry
+            , title = "Wikipedia: KornShell"
+            , href = "https://en.wikipedia.org/wiki/KornShell"
+            }
+          ]
+        }
+      , { name = "tcsh"
+        , originalAuthors = [ "Ken Greer" ]
+        , paradigms = [ Paradigm.imperative ]
+        , examples = [] : List Example
+        , description =
+            ''
+
+            An enhanced version of the C shell (csh) with command-line editing,
+            programmable command completion, and spelling correction. tcsh is the
+            default shell on FreeBSD.
+
+            ''
+        , yearFirstPublished = 1981
+        , compilationTargets = [ CompilationTarget.interpreted ]
+        , typing = [ TypingSystem.dynamic ]
+        , resources =
+          [ { type = ResourceType.homepage
+            , title = "tcsh Homepage"
+            , href = "https://www.tcsh.org/"
+            }
+          , { type = ResourceType.wikipediaEntry
+            , title = "Wikipedia: tcsh"
+            , href = "https://en.wikipedia.org/wiki/Tcsh"
             }
           ]
         }
