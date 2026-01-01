@@ -656,6 +656,43 @@ in    [ { name = "8th"
             }
           ]
         }
+      , { name = "BQN"
+        , originalAuthors = [ "Marshall Lochbaum" ]
+        , paradigms = [ Paradigm.array, Paradigm.functional ]
+        , examples =
+          [ { type = ExampleType.helloWorld
+            , content =
+                ''
+                "Hello, world!"
+                ''
+            }
+          ]
+        , description =
+            ''
+
+            A modern array programming language inspired by APL and J. BQN
+            (Big Questions Notation) features tacit programming, a rich set of
+            array operations, and a focus on expressiveness and consistency.
+
+            ''
+        , yearFirstPublished = 2020
+        , compilationTargets = [ CompilationTarget.interpreted ]
+        , typing = [ TypingSystem.dynamic ]
+        , resources =
+          [ { type = ResourceType.homepage
+            , title = "BQN Homepage"
+            , href = "https://mlochbaum.github.io/BQN/"
+            }
+          , { type = ResourceType.documentation
+            , title = "BQN Documentation"
+            , href = "https://mlochbaum.github.io/BQN/doc/index.html"
+            }
+          , { type = ResourceType.sourceRepository
+            , title = "BQN Source Repository"
+            , href = "https://github.com/mlochbaum/BQN"
+            }
+          ]
+        }
       , { name = "C"
         , paradigms = [ Paradigm.imperative ]
         , originalAuthors = [ "Dennis Ritchie" ]
@@ -3247,6 +3284,45 @@ in    [ { name = "8th"
             }
           ]
         }
+      , { name = "Q"
+        , originalAuthors = [ "Arthur Whitney" ]
+        , paradigms = [ Paradigm.array, Paradigm.functional ]
+        , examples =
+          [ { type = ExampleType.helloWorld
+            , content =
+                ''
+                "Hello, world!"
+                ''
+            }
+          ]
+        , description =
+            ''
+
+            A high-performance array programming language from Kx Systems,
+            primarily used for time-series databases and financial applications.
+            Q is the query language for kdb+, a columnar database optimized for
+            speed and efficiency.
+
+            ''
+        , yearFirstPublished = 2003
+        , compilationTargets = [ CompilationTarget.interpreted ]
+        , typing = [ TypingSystem.dynamic ]
+        , resources =
+          [ { type = ResourceType.homepage
+            , title = "Kx Systems"
+            , href = "https://kx.com"
+            }
+          , { type = ResourceType.documentation
+            , title = "Q Reference"
+            , href = "https://code.kx.com/q/ref/"
+            }
+          , { type = ResourceType.wikipediaEntry
+            , title = "Wikipedia: Q (programming language from Kx Systems)"
+            , href =
+                "https://en.wikipedia.org/wiki/Q_(programming_language_from_Kx_Systems)"
+            }
+          ]
+        }
       , { name = "QBasic"
         , originalAuthors = [ "Microsoft" ]
         , paradigms = [ Paradigm.imperative ]
@@ -4072,6 +4148,48 @@ in    [ { name = "8th"
           , { type = ResourceType.book
             , title = "The TypeScript Handbook"
             , href = "https://www.typescriptlang.org/docs/handbook/intro.html"
+            }
+          ]
+        }
+      , { name = "Uiua"
+        , originalAuthors = [ "Kai Schmidt" ]
+        , paradigms = [ Paradigm.stack, Paradigm.array ]
+        , examples =
+          [ { type = ExampleType.helloWorld
+            , content =
+                ''
+                "Hello, world!"
+                ''
+            }
+          ]
+        , description =
+            ''
+
+            A stack-based array programming language with a focus on tacit
+            programming and Unicode symbols. Uiua combines the array-oriented
+            paradigm with stack-based computation, offering a unique approach
+            to expressing algorithms.
+
+            ''
+        , yearFirstPublished = 2023
+        , compilationTargets = [ CompilationTarget.interpreted ]
+        , typing = [ TypingSystem.dynamic ]
+        , resources =
+          [ { type = ResourceType.homepage
+            , title = "Uiua Homepage"
+            , href = "https://www.uiua.org"
+            }
+          , { type = ResourceType.documentation
+            , title = "Uiua Documentation"
+            , href = "https://www.uiua.org/docs"
+            }
+          , { type = ResourceType.sourceRepository
+            , title = "Uiua Source Repository"
+            , href = "https://github.com/uiua-lang/uiua"
+            }
+          , { type = ResourceType.playground
+            , title = "Uiua Playground"
+            , href = "https://www.uiua.org/pad"
             }
           ]
         }
