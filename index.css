@@ -27,7 +27,6 @@ h1, h2, h3, h4, h5, h6 {
 #search-input {
     width: 100%;
     padding: 10px;
-    border-radius: 5px;
     border: 1px solid #ccc;
     margin-bottom: 20px;
 }
@@ -38,7 +37,6 @@ h1, h2, h3, h4, h5, h6 {
     background: #fff;
     padding: 10px;
     margin-bottom: 20px;
-    border-radius: 5px;
 }
 
 #list {
@@ -48,8 +46,6 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (min-width: 500px) {
     #list {
-        display: grid;
-        grid: auto-flow / 1fr 1fr;
         gap: 20px;
     }
 }
@@ -60,7 +56,6 @@ h1, h2, h3, h4, h5, h6 {
     background: #fff;
     padding: 10px;
     margin-bottom: 20px;
-    border-radius: 5px;
 }
 
 #list li .header {
@@ -85,7 +80,6 @@ h1, h2, h3, h4, h5, h6 {
 #list li .paradigms .paradigm {
     border: 1px solid #ccc;
     padding: 5px;
-    border-radius: 5px;
 }
 
 #list li .first-appeared {
