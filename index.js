@@ -9,6 +9,22 @@ const humanize = (text) => {
 
 const renderLang = (lang) => {
   const li = document.createElement("li");
+
+  const examplesHTML = lang.examples?.length > 0
+    ? `<button class="toggle-examples">Show Examples</button>
+       <div class="examples hidden">
+          ${lang.examples
+            .map(
+              (example) =>
+                `<div class="example">
+                   <h5>${humanize(example.type)}</h5>
+                   <pre><code>${example.content}</code></pre>
+                 </div>`
+            )
+            .join("")}
+       </div>`
+    : '';
+
   li.innerHTML = `<div data-name="${lang.name}">
                       <div class="header">
                           <h4>${lang.name}</h4>
@@ -39,7 +55,30 @@ const renderLang = (lang) => {
                             )
                             .join(" | ")}
                       </div>
+                      ${examplesHTML}
                     </div>`;
+
+  // Event listener for toggle button
+  if (lang.examples?.length > 0) {
+    const toggleButton = li.querySelector('.toggle-examples');
+    const examplesDiv = li.querySelector('.examples');
+
+    toggleButton.addEventListener('click', () => {
+      const isHidden = examplesDiv.classList.contains('hidden');
+      examplesDiv.classList.toggle('hidden');
+      toggleButton.textContent = examplesDiv.classList.contains('hidden')
+        ? 'Show Examples'
+        : 'Hide Examples';
+
+      // Apply syntax highlighting when examples are first shown
+      if (isHidden && typeof hljs !== 'undefined') {
+        examplesDiv.querySelectorAll('pre code').forEach((block) => {
+          hljs.highlightElement(block);
+        });
+      }
+    });
+  }
+
   list.appendChild(li);
 };
 

@@ -88,6 +88,59 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 10px;
 }
 
+.toggle-examples {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.toggle-examples:hover {
+    background-color: #f5f5f5;
+    border-color: #999;
+}
+
+.examples {
+    margin-top: 15px;
+}
+
+.examples.hidden {
+    display: none;
+}
+
+.example {
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-left: 3px solid #999;
+    margin-bottom: 15px;
+}
+
+.example:last-child {
+    margin-bottom: 0;
+}
+
+.example h5 {
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.example pre {
+    margin: 0;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+.example code {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
 #filters {
     display: flex;
     gap: 10px;
@@ -113,5 +166,24 @@ h1, h2, h3, h4, h5, h6 {
 
     a {
         color: #888;
+    }
+
+    .toggle-examples {
+        color: #eee;
+        border-color: #555;
+    }
+
+    .toggle-examples:hover {
+        background-color: #2a2a2a;
+        border-color: #777;
+    }
+
+    .example {
+        background-color: #1a1a1a;
+        border-left-color: #666;
+    }
+
+    .example h5 {
+        color: #eee;
     }
 }
