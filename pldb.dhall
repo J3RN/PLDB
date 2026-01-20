@@ -1381,7 +1381,40 @@ in    [ { name = "8th"
       , { name = "Elixir"
         , originalAuthors = [ "José Valim" ]
         , paradigms = [ Paradigm.functional, Paradigm.declarative ]
-        , examples = [] : List Example
+        , examples =
+          [ { type = ExampleType.helloWorld
+            , content =
+                ''
+                IO.puts("Hello, World!")
+                ''
+            }
+          , { type = ExampleType.factorial
+            , content =
+                ''
+                # Elixir functions must be defined within a module
+                defmodule Example do
+                  def factorial(n) when n <= 1, do: 1
+
+                  def factorial(n) do
+                    n * factorial(n - 1)
+                  end
+                end
+                ''
+            }
+          , { type = ExampleType.fibonacci
+            , content =
+                ''
+                defmodule Example do
+                  def fibonacci(0), do: 0
+                  def fibonacci(1), do: 1
+
+                  def fibonacci(n) do
+                    fibonacci(n - 1) + fibonacci(n - 2)
+                  end
+                end
+                ''
+            }
+          ]
         , description =
             ''
 
