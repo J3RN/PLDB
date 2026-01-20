@@ -2748,6 +2748,56 @@ in    [ { name = "8th"
             }
           ]
         }
+      , { name = "MoonScript"
+        , originalAuthors = [ "Leaf Corcoran" ]
+        , paradigms = [ Paradigm.functional, Paradigm.imperative ]
+        , examples =
+          [ { type = ExampleType.helloWorld
+            , content =
+                ''
+                print "Hello, World!"
+                ''
+            }
+          , { type = ExampleType.fibonacci
+            , content =
+                ''
+                fib = (n) ->
+                  return n if n < 2
+                  fib(n - 1) + fib(n - 2)
+
+                print fib 10
+                ''
+            }
+          ]
+        , description =
+            ''
+
+            MoonScript is a dynamic scripting language that compiles to Lua. It
+            features a clean, Python-inspired syntax with significant whitespace,
+            object-oriented programming with classes, comprehensions, and
+            destructuring assignment. MoonScript aims to make Lua development more
+            expressive and concise while maintaining full compatibility with the
+            Lua runtime.
+
+            ''
+        , yearFirstPublished = 2011
+        , compilationTargets = [ CompilationTarget.language { name = "Lua" } ]
+        , typing = [ TypingSystem.dynamic ]
+        , resources =
+          [ { type = ResourceType.homepage
+            , title = "MoonScript Homepage"
+            , href = "https://moonscript.org"
+            }
+          , { type = ResourceType.documentation
+            , title = "MoonScript Language Guide"
+            , href = "https://moonscript.org/reference/"
+            }
+          , { type = ResourceType.sourceRepository
+            , title = "MoonScript GitHub Repository"
+            , href = "https://github.com/leafo/moonscript"
+            }
+          ]
+        }
       , { name = "Nim"
         , originalAuthors = [ "Andreas Rumpf" ]
         , paradigms =
