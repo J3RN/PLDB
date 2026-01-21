@@ -4244,6 +4244,20 @@ in    [ { name = "8th"
                 "Hello, world!"
                 ''
             }
+          , { type = ExampleType.sum
+            , content =
+                ''
+                ⟜/+
+                ''
+            }
+          , { type = ExampleType.average
+            , content =
+                ''
+                ⟜/+ # Sum
+                ⧻   # Length
+                ÷   # Divide
+                ''
+            }
           ]
         , description =
             ''
